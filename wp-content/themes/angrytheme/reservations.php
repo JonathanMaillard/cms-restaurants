@@ -14,10 +14,7 @@
 <div class="originalRest">
 
     <div class="originalRest__One">
-        <h4>Our original restaurant</h4>
-        </br>
-        <h3>The chef's cafeteria</h3>
-        <p>
+    <img class="originalRest__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="restaurant" />
         Epic cheeseburgers come in all kinds of manifestations, 
         but we want them in and around our mouth no matter what. 
         Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. 
@@ -26,6 +23,7 @@
     </div>
 
     <div class="originalRest__Two">
+    <img class="originalRest__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png" alt="Logo" />
         <h4>Our original restaurant</h4>
         </br>
         <h3>The chef's cafeteria</h3>
@@ -52,11 +50,10 @@
  Voir pour mettre un formulaire
 </div>
 
-<!--  DISCOVER OUR MENU   -->
-<div class="discoverMenu">
-    <h4>LET'S DISCOVER FOOD</h4>
-    <h3>DISCOVER OUR MENU</h3>
-</div>
+<!--  DISCOVER OUR MENU with Jonathan   -->
+
+<!--  Latest updated RECIPES BLOG with Jonathan   -->
+
 
 
 <?php get_footer(); ?>
