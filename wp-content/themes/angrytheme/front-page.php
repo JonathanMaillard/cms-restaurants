@@ -40,4 +40,8 @@
 
 </section>
 
+<section class="story">
+    
+</section>
+
 <?php get_footer(); ?>
