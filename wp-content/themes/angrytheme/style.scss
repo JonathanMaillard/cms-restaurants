@@ -42,6 +42,9 @@ $breakpoints: (
     @media (max-width: map-get($breakpoints, big-desktop-up )) { @content; }
 }
 
+//VARIABLE
+$font-family: 'Poppins', sans-serif;
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -52,6 +55,31 @@ body{
 //Page reservations.php
 
 .originalRest{
+width: 100%;
+max-width: 28rem;
+margin-left: auto;
+margin-right: auto;
+
+ &__picture{
+    width: 28rem;
+    padding: 20px 0px;
+}
+
+    &__title4{
+    font-family: $font-family;
+    text-align: center;
+    padding: 1rem 0rem;
+    }
+
+    &__title3{
+        font-family: $font-family;
+        text-align: center;
+        padding: 1rem 0rem;
+        }
+
+    &__para{
+        padding: 0rem 1.5rem;
+    }    
 
 }
 
