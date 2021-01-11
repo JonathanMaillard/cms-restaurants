@@ -12,9 +12,46 @@ $black : #292929;
 $grey : #F5F5F5;
 //--------//
 
+/*-----RESPONSIVE----*/
+
+$breakpoints: (
+    phone-only: 599px,
+    tablet-portrait-up: 600px,
+    tablet-landscape-up:900px,
+    desktop-up-small: 1200px,
+    desktop-up: 1400px,
+    big-desktop-up: 1800px,
+);
+
+@mixin for-phone-only {
+    @media (max-width: map-get($breakpoints, phone-only )) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (max-width: map-get($breakpoints, tablet-portrait-up )) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (max-width: map-get($breakpoints , tablet-landscape-up )) { @content; }
+}
+@mixin for-desktop-up-small {
+    @media (max-width: map-get($breakpoints, desktop-up-small)) { @content; }
+}
+@mixin for-desktop-up {
+    @media (max-width: map-get($breakpoints, desktop-up)) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (max-width: map-get($breakpoints, big-desktop-up )) { @content; }
+}
+
 
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: light;
 }
+
+//Page reservations.php
+
+.originalRest{
+
+}
+
