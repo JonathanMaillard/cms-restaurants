@@ -46,6 +46,8 @@
     <h4 class="originalRest__title4">Find Us</h4>
     </br>
     <h3 class="originalRest__title3">Location</h3>
+    <iframe class="openstreetmap" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_547091?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></p>
+    <!-- width="100%" height="300px" -->
 </div>
 
 <!--  RESERVE TABLE   -->
