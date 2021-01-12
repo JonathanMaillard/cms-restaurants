@@ -7,8 +7,28 @@ Version: 1.0
 */
 /*-----RESPONSIVE----*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: light;
 }
+
+/* HEADER */
+.menu_class__navlinks {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-btn a {
+  color: grey;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  /* haut | droit | bas | gauche */
+  padding: 8px 15px 8px 15px;
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
