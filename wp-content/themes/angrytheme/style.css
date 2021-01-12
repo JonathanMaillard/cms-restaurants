@@ -84,4 +84,26 @@ body {
   margin-right: 10px;
 }
 
+.qualities .qualities__text {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.story .story__image img {
+  width: 100%;
+}
+
+.restaurants {
+  background-image: url("assets/images/burger party.png");
+  background-size: auto;
+  background-position: center;
+  background-color: #F5F5F5;
+}
+.restaurants .restaurant {
+  background-color: #FFF;
+}
+.restaurants .restaurant .restaurant__image img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
