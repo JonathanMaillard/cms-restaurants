@@ -5,7 +5,29 @@ Author: The San-Drine, Mega Lee, Yellow Wait
 Author URI: https://github.com/JonathanMaillard/cms-restaurants
 Version: 1.0
 */
+/*  ALL  */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* RESPONSIVE */
+/* MIXIN */
+/* h3  */
+/* h4  */
+/* FORM  */
+/* VARIABLE */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -15,51 +37,61 @@ body {
 /* Page reservations.php */
 .originalRest {
   width: 100%;
-  max-width: 28rem;
   margin-right: auto;
   margin-left: auto;
 }
+
 .originalRest__picture {
   width: 100%;
-  padding: 20px 0px;
 }
+
 .originalRest__title4 {
-  padding: 1rem 0rem;
+  padding-top: 6rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+
 .originalRest__title3 {
-  padding: 1rem 0rem;
+  padding: 3rem 0rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
   font-weight: 600;
   text-align: center;
 }
+
 .originalRest__para {
-  padding: 0rem 1.5rem;
+  padding: 0rem 1.5rem 10rem 1.5rem;
   line-height: 3em;
+}
+
+@media (min-width: 768px) {
+  .originalRest__para {
+    padding: 0rem 6rem 10rem 1.5rem;
+  }
 }
 
 /* RESERVE TABLE */
 .reserveTable {
   margin-top: 6rem;
 }
+
 .reserveTable__picture {
   margin-bottom: -20px;
   width: 100%;
-  padding: 20px 0px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .reserveTable__title4 {
-  padding: 1rem 0rem;
+  padding-top: 6rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+
 .reserveTable__title3 {
-  padding: 1rem 0rem;
+  padding: 3rem 0rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
@@ -186,7 +218,7 @@ body {
 .menu_class__navlinks {
   font-size: 12px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .order-btn a {
@@ -194,7 +226,7 @@ body {
   text-decoration: none;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: red;
   /* haut | droit | bas | gauche */
   padding: 8px 15px 8px 15px;
@@ -216,11 +248,12 @@ body {
   background-position: center;
   background-color: #F5F5F5;
 }
+
 .restaurants .restaurant {
   background-color: #FFF;
 }
+
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
-
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 <!--  TITLE   -->
-<div class="">
+
 <h4 class="originalRest__title4">Welcome in Liège</h4>
 <h3 class="originalRest__title3">PRESENTATION</h3>
 
