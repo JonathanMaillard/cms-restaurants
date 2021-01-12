@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<section class="qualities">
+<section class="qualities container d-flex flex-column align-items-center">
 
-    <div class="qualities__quality">
+    <div class="qualities__quality text-center">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/quality-food.svg" />
@@ -14,7 +14,7 @@
 
     </div>
 
-    <div class="qualities__quality">
+    <div class="qualities__quality text-center">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/fastest-delivery.svg" />
@@ -26,7 +26,7 @@
 
     </div>
 
-    <div class="qualities__quality">
+    <div class="qualities__quality text-center">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/original-recipes.svg" />
@@ -40,17 +40,62 @@
 
 </section>
 
-<section class="story">
+<section class="story container">
 
     <div class="story__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/the-chef.jpg">
     </div>
 
-    <div class="story">
-        <h2>Discover<br>OUR STORY</h2>
-        <h4></h4>
+    <div class="story__text">
+        <h3>Discover<h3>
+        <h2>OUR STORY</h2>
+        <h4>ULTIMATE DINING EXPERIENCE LIKE NO OTHER</h4>
+
+        <p>One of the notable character traits of a successful small restaurant owner is the ablity to easily solve problems. Problem-solving is a skill and most of the time comes with being open-minded.<p>
+        <p>Succesful entrepreneurs are open-minded people and as such good optimists, critical thinkers and prolem solvers. As a small restaurant owner, you need to be able to proffer quick solutions to any problem that may arise in the course of your business<p>
+        
+        <h4>OUR FOUNDER</h4>
+        <div>The Chef</div>
+
     </div>
 
+</section>
+
+<section class="restaurants container-fluid">
+    <div class="container">
+
+        <h3 class="text-center">Discover our franchise</h3>
+        <h2 class="text-center">OUR RESTAURANTS</h2>
+        
+        <div class="restaurant restaurant-right">
+
+            <div class="restaurant__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg">
+            </div>
+            <div class="restaurant__text text-center">
+                <h4>Our original restaurant</h4>
+                <h3>The Chef's cafeteria</h3>
+                <p>The chef's cefeteria's 50 seat room, "The Meazzanine Room" features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, "Barbaresco", is available for meeting, birhtdays and other occasions.</p>
+                <a href="#">More infos</a>
+            </div>
+
+        </div>
+
+        <div class="restaurant restaurant-left">
+            
+            <div class="restaurant__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto2.jpg">
+            </div>
+            <div class="restaurant__text text-center">
+                <h4>Our first restaurant in Brussels</h4>
+                <h3>The BeCentral resto</h3>
+                <p>The chef's cefeteria's 50 seat room, "The Meazzanine Room" features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, "Barbaresco", is available for meeting, birhtdays and other occasions.</p>
+                <a href="#">More infos</a>
+            </div>
+
+        </div>
+
+    </div>
 </section>
 
 <?php get_footer(); ?>
