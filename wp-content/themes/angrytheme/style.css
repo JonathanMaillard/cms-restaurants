@@ -12,11 +12,12 @@ body {
   font-weight: light;
 }
 
+/*------Page reservations.php-----*/
 .originalRest {
   width: 100%;
   max-width: 28rem;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .originalRest__picture {
@@ -25,21 +26,49 @@ body {
 }
 
 .originalRest__title4 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
   padding: 1rem 0rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .originalRest__title3 {
+  padding: 1rem 0rem;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
   font-weight: 600;
   text-align: center;
-  padding: 1rem 0rem;
 }
 
 .originalRest__para {
   padding: 0rem 1.5rem;
   line-height: 3em;
+}
+
+.reserveTable {
+  margin-top: 6rem;
+}
+
+.reserveTable__picture {
+  width: 28rem;
+  padding: 20px 0px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reserveTable__title4 {
+  padding: 1rem 0rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.reserveTable__title3 {
+  padding: 1rem 0rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.9rem;
+  font-weight: 600;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

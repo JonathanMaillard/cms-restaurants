@@ -27,7 +27,7 @@
     </div>
 
     <div class="originalRest__Two">
-        <img class="originalRest__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png" alt="Logo" />
+        <img class="originalRest__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png" alt="food" />
         <h4 class="originalRest__title4">Our original restaurant</h4>
         <h3 class="originalRest__title3">The chef's cafeteria</h3>
         <p class="originalRest__para">
@@ -46,13 +46,15 @@
     <h4 class="originalRest__title4">Find Us</h4>
     </br>
     <h3 class="originalRest__title3">Location</h3>
-    <iframe class="openstreetmap" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_547091?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></p>
-    <!-- width="100%" height="300px" -->
+    <iframe width="100%" height="600px class="openstreetmap" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_547091?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+    <!-- " -->
 </div>
 
 <!--  RESERVE TABLE   -->
 <div class="reserveTable">
- Voir pour mettre un formulaire
+    <h4 class="reserveTable__title4">Submit Information to Place Order</h4>
+    <h3 class="reserveTable__title3">RESERVE A TABLE</h3>
+    <img class="reserveTable__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="fish" />
 </div>
 
 <!--  DISCOVER OUR MENU with Jonathan   -->

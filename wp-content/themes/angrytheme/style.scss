@@ -42,6 +42,33 @@ $breakpoints: (
     @media (max-width: map-get($breakpoints, big-desktop-up )) { @content; }
 }
 
+//MIXIN
+
+@mixin pictureResevations{
+    width: 28rem;
+    padding: 20px 0px;
+}
+
+@mixin centerElement{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin titlereservationsh3{
+    padding: 1rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 2.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+@mixin titlereservationsh4{
+    padding: 1rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+}
+
 //VARIABLE
 $font-family: 'Poppins', sans-serif;
 
@@ -52,31 +79,24 @@ body{
     font-weight: light;
 }
 
-//Page reservations.php
+/*------Page reservations.php-----*/
 
+//PART ONE CARD : ORIGINAL RESTAURANT
 .originalRest{
 width: 100%;
 max-width: 28rem;
-margin-left: auto;
-margin-right: auto;
+@include centerElement;
 
  &__picture{
-    width: 28rem;
-    padding: 20px 0px;
+    @include pictureResevations;
 }
 
     &__title4{
-    font-family: $font-family;
-    text-align: center;
-    padding: 1rem 0rem;
+    @include titlereservationsh4;
     }
 
     &__title3{
-        font-family: $font-family;
-        font-size: 2.9rem;
-        font-weight: 600;
-        text-align: center;
-        padding: 1rem 0rem;
+        @include titlereservationsh3;
         }
 
     &__para{
@@ -86,10 +106,22 @@ margin-right: auto;
 
 }
 
-.locationMap{
+//RESERVE TABLE
 
-    .openstreetmap{
-        widht:;
+.reserveTable{
+    margin-top:6rem;
+    &__picture{
+    @include pictureResevations;
+    display: block;
+    @include centerElement;
+    }
+
+    &__title4{
+    @include titlereservationsh4;
+    }
+
+    &__title3{
+    @include titlereservationsh3;
     }
 }
 
