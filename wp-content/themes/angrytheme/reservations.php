@@ -57,9 +57,13 @@
     <img class="reserveTable__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="fish" />
 </div>
 
+<?php echo do_shortcode('[formidable id="4"]');?>
+
 <!--  DISCOVER OUR MENU with Jonathan   -->
 
 <!--  Latest updated RECIPES BLOG with Jonathan   -->
+
+
 
 
 
