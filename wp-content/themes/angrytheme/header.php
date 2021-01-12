@@ -14,13 +14,13 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light bg-transparent" role="navigation">
-  <div class="container">
+<nav class="navbar mt-3 navbar-expand-md bg-transparent" role="navigation">
+  <div class="container px-5 py-3" style="width:80%;">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand text-uppercase small h6" href="#">Dev restaurant</a>
+    <a class="navbar-brand text-uppercase small text-white h6" href="#">Dev restaurant</a>
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
@@ -34,10 +34,11 @@
         ) );
         ?>
         <div class="order-btn"><a href="#">Order</a></div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarket.svg" alt="cart" width=13/>
-
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarketwhite.svg" alt="cart" class="cart"/>
     </div>
 </nav>
+
+
 
 
 <!--<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
