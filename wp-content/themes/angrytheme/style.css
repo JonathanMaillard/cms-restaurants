@@ -31,4 +31,31 @@ body {
   margin-right: 10px;
 }
 
+.originalRest {
+  width: 100%;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.originalRest__picture {
+  width: 28rem;
+  padding: 20px 0px;
+}
+
+.originalRest__title4 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.originalRest__title3 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.originalRest__para {
+  padding: 0rem 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
