@@ -7,7 +7,7 @@ Version: 1.0
 */
 /*-----RESPONSIVE----*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: light;
 }
@@ -18,25 +18,22 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .originalRest__picture {
   width: 28rem;
   padding: 20px 0px;
 }
-
 .originalRest__title4 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 1rem 0rem;
 }
-
 .originalRest__title3 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 1rem 0rem;
 }
-
 .originalRest__para {
   padding: 0rem 1.5rem;
 }
+
 /*# sourceMappingURL=style.css.map */
