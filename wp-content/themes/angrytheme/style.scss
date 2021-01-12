@@ -125,3 +125,19 @@ max-width: 28rem;
     }
 }
 
+
+/* HEADER */
+.menu_class {
+&__navlinks {font-size:12px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;}}
+
+.order-btn a {color:grey;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    background-color:red;
+    /* haut | droit | bas | gauche */
+    padding:8px 15px 8px 15px; 
+    margin-right:10px;}    
