@@ -12,79 +12,92 @@ $black : #292929;
 $grey : #F5F5F5;
 //--------//
 
-/*-----RESPONSIVE----*/
+/*  ALL  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
 
 $breakpoints: (
-    phone-only: 599px,
-    tablet-portrait-up: 600px,
-    tablet-landscape-up:900px,
-    desktop-up-small: 1200px,
-    desktop-up: 1400px,
-    big-desktop-up: 1800px,
+    phone-only: 320px,
+    tablet-portrait-up: 768px,
+    desktop-up: 1024px,
 );
 
 @mixin for-phone-only {
-    @media (max-width: map-get($breakpoints, phone-only )) { @content; }
+    @media (min-width: map-get($breakpoints, phone-only )) { @content; }
 }
 @mixin for-tablet-portrait-up {
-    @media (max-width: map-get($breakpoints, tablet-portrait-up )) { @content; }
-}
-@mixin for-tablet-landscape-up {
-    @media (max-width: map-get($breakpoints , tablet-landscape-up )) { @content; }
-}
-@mixin for-desktop-up-small {
-    @media (max-width: map-get($breakpoints, desktop-up-small)) { @content; }
+    @media (min-width: map-get($breakpoints, tablet-portrait-up )) { @content; }
 }
 @mixin for-desktop-up {
-    @media (max-width: map-get($breakpoints, desktop-up)) { @content; }
-}
-@mixin for-big-desktop-up {
-    @media (max-width: map-get($breakpoints, big-desktop-up )) { @content; }
+    @media (min-width: map-get($breakpoints, desktop-up)) { @content; }
 }
 
-//MIXIN
+/* MIXIN */
 
 @mixin pictureResevations{
-    width: 28rem;
-    padding: 20px 0px;
+    width: 100%;
 }
 
 @mixin centerElement{
     margin-right: auto;
     margin-left: auto;
 }
-
+    /* h3  */
 @mixin titlereservationsh3{
-    padding: 1rem 0rem;
+    padding: 3rem 0rem;
     text-align: center;
     font-family: $font-family;
     font-size: 2.9rem;
     font-weight: 600;
     text-align: center;
-}
 
+    @include for-tablet-portrait-up{
+      
+    }
+}
+    /* h4  */
 @mixin titlereservationsh4{
-    padding: 1rem 0rem;
+    padding-top: 6rem;
     text-align: center;
     font-family: $font-family;
 }
 
-//VARIABLE
+    /* FORM  */
+@mixin inputForm{
+    border-color:#f5f5f5;
+    border-radius: 0%;
+}
+
+/* VARIABLE */
 $font-family: 'Poppins', sans-serif;
 
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family;
     font-size: 16px;
     font-weight: light;
 }
 
-/*------Page reservations.php-----*/
+/* Page reservations.php */
 
 //PART ONE CARD : ORIGINAL RESTAURANT
 .originalRest{
 width: 100%;
-max-width: 28rem;
 @include centerElement;
 
  &__picture{
@@ -100,17 +113,21 @@ max-width: 28rem;
         }
 
     &__para{
-        padding: 0rem 1.5rem;
+        padding: 0rem 1.5rem 10rem 1.5rem;
         line-height: 3em;
+        @include for-tablet-portrait-up{
+        padding: 0rem 6rem 10rem 1.5rem;
+        }
     }    
 
 }
 
-//RESERVE TABLE
+/* RESERVE TABLE */
 
 .reserveTable{
     margin-top:6rem;
     &__picture{
+    margin-bottom: -20px;
     @include pictureResevations;
     display: block;
     @include centerElement;
@@ -123,6 +140,65 @@ max-width: 28rem;
     &__title3{
     @include titlereservationsh3;
     }
+}
+
+/* FORM */
+.frm_combo_inputs_container, 
+.frm_grid_container, 
+.frm_form_fields 
+.frm_section_heading, 
+.frm_form_fields 
+.frm_fields_container{
+    margin-top: 0%;
+    width: 100%;
+    padding: 4rem 4rem;
+    @include centerElement;
+    background-color: #f5f5f5;
+
+    .with_frm_style, 
+    .frm_primary_label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    }
+    /*INPUT FORMULAIRE*/
+    #field_rv7v3{
+    @include inputForm;
+    }
+
+    #field_gtla8{
+    @include inputForm;
+    }
+
+    #field_oj1pb{
+    @include inputForm;
+    }
+
+    #field_49kp8{
+    @include inputForm;
+    }
+
+    #field_huin7{
+    @include inputForm;
+    }
+
+    #field_zairb{
+    @include inputForm;
+    }
+
+    #field_cv5th{
+    @include inputForm;
+    }
+    
+    .frm_submit{
+       
+    .frm_button_submit{
+        background-color: black;
+        border-color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        font-weight: 800;
+    }
+}
 }
 
 
@@ -196,5 +272,39 @@ max-width: 28rem;
         color:white;
         text-transform:uppercase;
         font-weight:500;}
-      
-   
+
+
+
+//front-page.php JONATHAN
+
+.qualities{
+    .qualities__text{
+        font-weight:bold;
+        font-size: 24px;
+    }
+}
+
+.story{
+    .story__image img{
+        width:100%;
+    }
+}
+
+.restaurants{
+    background-image: url("assets/images/burger party-t.png");
+    background-size: auto;
+    background-position: center;
+    background-color: $grey;
+
+    .restaurant{
+
+        background-color: $white;
+
+        .restaurant__image img{
+            width:100%;
+        }
+    }
+    
+}
+
+//END JONATHAN
