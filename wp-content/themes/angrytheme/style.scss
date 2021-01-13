@@ -292,17 +292,25 @@ $breakpoints: (
     font-family: $font-family;
     font-size: 2.9rem;
     font-weight: 600;
-    text-align: center;
 
     @include for-tablet-portrait-up{
-      
-    }
+        font-size: 2.9rem;
+        text-align: left;
+        margin: 0% 15%;
+        }
 }
     /* h4  */
 @mixin titlereservationsh4{
     padding-top: 6rem;
     text-align: center;
     font-family: $font-family;
+    font-size: 1.6rem;
+
+    @include for-tablet-portrait-up{
+        font-size: 2rem;
+        text-align: left;
+        margin: 0% 15%;
+        }
 }
 
     /* Form  */
@@ -314,9 +322,44 @@ $breakpoints: (
 
 /* 6.2 — ORIGINAL REST */
 
+
+/* Page reservations.php */
+
+//title
+.welcome{
+    padding-top: 6rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 1.6rem;
+
+    @include for-tablet-portrait-up{
+        font-size: 2rem;
+        }
+}
+
+.presentation{
+    padding: 3rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 2.9rem;
+    font-weight: 600;
+
+    @include for-tablet-portrait-up{
+        font-size: 3.3rem;
+        }
+}
+
+//PART ONE CARD : ORIGINAL RESTAURANT
 .originalRest{
 width: 100%;
 @include centerElement;
+
+&__rectangle{
+    width: 100%;
+    height: 8rem;
+    background-color: #f5f5f5;
+    border-top: 1px solid black;
+}
 
  &__picture{
     @include pictureResevations;
@@ -333,8 +376,9 @@ width: 100%;
     &__para{
         padding: 0rem 1.5rem 10rem 1.5rem;
         line-height: 3em;
+
         @include for-tablet-portrait-up{
-        padding: 0rem 6rem 10rem 1.5rem;
+        padding: 0rem 7rem 10rem 7rem;
         }
     }    
 

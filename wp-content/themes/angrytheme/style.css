@@ -28,7 +28,8 @@ Version: 1.0
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -71,7 +72,7 @@ body {
 .menu_class__navlinks {
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .order-btn a {
@@ -80,11 +81,12 @@ body {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: white;
   /* haut | droit | bas | gauche */
   padding: 0.7rem 2rem 0.7rem 2rem;
   margin: 0rem 1rem 0rem 1rem;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -96,6 +98,7 @@ body {
 .nav.navbar-nav li a {
   color: white;
   margin: 0rem 1.2rem 0rem 1.2rem;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -116,6 +119,7 @@ body {
   z-index: -3;
   top: 0;
 }
+
 .headerhatching img {
   position: absolute;
   z-index: -3;
@@ -133,7 +137,8 @@ body {
 
 .black {
   -webkit-filter: invert(0%) grayscale(10%) brightness(50%) contrast(1);
-  object-position: 50% -50%;
+  -o-object-position: 50% -50%;
+     object-position: 50% -50%;
   z-index: -1;
   top: 0px;
   position: relative;
@@ -141,20 +146,24 @@ body {
 
 .hatching {
   width: 100%;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   z-index: 3;
   position: relative;
 }
 
 .block {
-  transform: translate(0, 10rem);
+  -webkit-transform: translate(0, 10rem);
+          transform: translate(0, 10rem);
 }
+
 .block__maintitle {
   font-size: 3vw;
   color: white;
   font-weight: 300;
   line-height: 1.2;
 }
+
 .block__maintitle span {
   font-size: 5vw;
   display: block;
@@ -162,31 +171,44 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+
 .block__mainlink {
   font-size: 1vw;
   color: #FFF;
   font-weight: 500;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
-  transform: translate(0, 9rem);
+  -webkit-transform: translate(0, 9rem);
+          transform: translate(0, 9rem);
 }
+
 .block__mainlink:hover {
-  transform: translate(4rem, 9rem);
+  -webkit-transform: translate(4rem, 9rem);
+          transform: translate(4rem, 9rem);
   text-decoration: none;
 }
 
 .liner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-align: left;
 }
+
 .liner:before {
-  content: "";
-  flex-grow: 1;
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 1px;
   background: white;
   max-width: 4rem;
   margin: 1rem;
 }
+
 .liner:before {
   margin-right: 2rem;
 }
@@ -221,9 +243,11 @@ footer {
   background-position: center;
   background-color: #F5F5F5;
 }
+
 .restaurants .restaurant {
   background-color: #FFF;
 }
+
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
@@ -243,34 +267,90 @@ footer {
 /* h4  */
 /* Form  */
 /* 6.2 — ORIGINAL REST */
+/* Page reservations.php */
+.welcome {
+  padding-top: 6rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    font-size: 2rem;
+  }
+}
+
+.presentation {
+  padding: 3rem 0rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.9rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    font-size: 3.3rem;
+  }
+}
+
 .originalRest {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
+
+.originalRest__rectangle {
+  width: 100%;
+  height: 8rem;
+  background-color: #f5f5f5;
+  border-top: 1px solid black;
+}
+
 .originalRest__picture {
   width: 100%;
 }
+
 .originalRest__title4 {
   padding-top: 6rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
 }
+
+@media (min-width: 768px) {
+  .originalRest__title4 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0% 15%;
+  }
+}
+
 .originalRest__title3 {
   padding: 3rem 0rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
   font-weight: 600;
-  text-align: center;
 }
+
+@media (min-width: 768px) {
+  .originalRest__title3 {
+    font-size: 2.9rem;
+    text-align: left;
+    margin: 0% 15%;
+  }
+}
+
 .originalRest__para {
   padding: 0rem 1.5rem 10rem 1.5rem;
   line-height: 3em;
 }
+
 @media (min-width: 768px) {
   .originalRest__para {
-    padding: 0rem 6rem 10rem 1.5rem;
+    padding: 0rem 7rem 10rem 7rem;
   }
 }
 
@@ -278,6 +358,7 @@ footer {
 .reserveTable {
   margin-top: 6rem;
 }
+
 .reserveTable__picture {
   margin-bottom: -20px;
   width: 100%;
@@ -285,24 +366,45 @@ footer {
   margin-right: auto;
   margin-left: auto;
 }
+
 .reserveTable__title4 {
   padding-top: 6rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
 }
+
+@media (min-width: 768px) {
+  .reserveTable__title4 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0% 15%;
+  }
+}
+
 .reserveTable__title3 {
   padding: 3rem 0rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
   font-weight: 600;
-  text-align: center;
 }
+
+@media (min-width: 768px) {
+  .reserveTable__title3 {
+    font-size: 2.9rem;
+    text-align: left;
+    margin: 0% 15%;
+  }
+}
+
 /* 6.4 — FORMS */
 .frm_combo_inputs_container,
 .frm_grid_container,
-.frm_form_fields .frm_section_heading,
-.frm_form_fields .frm_fields_container {
+.frm_form_fields
+.frm_section_heading,
+.frm_form_fields
+.frm_fields_container {
   margin-top: 0%;
   width: 100%;
   padding: 4rem 4rem;
@@ -311,73 +413,102 @@ footer {
   background-color: #f5f5f5;
   /* Input formulaire */
 }
+
 .frm_combo_inputs_container .with_frm_style,
 .frm_combo_inputs_container .frm_primary_label,
 .frm_grid_container .with_frm_style,
 .frm_grid_container .frm_primary_label,
-.frm_form_fields .frm_section_heading .with_frm_style,
-.frm_form_fields .frm_section_heading .frm_primary_label,
-.frm_form_fields .frm_fields_container .with_frm_style,
-.frm_form_fields .frm_fields_container .frm_primary_label {
-  font-family: "Poppins", sans-serif;
+.frm_form_fields
+.frm_section_heading .with_frm_style,
+.frm_form_fields
+.frm_section_heading .frm_primary_label,
+.frm_form_fields
+.frm_fields_container .with_frm_style,
+.frm_form_fields
+.frm_fields_container .frm_primary_label {
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
 }
+
 .frm_combo_inputs_container #field_rv7v3,
 .frm_grid_container #field_rv7v3,
-.frm_form_fields .frm_section_heading #field_rv7v3,
-.frm_form_fields .frm_fields_container #field_rv7v3 {
+.frm_form_fields
+.frm_section_heading #field_rv7v3,
+.frm_form_fields
+.frm_fields_container #field_rv7v3 {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container #field_gtla8,
 .frm_grid_container #field_gtla8,
-.frm_form_fields .frm_section_heading #field_gtla8,
-.frm_form_fields .frm_fields_container #field_gtla8 {
+.frm_form_fields
+.frm_section_heading #field_gtla8,
+.frm_form_fields
+.frm_fields_container #field_gtla8 {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container #field_oj1pb,
 .frm_grid_container #field_oj1pb,
-.frm_form_fields .frm_section_heading #field_oj1pb,
-.frm_form_fields .frm_fields_container #field_oj1pb {
+.frm_form_fields
+.frm_section_heading #field_oj1pb,
+.frm_form_fields
+.frm_fields_container #field_oj1pb {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container #field_49kp8,
 .frm_grid_container #field_49kp8,
-.frm_form_fields .frm_section_heading #field_49kp8,
-.frm_form_fields .frm_fields_container #field_49kp8 {
+.frm_form_fields
+.frm_section_heading #field_49kp8,
+.frm_form_fields
+.frm_fields_container #field_49kp8 {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container #field_huin7,
 .frm_grid_container #field_huin7,
-.frm_form_fields .frm_section_heading #field_huin7,
-.frm_form_fields .frm_fields_container #field_huin7 {
+.frm_form_fields
+.frm_section_heading #field_huin7,
+.frm_form_fields
+.frm_fields_container #field_huin7 {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container #field_zairb,
 .frm_grid_container #field_zairb,
-.frm_form_fields .frm_section_heading #field_zairb,
-.frm_form_fields .frm_fields_container #field_zairb {
+.frm_form_fields
+.frm_section_heading #field_zairb,
+.frm_form_fields
+.frm_fields_container #field_zairb {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container #field_cv5th,
 .frm_grid_container #field_cv5th,
-.frm_form_fields .frm_section_heading #field_cv5th,
-.frm_form_fields .frm_fields_container #field_cv5th {
+.frm_form_fields
+.frm_section_heading #field_cv5th,
+.frm_form_fields
+.frm_fields_container #field_cv5th {
   border-color: #f5f5f5;
   border-radius: 0%;
 }
+
 .frm_combo_inputs_container .frm_submit .frm_button_submit,
 .frm_grid_container .frm_submit .frm_button_submit,
-.frm_form_fields .frm_section_heading .frm_submit .frm_button_submit,
-.frm_form_fields .frm_fields_container .frm_submit .frm_button_submit {
+.frm_form_fields
+.frm_section_heading .frm_submit .frm_button_submit,
+.frm_form_fields
+.frm_fields_container .frm_submit .frm_button_submit {
   background-color: black;
   border-color: black;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
   font-weight: 800;
 }
@@ -394,5 +525,9 @@ footer {
    9.0 - Single recipe (Magali)
     single-recipe.php
    =================================== */
+<<<<<<< HEAD
 
 /*# sourceMappingURL=style.css.map */
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 0da734bd4c53ee9fb1172d1dd0fbc8d9ac9076ac
