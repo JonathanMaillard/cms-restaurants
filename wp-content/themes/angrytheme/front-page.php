@@ -55,17 +55,19 @@
         <p>Succesful entrepreneurs are open-minded people and as such good optimists, critical thinkers and prolem solvers. As a small restaurant owner, you need to be able to proffer quick solutions to any problem that may arise in the course of your business<p>
         
         <h4>OUR FOUNDER</h4>
-        <div>The Chef</div>
+        <div class="signature">The Chef</div>
 
     </div>
 
 </section>
 
-<section class="restaurants container-fluid">
+<section class="restaurants">
     <div class="container">
 
-        <h3 class="text-center">Discover our franchise</h3>
-        <h2 class="text-center">OUR RESTAURANTS</h2>
+        <div class="restaurants__head">
+            <h3 class="text-center">Discover our franchise</h3>
+            <h2 class="text-center">OUR RESTAURANTS</h2>
+        </div>
         
         <div class="restaurant restaurant-right">
 
@@ -131,5 +133,26 @@
     </div>
 </section>
 
+<section class="quote text-center">
+    <div>
+        <div class="quote__text">
+            <p><i class="fas fa-quote-right"></i></p>
+            <p>Any Time We Start Something New It Is Exciting And We Are Very Motivated And Committed. As Time Goes By</p>
+        </div>
+
+        <div class="quote__author">
+            - Devil Roy Barman
+        </div>
+
+        <div class="quote__nav">
+            <div class="bullet"></div>
+            <div class="bullet active"></div>
+            <div class="bullet"></div>   
+        </div>
+    </div>
+    <div class="quote__image">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png">
+    </div>
+</section>
 
 <?php get_footer(); ?>
