@@ -45,7 +45,6 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
   font-weight: light;
 }
 
@@ -206,13 +205,42 @@ footer {
    5.0 - PAGE : Front page (Jonathan)
     front-page.php
    =================================== */
+.qualities .qualities__quality {
+  margin: 2rem;
+}
 .qualities .qualities__text {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
+.story {
+  padding-bottom: 10rem;
+}
 .story .story__image img {
   width: 100%;
+}
+.story .story__text {
+  margin-top: 3.5rem;
+  padding: 0 2rem;
+}
+.story .story__text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.story .story__text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.story .story__text h4 {
+  font-weight: bold;
+}
+.story .story__text p {
+  line-height: 3rem;
+}
+.story .story__text .signature {
+  font-size: 3.2rem;
 }
 
 .restaurants {
@@ -221,17 +249,40 @@ footer {
   background-position: center;
   background-color: #F5F5F5;
 }
+.restaurants h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.restaurants h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.restaurants .restaurants__head {
+  padding: 4.2rem 0;
+}
 .restaurants .restaurant {
   background-color: #FFF;
 }
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
+.restaurants .restaurant .restaurant__text {
+  padding: 5rem 3rem;
+}
 
 .food .food__pictures img {
   width: 100%;
   max-width: 200px;
   margin: 5px;
+}
+
+.quote {
+  background-color: #292929;
+  color: #FFF;
+}
+.quote .quote__image img {
+  width: 100%;
 }
 
 /* ===================================

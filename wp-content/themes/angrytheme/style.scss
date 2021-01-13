@@ -57,7 +57,6 @@ a {
 
 body{
     font-family: $font-family;
-    font-size: 1.6rem;
     font-weight: light;
 }
 
@@ -228,17 +227,62 @@ $breakpoints: (
    5.0 - PAGE : Front page (Jonathan)
     front-page.php
    =================================== */
+   @mixin fronth2{
+    font-family: $font-family;
+    font-size: 3.0rem;
+    font-weight:bold;
+}
+   @mixin fronth3{
+    font-family: $font-family;
+    font-size: 2.0rem;
+}
 
    .qualities{
+
+    .qualities__quality{
+        margin:2rem;
+    }
     .qualities__text{
         font-weight:bold;
-        font-size: 24px;
+        font-size: 1.8rem;
+        margin-top: 2rem;
     }
+    
 }
 
 .story{
+
+
+    padding-bottom:10rem;
+
     .story__image img{
         width:100%;
+    }
+
+    .story__text{
+
+        margin-top:3.5rem;
+        padding:0 2rem;
+
+        h2{
+            @include fronth2;
+        }
+
+        h3{
+            @include fronth3;
+        }
+
+        h4{
+            font-weight: bold;
+        }
+
+        p{
+            line-height: 3rem;
+        }
+
+        .signature{
+            font-size: 3.2rem;
+        }
     }
 }
 
@@ -248,12 +292,35 @@ $breakpoints: (
     background-position: center;
     background-color: $grey;
 
+
+    h2{
+        @include fronth2;
+    }
+
+    h3{
+        @include fronth3;
+    }
+
+    
+
+    .restaurants__head{
+        padding: 4.2rem 0;
+    }
+
     .restaurant{
 
         background-color: $white;
 
+
         .restaurant__image img{
             width:100%;
+        }
+        .restaurant__text{
+            padding: 5rem 3rem;
+
+            p{
+                
+            }
         }
     }
     
@@ -264,6 +331,15 @@ $breakpoints: (
         width:100%;
         max-width:200px;
         margin: 5px;
+    }
+}
+
+.quote{
+    background-color: $black;
+    color: $white;
+
+    .quote__image img{
+        width:100%;
     }
 }
 
