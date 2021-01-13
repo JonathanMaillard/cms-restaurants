@@ -4,7 +4,7 @@ Theme Name: angryTheme
 Description: Un wordpress angry pour un restaurant hungry !
 Author: The San-Drine, Mega Lee, Yellow Wait
 Author URI: https://github.com/JonathanMaillard/cms-restaurants
-Version: 1.0
+Version: 1.0 
 */
 /* 
 *  CSS TABLE OF CONTENTS
@@ -56,8 +56,20 @@ body {
    3.0 - Header (Sandrine)
     header.php
    ================================ */
+.white-bg {
+  background-color: #FFF;
+}
+
+.black-bg {
+  background-color: #292929;
+}
+
+.grey-bg {
+  background-color: #F5F5F5;
+}
+
 .menu_class__navlinks {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -66,13 +78,13 @@ body {
   color: #292929;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   background-color: white;
   /* haut | droit | bas | gauche */
-  padding: 7px 20px 7px 20px;
-  margin: 0px 10px 0px 10px;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  margin: 0rem 1rem 0rem 1rem;
   transition: 0.3s;
 }
 
@@ -83,7 +95,7 @@ body {
 
 .nav.navbar-nav li a {
   color: white;
-  margin: 0px 12px 0px 12px;
+  margin: 0rem 1.2rem 0rem 1.2rem;
   transition: 0.2s;
 }
 
@@ -92,16 +104,30 @@ body {
 }
 
 .cart {
-  width: 18px;
-  margin: 0px 0px 0px 10px;
+  width: 1.8rem;
+  margin: 0rem 0rem 0rem 1rem;
 }
 
-#headerpicture {
+.headerhatching {
   width: 100%;
   height: 80vh;
   overflow: hidden;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
+  top: 0;
+}
+.headerhatching img {
+  position: absolute;
+  z-index: -3;
+  bottom: 0;
+}
+
+.headerpicture {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -3;
   top: 0px;
 }
 
@@ -120,20 +146,49 @@ body {
   position: relative;
 }
 
-.title {
-  font-size: 4vw;
+.block {
+  transform: translate(0, 10rem);
+}
+.block__maintitle {
+  font-size: 3vw;
   color: white;
   font-weight: 300;
   line-height: 1.2;
-  transform: translate(0, 100px);
 }
-
-.title span {
+.block__maintitle span {
   font-size: 5vw;
   display: block;
   color: white;
   text-transform: uppercase;
+  font-weight: 600;
+}
+.block__mainlink {
+  font-size: 1vw;
+  color: #FFF;
   font-weight: 500;
+  transition: 0.8s;
+  transform: translate(0, 9rem);
+}
+.block__mainlink:hover {
+  transform: translate(4rem, 9rem);
+  text-decoration: none;
+}
+
+.liner {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+.liner:before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: white;
+  max-width: 4rem;
+  margin: 1rem;
+}
+.liner:before {
+  margin-right: 2rem;
 }
 
 /* ================================
@@ -141,7 +196,10 @@ body {
      footer.php
    ================================ */
 footer {
-  font-size: 13px;
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #292929;
 }
 
 /* ===================================

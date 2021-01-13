@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <?php wp_head(); ?>
 </head>
-<body>
 
-<nav class="navbar mt-3 navbar-expand-md bg-transparent" role="navigation">
-  <div class="container px-5 py-3" style="width:80%;">
+
+<nav class="navbar mt-5 navbar-expand-md bg-transparent" role="navigation">
+  <div class="container px-5 py-3">
     <!-- Brand and toggle get grouped for better mobile display -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,37 +41,3 @@
 
 
 
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-  <div class="container">
-    <a class="navbar-brand href="#"><h5 class="text-uppercase">Dev restaurant</h5></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav navlinks ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/home-minimal.svg" width=10 alt="home"/></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ours restaurants</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Recipes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reservations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Order</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarket.svg" width=14 alt="cart"></a>
-        </li>
-     
-      </ul>
-    </div>
-  </div>
-</nav>-->
