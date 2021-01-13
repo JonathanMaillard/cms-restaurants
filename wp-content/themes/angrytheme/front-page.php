@@ -118,9 +118,18 @@
         <h2 class="text-center">DISCOVER OUR MENU</h2>
     </div>
 
-    <div class="food__pictures">
-    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto3.jpg"></div>
+    <div class="food__pictures d-flex flex-column align-items-center">
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes1.jpg"></div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes2.jpg"></div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes3.jpg"></div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes4.jpg"></div>
+    </div>
+
+    <div class="food__text">
+        <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
+        <a href="#">View the full Menu</a>
     </div>
 </section>
+
 
 <?php get_footer(); ?>

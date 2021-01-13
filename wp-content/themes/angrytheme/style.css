@@ -106,4 +106,10 @@ body {
   width: 100%;
 }
 
+.food .food__pictures img {
+  width: 100%;
+  max-width: 200px;
+  margin: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
