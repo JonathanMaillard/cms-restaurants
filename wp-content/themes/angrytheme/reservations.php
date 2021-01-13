@@ -8,13 +8,14 @@
 <?php get_header(); ?>
 <!--  TITLE   -->
 
-<h4 class="originalRest__title4">Welcome in Liège</h4>
-<h3 class="originalRest__title3">PRESENTATION</h3>
+<h4 class="welcome">Welcome in Liège</h4>
+<h3 class="presentation">PRESENTATION</h3>
 
 <!--  PART ONE CARD : ORIGINAL RESTAURANT   -->
 <div class="originalRest">
 
     <div class="originalRest__One">
+        <!-- PICTURE RESTAURANT -->
         <img class="originalRest__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="restaurant" />
         <h4 class="originalRest__title4">Our original restaurant</h4>
         <h3 class="originalRest__title3">The chef's cafeteria</h3>
@@ -27,6 +28,9 @@
     </div>
 
     <div class="originalRest__Two">
+        <!-- PICTURE SALAD -->
+        <div class="originalRest__rectangle">
+        </div>
         <img class="originalRest__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png" alt="food" />
         <h4 class="originalRest__title4">Our original restaurant</h4>
         <h3 class="originalRest__title3">The chef's cafeteria</h3>
@@ -37,6 +41,8 @@
         Lettuce remind you that cheeseburgers come in all forms - bun intended.
         Pop quiz: what’s the greatest thing to happen to your mind, body, and soul in recent history? A cheeseburger, obviously. 
         </p>
+        <div class="originalRest__rectangle">
+        </div>
     </div>
 
 </div>
