@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 <!--  TITLE   -->
-<div class="">
+
 <h4 class="originalRest__title4">Welcome in Liège</h4>
 <h3 class="originalRest__title3">PRESENTATION</h3>
 
@@ -57,9 +57,13 @@
     <img class="reserveTable__picture" src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="fish" />
 </div>
 
+<?php echo do_shortcode('[formidable id="4"]');?>
+
 <!--  DISCOVER OUR MENU with Jonathan   -->
 
 <!--  Latest updated RECIPES BLOG with Jonathan   -->
+
+
 
 
 
