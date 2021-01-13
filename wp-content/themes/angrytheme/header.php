@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <?php wp_head(); ?>
 </head>
-
+<body>
 
 <nav class="navbar mt-5 navbar-expand-md bg-transparent" role="navigation">
   <div class="container px-5 py-3">
