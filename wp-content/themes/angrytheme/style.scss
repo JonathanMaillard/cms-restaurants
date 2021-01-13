@@ -66,8 +66,8 @@ body{
    ================================ */
 
 $breakpoints: (
-    phone-only: 320px,
-    tablet-portrait-up: 768px,
+    phone-only: 319px,
+    tablet-portrait-up: 769px,
     desktop-up: 1024px,
 );
 
@@ -91,12 +91,23 @@ $breakpoints: (
 .black-bg {background-color:#292929;}
 .grey-bg {background-color:#F5F5F5;}
 
+   .burgermenu span {font-size:10px;
+    font-weight:500; 
+    color:white!important;}
+    .navbar-toggler>.close {
+        display:inline;
+    }
+    .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.open {
+        display:none;
+    }
+
+
    .menu_class {
     &__navlinks {font-size:1.2rem;
         font-weight:500;
         font-family: 'Poppins', sans-serif;}}
     
-    .order-btn a {color:$black;
+    .order-btn a {
         text-decoration:none;
         text-transform:uppercase;
         font-size:1.1rem;
@@ -106,7 +117,8 @@ $breakpoints: (
         /* haut | droit | bas | gauche */
         padding:0.7rem 2rem 0.7rem 2rem; 
         margin:0rem 1rem 0rem 1rem;
-        transition:0.3s;} 
+        transition:0.3s;
+        @include for-phone-only {display:none;}} 
         
         .order-btn a:hover {color:$white;
             background-color:$black;}  
@@ -122,13 +134,15 @@ $breakpoints: (
         }
     
         .cart {
+
             width:1.8rem;
             margin:0rem 0rem 0rem 1rem;
+            @include for-phone-only {display:none;}
           }
 
         .headerhatching {
             width:100%;
-            height:80vh;
+            height:90vh;
             overflow: hidden;
             position:absolute;
             z-index: -3;
@@ -143,11 +157,12 @@ $breakpoints: (
         
         .headerpicture {
             width:100%;
-            height:80vh;
+            height:90vh;
             overflow: hidden;
             position:absolute;
             z-index: -3;
             top: 0px;
+            
           
     
         }
@@ -166,35 +181,38 @@ $breakpoints: (
         position:relative;}
         
 .block {
-    transform: translate(0,10rem);
+    transform: translate(0,3rem); 
+
+    @include for-desktop-up {transform: translate(0,9rem); }
 
         &__maintitle { 
-            font-size:3vw;
             color:white;
             font-weight:300;
             line-height:1.2;
         
-            @include for-tablet-portrait-up {font-size:2vw;}
-            @include for-phone-only {font-size:7vw;}
+            @include for-tablet-portrait-up {font-size:1vw;}
+            @include for-phone-only {font-size:6vw;}
+            @include for-desktop-up {font-size:2vw;}
             }
     
-        &__maintitle span { font-size:5vw;
+        &__maintitle span { 
             display:block;
             color:white;
             text-transform:uppercase;
             font-weight:600;
-        
-            @include for-tablet-portrait-up {font-size:4vw;}
-            @include for-phone-only {font-size:10vw;}}
 
-        &__mainlink{font-size:1vw;
+            @include for-tablet-portrait-up {font-size:3rem;}
+            @include for-phone-only {font-size:10vw;}
+            @include for-desktop-up {font-size:5rem;}}
+
+        &__mainlink{font-size:3vw;
             color:$white;
             font-weight:500;
         transition: 0.8s;
         transform: translate(0,9rem);
-    
-        @include for-tablet-portrait-up {font-size:15px;}
-        @include for-phone-only {font-size:10px;}}
+
+        @include for-desktop-up {font-size:1.1vw;}
+        @include for-phone-only {font-size:1.5vw;}}
 
         &__mainlink:hover {
        transform: translate(4rem,9rem);
@@ -214,13 +232,19 @@ $breakpoints: (
       background:white;
       max-width: 4rem;
       margin: 1rem;
-      @include for-tablet-portrait-up {display:none;}
-      @include for-phone-only {display:none;}
+
+    @include for-tablet-portrait-up {      max-width: 3rem;
+    transform:translate(0,-0.2rem);}
+    @include for-phone-only {      max-width: 3rem;
+        transform:translate(0,0.2rem);}
+      
+
 
     }
   
     &:before {
       margin-right: 2rem;
+      margin-top:1rem;
     }
   }
     

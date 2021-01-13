@@ -12,14 +12,18 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <?php wp_head(); ?>
 </head>
-<body>
+
 
 <nav class="navbar mt-5 navbar-expand-md bg-transparent" role="navigation">
   <div class="container px-5 py-3">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <p class="burgermenu open"> <span class="me-3">Menu</span> <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/menu.svg" alt="menu" width=15/></p>
+    <p class="burgermenu close active">  <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cross.svg" alt="menu" width=12/></p>
+</button>
+
     <a class="navbar-brand text-uppercase small text-white h6" href="#">Dev restaurant</a>
         <?php
         wp_nav_menu( array(
@@ -27,17 +31,14 @@
             'depth'             => 2,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav ms-auto menu_class__navlinks navbar-nav',
+            'container_id'      => 'navbarSupportedContent',
+            'menu_class'        => 'nav ms-auto menu_class__navlinks float-right text-right navbar-nav',
             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
-        <div class="order-btn"><a href="#">Order</a></div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarketwhite.svg" alt="cart" class="cart"/>
+        <!--<div class="order-btn"><a href="#">Order</a></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarketwhite.svg" alt="cart" class="cart"/>-->
     </div>
 </nav>
-
-
-
 
