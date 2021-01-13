@@ -89,7 +89,21 @@
             <div class="restaurant__text text-center">
                 <h4>Our first restaurant in Brussels</h4>
                 <h3>The BeCentral resto</h3>
-                <p>The chef's cefeteria's 50 seat room, "The Meazzanine Room" features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, "Barbaresco", is available for meeting, birhtdays and other occasions.</p>
+                <p>Somewhere over the rainbow<br>Way up high<br>And the dreams that you dream of<br>Once in a lullaby</p>
+                <a href="#">More infos</a>
+            </div>
+
+        </div>
+
+        <div class="restaurant restaurant-right">
+
+            <div class="restaurant__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto3.jpg">
+            </div>
+            <div class="restaurant__text text-center">
+                <h4>Outssiplou, the place to be</h4>
+                <h3>The Honkytonk</h3>
+                <p>I feel your presence amongst us<br>You cannot hide in the darkness<br>Can you hear the rumble?<br>Can you hear the rumble that's calling?</p>
                 <a href="#">More infos</a>
             </div>
 
@@ -97,5 +111,25 @@
 
     </div>
 </section>
+
+<section class="food container-fluid">
+    <div class="container">
+        <h3 class="text-center">LET'S DISCOVER FOOD</h3>
+        <h2 class="text-center">DISCOVER OUR MENU</h2>
+    </div>
+
+    <div class="food__pictures d-flex flex-column align-items-center">
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes1.jpg"></div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes2.jpg"></div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes3.jpg"></div>
+        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes4.jpg"></div>
+    </div>
+
+    <div class="food__text">
+        <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
+        <a href="#">View the full Menu</a>
+    </div>
+</section>
+
 
 <?php get_footer(); ?>

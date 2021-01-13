@@ -1,11 +1,30 @@
+@charset "UTF-8";
 /*
 Theme Name: angryTheme
 Description: Un wordpress angry pour un restaurant hungry !
 Author: The San-Drine, Mega Lee, Yellow Wait
 Author URI: https://github.com/JonathanMaillard/cms-restaurants
-Version: 1.0
+Version: 1.0 
 */
-/*  ALL  */
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Reset and Global Settings
+*  2.0 - Responsive
+*  3.0 - Header
+*  4.0 - Footer 
+
+*  5.0 - PAGE : Front page (Jonathan)
+*  6.0 - PAGE : Reservations (Magali)
+*  7.0 - PAGE : Menu (Jonathan)
+*  8.0 - PAGE : Recipes Archive (Sandrine)
+*  9.0 - ARTICLE : Single Recipe (Magali)
+*/
+/* ================================
+   1.0 - Reset and Global Settings
+   ================================ */
+/* 1.1 — COLORS AND FONT VARIABLES */
+/* 1.2 — GENERAL SETTINGS */
 * {
   margin: 0;
   padding: 0;
@@ -16,24 +35,238 @@ Version: 1.0
 html {
   width: 100%;
   height: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
 }
 
 a {
   text-decoration: none;
 }
 
-/* RESPONSIVE */
-/* MIXIN */
-/* h3  */
-/* h4  */
-/* FORM  */
-/* VARIABLE */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: light;
 }
 
+/* ================================
+   2.0 - Responsive
+   ================================ */
+/* ================================
+   3.0 - Header (Sandrine)
+    header.php
+   ================================ */
+.white-bg {
+  background-color: #FFF;
+}
+
+.black-bg {
+  background-color: #292929;
+}
+
+.grey-bg {
+  background-color: #F5F5F5;
+}
+
+.menu_class__navlinks {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.order-btn a {
+  color: #292929;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  /* haut | droit | bas | gauche */
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  margin: 0rem 1rem 0rem 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.order-btn a:hover {
+  color: #FFF;
+  background-color: #292929;
+}
+
+.nav.navbar-nav li a {
+  color: white;
+  margin: 0rem 1.2rem 0rem 1.2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav.navbar-nav li a:hover {
+  color: darkgray;
+}
+
+.cart {
+  width: 1.8rem;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+.headerhatching {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+}
+
+.headerhatching img {
+  position: absolute;
+  z-index: -3;
+  bottom: 0;
+}
+
+.headerpicture {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -3;
+  top: 0px;
+}
+
+.black {
+  -webkit-filter: invert(0%) grayscale(10%) brightness(50%) contrast(1);
+  -o-object-position: 50% -50%;
+     object-position: 50% -50%;
+  z-index: -1;
+  top: 0px;
+  position: relative;
+}
+
+.hatching {
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+  position: relative;
+}
+
+.block {
+  -webkit-transform: translate(0, 10rem);
+          transform: translate(0, 10rem);
+}
+
+.block__maintitle {
+  font-size: 3vw;
+  color: white;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.block__maintitle span {
+  font-size: 5vw;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.block__mainlink {
+  font-size: 1vw;
+  color: #FFF;
+  font-weight: 500;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: translate(0, 9rem);
+          transform: translate(0, 9rem);
+}
+
+.block__mainlink:hover {
+  -webkit-transform: translate(4rem, 9rem);
+          transform: translate(4rem, 9rem);
+  text-decoration: none;
+}
+
+.liner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.liner:before {
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background: white;
+  max-width: 4rem;
+  margin: 1rem;
+}
+
+.liner:before {
+  margin-right: 2rem;
+}
+
+/* ================================
+    4.0 - Footer (Sandrine)
+     footer.php
+   ================================ */
+footer {
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #292929;
+}
+
+/* ===================================
+   5.0 - PAGE : Front page (Jonathan)
+    front-page.php
+   =================================== */
+.qualities .qualities__text {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.story .story__image img {
+  width: 100%;
+}
+
+.restaurants {
+  background-image: url("assets/images/burger party-t.png");
+  background-size: auto;
+  background-position: center;
+  background-color: #F5F5F5;
+}
+
+.restaurants .restaurant {
+  background-color: #FFF;
+}
+
+.restaurants .restaurant .restaurant__image img {
+  width: 100%;
+}
+
+.food .food__pictures img {
+  width: 100%;
+  max-width: 200px;
+  margin: 5px;
+}
+
+/* ===================================
+   6.0 - PAGE : Reservations (Magali)
+    reservations.php
+   =================================== */
+/* 6.1 — MIXINS */
+/* h3  */
+/* h4  */
+/* Form  */
+/* 6.2 — ORIGINAL REST */
 /* Page reservations.php */
 .welcome {
   padding-top: 6rem;
@@ -121,7 +354,7 @@ body {
   }
 }
 
-/* RESERVE TABLE */
+/* 6.3 — RESERVE TABLE  */
 .reserveTable {
   margin-top: 6rem;
 }
@@ -165,7 +398,7 @@ body {
   }
 }
 
-/* FORM */
+/* 6.4 — FORMS */
 .frm_combo_inputs_container,
 .frm_grid_container,
 .frm_form_fields
@@ -178,7 +411,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   background-color: #f5f5f5;
-  /*INPUT FORMULAIRE*/
+  /* Input formulaire */
 }
 
 .frm_combo_inputs_container .with_frm_style,
@@ -280,46 +513,16 @@ body {
   font-weight: 800;
 }
 
-/* HEADER */
-.menu_class__navlinks {
-  font-size: 12px;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-}
-
-.order-btn a {
-  color: grey;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  background-color: red;
-  /* haut | droit | bas | gauche */
-  padding: 8px 15px 8px 15px;
-  margin-right: 10px;
-}
-
-.qualities .qualities__text {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.story .story__image img {
-  width: 100%;
-}
-
-.restaurants {
-  background-image: url("assets/images/burger party-t.png");
-  background-size: auto;
-  background-position: center;
-  background-color: #F5F5F5;
-}
-
-.restaurants .restaurant {
-  background-color: #FFF;
-}
-
-.restaurants .restaurant .restaurant__image img {
-  width: 100%;
-}
+/* ===================================
+   7.0 - PAGE : Menu (Jonathan)
+    menu.php
+   =================================== */
+/* ===================================
+   8.0 - Recipes archives (Sandrine)
+    recipes.php
+   =================================== */
+/* ===================================
+   9.0 - Single recipe (Magali)
+    single-recipe.php
+   =================================== */
 /*# sourceMappingURL=style.css.map */
