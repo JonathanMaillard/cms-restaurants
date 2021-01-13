@@ -57,7 +57,6 @@ a {
 
 body{
     font-family: $font-family;
-    font-size: 16px;
     font-weight: light;
 }
 
@@ -161,6 +160,7 @@ $breakpoints: (
         position:relative; }
     
         .hatching {width:100%;
+        bottom:-1rem;
         transform: rotate(180deg);
         z-index: 3;
         position:relative;}
@@ -172,19 +172,29 @@ $breakpoints: (
             font-size:3vw;
             color:white;
             font-weight:300;
-            line-height:1.2;}
+            line-height:1.2;
+        
+            @include for-tablet-portrait-up {font-size:2vw;}
+            @include for-phone-only {font-size:7vw;}
+            }
     
         &__maintitle span { font-size:5vw;
             display:block;
             color:white;
             text-transform:uppercase;
-            font-weight:600;}
+            font-weight:600;
+        
+            @include for-tablet-portrait-up {font-size:4vw;}
+            @include for-phone-only {font-size:10vw;}}
 
         &__mainlink{font-size:1vw;
             color:$white;
             font-weight:500;
         transition: 0.8s;
-        transform: translate(0,9rem);}
+        transform: translate(0,9rem);
+    
+        @include for-tablet-portrait-up {font-size:15px;}
+        @include for-phone-only {font-size:10px;}}
 
         &__mainlink:hover {
        transform: translate(4rem,9rem);
@@ -204,6 +214,8 @@ $breakpoints: (
       background:white;
       max-width: 4rem;
       margin: 1rem;
+      @include for-tablet-portrait-up {display:none;}
+      @include for-phone-only {display:none;}
 
     }
   
@@ -222,6 +234,10 @@ $breakpoints: (
     position: absolute; 
     bottom: 0;
     background-color: $black;}
+
+    .black-hatching {width:100%;
+        z-index: 3;
+        position:relative;}
 
 
 /* ===================================

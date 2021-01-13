@@ -45,7 +45,6 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
   font-weight: light;
 }
 
@@ -141,6 +140,7 @@ body {
 
 .hatching {
   width: 100%;
+  bottom: -1rem;
   transform: rotate(180deg);
   z-index: 3;
   position: relative;
@@ -155,6 +155,16 @@ body {
   font-weight: 300;
   line-height: 1.2;
 }
+@media (min-width: 768px) {
+  .block__maintitle {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 320px) {
+  .block__maintitle {
+    font-size: 7vw;
+  }
+}
 .block__maintitle span {
   font-size: 5vw;
   display: block;
@@ -162,12 +172,32 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .block__maintitle span {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 320px) {
+  .block__maintitle span {
+    font-size: 10vw;
+  }
+}
 .block__mainlink {
   font-size: 1vw;
   color: #FFF;
   font-weight: 500;
   transition: 0.8s;
   transform: translate(0, 9rem);
+}
+@media (min-width: 768px) {
+  .block__mainlink {
+    font-size: 15px;
+  }
+}
+@media (min-width: 320px) {
+  .block__mainlink {
+    font-size: 10px;
+  }
 }
 .block__mainlink:hover {
   transform: translate(4rem, 9rem);
@@ -187,6 +217,16 @@ body {
   max-width: 4rem;
   margin: 1rem;
 }
+@media (min-width: 768px) {
+  .liner:before {
+    display: none;
+  }
+}
+@media (min-width: 320px) {
+  .liner:before {
+    display: none;
+  }
+}
 .liner:before {
   margin-right: 2rem;
 }
@@ -200,6 +240,12 @@ footer {
   position: absolute;
   bottom: 0;
   background-color: #292929;
+}
+
+.black-hatching {
+  width: 100%;
+  z-index: 3;
+  position: relative;
 }
 
 /* ===================================
