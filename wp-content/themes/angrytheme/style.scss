@@ -329,7 +329,12 @@ $breakpoints: (
     font-size: 2.0rem;
 }
 
-   .qualities{
+.wrapper{
+    width:100%;
+    max-width: 1200px;
+}
+
+.qualities{
 
     .qualities__quality{
         margin:2rem;
@@ -381,8 +386,11 @@ $breakpoints: (
 .restaurants{
     background-image: url("assets/images/burger party-t.png");
     background-size: auto;
+    background-repeat: repeat;
     background-position: center;
     background-color: $grey;
+
+    padding-bottom: 1px;
 
 
     h2{
@@ -402,16 +410,27 @@ $breakpoints: (
     .restaurant{
 
         background-color: $white;
+        margin-bottom: 8rem;
 
 
         .restaurant__image img{
             width:100%;
         }
         .restaurant__text{
-            padding: 5rem 3rem;
+            padding: 5rem 4rem;
 
             p{
-                
+                line-height:3rem;
+            }
+
+            a{
+                display: block;
+                width: 9rem;
+                text-decoration: none;
+                color: white;
+                background-color: $black;
+                padding: 1rem 0;
+                margin-top: 1rem;
             }
         }
     }
@@ -419,16 +438,90 @@ $breakpoints: (
 }
 
 .food{
+
+    padding: 3rem 0;
+
+    h2{
+        @include fronth2;
+    }
+
+    h3{
+        @include fronth3;
+    }
+
     .food__pictures img{
         width:100%;
-        max-width:200px;
+        max-width:250px;
         margin: 5px;
+    }
+
+    .food__text{
+        padding: 5rem 4rem;
+
+        p{
+            line-height:3rem;
+        }
+        a{
+            display: block;
+            width: 20rem;
+            font-size: 1.8rem;
+
+            text-decoration: none;
+            color: white;
+            background-color: $black;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
     }
 }
 
 .quote{
     background-color: $black;
     color: $white;
+
+    .quote__wrap{
+        padding: 4rem 4rem;
+
+        .quote__text{
+
+            p{
+                font-weight: bold;
+                font-size: 1.6rem;
+                line-height: 3.6rem;
+            }
+        }
+    
+        .quote__author{
+            font-size: 1.2rem;
+        }
+    
+        .quote__nav{
+            
+            margin-top: 3.6rem;
+            width: 4rem;
+
+            .bullet{
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: $white;
+                opacity: 0.5;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 1; 
+                }
+                &.active{
+                    opacity: 1;
+                }
+            }
+            
+        }
+    }
+
+    
+
+    
 
     .quote__image img{
         width:100%;
@@ -453,46 +546,63 @@ $breakpoints: (
     margin-right: auto;
     margin-left: auto;
 }
+
     /* h3  */
 @mixin titlereservationsh3{
     padding: 3rem 0rem;
     text-align: center;
     font-family: $font-family;
-    font-size: 2.9rem;
+    font-size: 4.2rem;
     font-weight: 600;
 
     @include for-tablet-portrait-up{
-        font-size: 2.9rem;
+        font-size: 4.3rem;
         text-align: left;
-        margin: 0% 15%;
+        margin: 0% 9%;
         }
+
+        @include for-desktop-up{
+            font-size: 3.8rem;
+            }
 }
     /* h4  */
 @mixin titlereservationsh4{
     padding-top: 6rem;
     text-align: center;
     font-family: $font-family;
-    font-size: 1.6rem;
+    font-size: 2rem;
 
     @include for-tablet-portrait-up{
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-align: left;
-        margin: 0% 15%;
+        margin: 0% 9%;
         }
+
+        @include for-desktop-up{
+            font-size: 3rem;
+            }
 }
 
     /* Form  */
 @mixin inputForm{
     border-color:#f5f5f5;
     border-radius: 0%;
+    height: 5rem;
 }
 
 
 /* 6.2 — ORIGINAL REST */
 
-
 /* Page reservations.php */
 
+.containerReserv{
+background-color:#f5f5f5;
+
+//padding article top
+@include for-desktop-up{
+    padding-right:20%;
+    padding-left:20%;
+    }
 //title
 .welcome{
     padding-top: 6rem;
@@ -501,7 +611,7 @@ $breakpoints: (
     font-size: 1.6rem;
 
     @include for-tablet-portrait-up{
-        font-size: 2rem;
+        font-size: 2.4rem;
         }
 }
 
@@ -513,7 +623,7 @@ $breakpoints: (
     font-weight: 600;
 
     @include for-tablet-portrait-up{
-        font-size: 3.3rem;
+        font-size: 3.6rem;
         }
 }
 
@@ -521,24 +631,88 @@ $breakpoints: (
 .originalRest{
 width: 100%;
 @include centerElement;
+padding-bottom: 2rem;
 
-&__rectangle{
-    width: 100%;
-    height: 8rem;
-    background-color: #f5f5f5;
+@include for-desktop-up{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    }
+
+.originalRest__One{
+background-color: white;
+margin-bottom: 10rem;
+border-bottom: 1px solid black;
+
+@include for-desktop-up{
+    display: flex;
+    border: none;
+    border-right: 1px solid black;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    }
 }
 
- &__picture{
+.originalRest__Two{
+background-color: white;
+margin-bottom: 10rem;
+border-bottom: 1px solid black;
+
+@include for-desktop-up{
+    display: flex;
+    border: none;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    }
+}
+
+//SIZE PICTURE
+.originalRest__pictureOne{
     @include pictureResevations;
+    width: 500px;
+    height: 500px;
+
+    @include for-tablet-portrait-up{
+        width: 100%;
+        }
+
+        @include for-desktop-up{
+            background-size: cover;
+            width: 500px;
+            height: 500px;
+            }
+}
+
+.originalRest__pictureTwo{
+    @include pictureResevations;
+    width: 500px;
+    height: 500px;
+
+    @include for-tablet-portrait-up{
+        width: 100%;
+        }
+
+        @include for-desktop-up{
+            background-size: cover;
+            width: 509px;
+            height: 500px;
+            }
 }
 
     &__title4{
-    @include titlereservationsh4;
-    }
+        @include titlereservationsh4;
+        
+        @include for-desktop-up{
+            text-align: center;
+            }
+        }
 
     &__title3{
         @include titlereservationsh3;
+
+        @include for-desktop-up{
+            text-align: center;
+            }
         }
 
     &__para{
@@ -548,31 +722,163 @@ width: 100%;
         @include for-tablet-portrait-up{
         padding: 0rem 7rem 10rem 7rem;
         }
+
+        @include for-desktop-up{
+        font-size: 1.2rem;
+        width: 500px;
+        height: 250px;
+        }
     }    
 
 }
 
-/* 6.3 — RESERVE TABLE  */
-
-.reserveTable{
-    margin-top:6rem;
-    &__picture{
-    margin-bottom: -20px;
-    @include pictureResevations;
-    display: block;
-    @include centerElement;
-    }
-
-    &__title4{
-    @include titlereservationsh4;
-    }
-
-    &__title3{
-    @include titlereservationsh3;
-    }
 }
 
-/* 6.4 — FORMS */
+.containerBottom{
+
+    width: 100%;
+
+/* 6.3 — MAP - */
+.locationMap{
+
+    background-color:white;
+    padding-top: 5rem;
+
+.locationMap__title4{
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 3rem;
+
+    @include for-tablet-portrait-up{
+        font-size: 3.2rem;
+        }
+}
+}
+
+.locationMap__title3{
+    margin-top: -20px;
+    margin-bottom: 6rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 4.2rem;
+    font-weight: 600;
+
+    @include for-tablet-portrait-up{
+        font-size: 4.3rem;
+        }
+}
+
+/* 6.4 — RESERVE TABLE  */
+
+.flexBottom{
+
+    @include for-desktop-up{
+       display: flex;
+        }
+
+.reserveTable{
+    margin-top: 0px;
+    background-color:white;
+
+    margin-top:6rem;
+    @include centerElement;
+
+    &__Submit{
+    @include titlereservationsh4;
+    font-size: 3rem;
+    line-height: 2;
+
+    @include for-tablet-portrait-up{
+        font-size:3rem;
+         }
+    }
+
+    &__Reserve{
+    @include titlereservationsh3;
+    margin-bottom: 6rem;
+
+    @include for-tablet-portrait-up{
+    font-size:4.2rem;
+    margin-bottom: 6rem;
+        }
+
+    @include for-desktop-up{
+    margin-bottom: 6rem;
+    }
+    }
+
+    .reserveTable__pictureDesk{
+        display: none;
+       
+        @include for-tablet-portrait-up{
+        display: none;
+        }
+
+        @include for-desktop-up{
+        display :block;
+        margin-bottom: -20px;
+        @include pictureResevations;
+        @include centerElement;
+        position: relative;
+        background-size: cover;
+        width: 100rem;
+        height: 80rem;
+        left: -18rem;
+        // height: 500px;
+        }
+
+        }
+    }
+
+    .reserveTable__picturePhone{
+        @include pictureResevations;
+        width: 100%;
+    
+        @include for-tablet-portrait-up{
+            width: 100%;
+            }
+    
+            @include for-desktop-up{
+               display: none;
+                }
+    }
+
+/* 6.5 — FORMS */
+//FORM SMARTPHONE
+.formSmartPhone{
+
+    //Desactiver sur DeskTop
+    @include for-desktop-up{
+        display: none;
+    }
+    //Desactiver sur tablette
+    @include for-tablet-portrait-up{
+        display: none;
+         }
+
+}
+//FORM TABLETTE ET DESKTOP
+.formTabletteDesk{
+
+    //Desactiver sur tablette
+    @include for-phone-only{
+    display: none;
+     }
+
+    //Activer sur tablette
+    @include for-tablet-portrait-up{
+    display: block;
+    }
+
+    //Activer sur DeskTop
+    @include for-desktop-up{
+        display: block;
+    }
+
+}
 
 .frm_combo_inputs_container, 
 .frm_grid_container, 
@@ -581,10 +887,28 @@ width: 100%;
 .frm_form_fields 
 .frm_fields_container{
     margin-top: 0%;
+    margin-bottom: 4rem;
     width: 100%;
     padding: 4rem 4rem;
-    @include centerElement;
     background-color: #f5f5f5;
+    @include centerElement;
+
+    @include for-tablet-portrait-up{
+        position : absolute;
+        width: 80%;
+        margin-top: -10rem;
+        margin-right: 10%;
+        margin-left: 10%;
+
+         }
+
+    @include for-desktop-up{
+        position : absolute;
+        width: 55rem;
+        margin-top: 41.5rem;
+        margin-left: -65rem;
+        padding: 5rem 10rem;
+    }
 
     .with_frm_style, 
     .frm_primary_label{
@@ -592,13 +916,31 @@ width: 100%;
     font-size: 1em;
     }
 
-    /* Input formulaire */
+     /* Input formulaire */
+
+     //Form Tablet Desktop
+    #frm_field_28_container{
+
+        @include for-tablet-portrait-up{
+            // width: 40%;
+            display: inline;
+             }
+
     #field_rv7v3{
     @include inputForm;
     }
+    }   
+    /*EMAIL*/
+    #frm_field_24_container{
+
+        @include for-tablet-portrait-up{
+            // width: 40%;
+            display: inline;
+             }
 
     #field_gtla8{
     @include inputForm;
+    }
     }
 
     #field_oj1pb{
@@ -606,6 +948,10 @@ width: 100%;
     }
 
     #field_49kp8{
+    @include inputForm;
+    }
+
+    #field_dsgiz{
     @include inputForm;
     }
 
@@ -619,8 +965,43 @@ width: 100%;
 
     #field_cv5th{
     @include inputForm;
+    height: 13rem;
     }
-    
+
+    //Form Tablet Desktop
+    #field_rv7v379869a9ad1{
+        @include inputForm;
+    }
+
+    #field_gtla89fdad2c70e{
+        @include inputForm;
+    }
+
+    #field_oj1pbcb2195b7f1{
+        @include inputForm;
+    }
+
+    #field_49kp83c2bcfb41b{
+        @include inputForm;
+    }
+
+    #field_zairbfc1ea13e63{
+        @include inputForm;
+    }
+
+    #field_dsgiz5bac5b192a{
+        @include inputForm;
+    }
+
+    #field_huin71964c76a75{
+        @include inputForm;
+    }
+
+    #field_cv5th45dec29127{
+        @include inputForm;
+        height: 13rem;
+    }
+
     .frm_submit{
        
     .frm_button_submit{
@@ -629,9 +1010,27 @@ width: 100%;
         font-family: 'Poppins', sans-serif;
         font-size: 1em;
         font-weight: 800;
+        margin-left:22%;
+        margin-right:22%;
+
+        @include for-tablet-portrait-up{
+            margin-left:0rem;                ; 
+             }
+
+             @include for-desktop-up{
+                margin-left: 0rem;
+                
+            }
     }
+
 }
+//container FORM
 }
+//Container flexBottom
+}
+//CONTAINER RESERV
+}
+
 
 
 /* ===================================
