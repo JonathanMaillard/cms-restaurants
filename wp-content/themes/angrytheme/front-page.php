@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="qualities container d-flex flex-column align-items-center">
+<section class="qualities wrapper d-flex flex-column align-items-center">
 
     <div class="qualities__quality text-center">
 
@@ -40,7 +40,7 @@
 
 </section>
 
-<section class="story container">
+<section class="story wrapper">
 
     <div class="story__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/the-chef.jpg">
@@ -62,7 +62,7 @@
 </section>
 
 <section class="restaurants">
-    <div class="container">
+    <div class="wrapper">
 
         <div class="restaurants__head">
             <h3 class="text-center">Discover our franchise</h3>
@@ -74,7 +74,7 @@
             <div class="restaurant__image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg">
             </div>
-            <div class="restaurant__text text-center">
+            <div class="restaurant__text text-center d-flex flex-column align-items-center">
                 <h4>Our original restaurant</h4>
                 <h3>The Chef's cafeteria</h3>
                 <p>The chef's cefeteria's 50 seat room, "The Meazzanine Room" features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, "Barbaresco", is available for meeting, birhtdays and other occasions.</p>
@@ -88,7 +88,7 @@
             <div class="restaurant__image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto2.jpg">
             </div>
-            <div class="restaurant__text text-center">
+            <div class="restaurant__text text-center d-flex flex-column align-items-center">
                 <h4>Our first restaurant in Brussels</h4>
                 <h3>The BeCentral resto</h3>
                 <p>Somewhere over the rainbow<br>Way up high<br>And the dreams that you dream of<br>Once in a lullaby</p>
@@ -102,7 +102,7 @@
             <div class="restaurant__image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto3.jpg">
             </div>
-            <div class="restaurant__text text-center">
+            <div class="restaurant__text text-center d-flex flex-column align-items-center">
                 <h4>Outssiplou, the place to be</h4>
                 <h3>The Honkytonk</h3>
                 <p>I feel your presence amongst us<br>You cannot hide in the darkness<br>Can you hear the rumble?<br>Can you hear the rumble that's calling?</p>
@@ -115,7 +115,7 @@
 </section>
 
 <section class="food container-fluid">
-    <div class="container">
+    <div class="wrapper">
         <h3 class="text-center">LET'S DISCOVER FOOD</h3>
         <h2 class="text-center">DISCOVER OUR MENU</h2>
     </div>
@@ -127,14 +127,14 @@
         <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes4.jpg"></div>
     </div>
 
-    <div class="food__text">
+    <div class="food__text text-center d-flex flex-column align-items-center">
         <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
         <a href="#">View the full Menu</a>
     </div>
 </section>
 
-<section class="quote text-center">
-    <div>
+<section class="quote wrapper text-center">
+    <div class="quote__wrap d-flex flex-column align-items-center">
         <div class="quote__text">
             <p><i class="fas fa-quote-right"></i></p>
             <p>Any Time We Start Something New It Is Exciting And We Are Very Motivated And Committed. As Time Goes By</p>
@@ -144,14 +144,14 @@
             - Devil Roy Barman
         </div>
 
-        <div class="quote__nav">
+        <div class="quote__nav d-flex align-items-center justify-content-between">
             <div class="bullet"></div>
             <div class="bullet active"></div>
             <div class="bullet"></div>   
         </div>
     </div>
     <div class="quote__image">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png">
     </div>
 </section>
 

@@ -237,7 +237,12 @@ $breakpoints: (
     font-size: 2.0rem;
 }
 
-   .qualities{
+.wrapper{
+    width:100%;
+    max-width: 1200px;
+}
+
+.qualities{
 
     .qualities__quality{
         margin:2rem;
@@ -289,8 +294,11 @@ $breakpoints: (
 .restaurants{
     background-image: url("assets/images/burger party-t.png");
     background-size: auto;
+    background-repeat: repeat;
     background-position: center;
     background-color: $grey;
+
+    padding-bottom: 1px;
 
 
     h2{
@@ -310,16 +318,27 @@ $breakpoints: (
     .restaurant{
 
         background-color: $white;
+        margin-bottom: 8rem;
 
 
         .restaurant__image img{
             width:100%;
         }
         .restaurant__text{
-            padding: 5rem 3rem;
+            padding: 5rem 4rem;
 
             p{
-                
+                line-height:3rem;
+            }
+
+            a{
+                display: block;
+                width: 9rem;
+                text-decoration: none;
+                color: white;
+                background-color: $black;
+                padding: 1rem 0;
+                margin-top: 1rem;
             }
         }
     }
@@ -327,16 +346,90 @@ $breakpoints: (
 }
 
 .food{
+
+    padding: 3rem 0;
+
+    h2{
+        @include fronth2;
+    }
+
+    h3{
+        @include fronth3;
+    }
+
     .food__pictures img{
         width:100%;
-        max-width:200px;
+        max-width:250px;
         margin: 5px;
+    }
+
+    .food__text{
+        padding: 5rem 4rem;
+
+        p{
+            line-height:3rem;
+        }
+        a{
+            display: block;
+            width: 20rem;
+            font-size: 1.8rem;
+
+            text-decoration: none;
+            color: white;
+            background-color: $black;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
     }
 }
 
 .quote{
     background-color: $black;
     color: $white;
+
+    .quote__wrap{
+        padding: 4rem 4rem;
+
+        .quote__text{
+
+            p{
+                font-weight: bold;
+                font-size: 1.6rem;
+                line-height: 3.6rem;
+            }
+        }
+    
+        .quote__author{
+            font-size: 1.2rem;
+        }
+    
+        .quote__nav{
+            
+            margin-top: 3.6rem;
+            width: 4rem;
+
+            .bullet{
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: $white;
+                opacity: 0.5;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 1; 
+                }
+                &.active{
+                    opacity: 1;
+                }
+            }
+            
+        }
+    }
+
+    
+
+    
 
     .quote__image img{
         width:100%;
