@@ -454,46 +454,63 @@ $breakpoints: (
     margin-right: auto;
     margin-left: auto;
 }
+
     /* h3  */
 @mixin titlereservationsh3{
     padding: 3rem 0rem;
     text-align: center;
     font-family: $font-family;
-    font-size: 2.9rem;
+    font-size: 4.2rem;
     font-weight: 600;
 
     @include for-tablet-portrait-up{
-        font-size: 2.9rem;
+        font-size: 4.3rem;
         text-align: left;
-        margin: 0% 15%;
+        margin: 0% 9%;
         }
+
+        @include for-desktop-up{
+            font-size: 3.8rem;
+            }
 }
     /* h4  */
 @mixin titlereservationsh4{
     padding-top: 6rem;
     text-align: center;
     font-family: $font-family;
-    font-size: 1.6rem;
+    font-size: 2rem;
 
     @include for-tablet-portrait-up{
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-align: left;
-        margin: 0% 15%;
+        margin: 0% 9%;
         }
+
+        @include for-desktop-up{
+            font-size: 3rem;
+            }
 }
 
     /* Form  */
 @mixin inputForm{
     border-color:#f5f5f5;
     border-radius: 0%;
+    height: 5rem;
 }
 
 
 /* 6.2 — ORIGINAL REST */
 
-
 /* Page reservations.php */
 
+.containerReserv{
+background-color:#f5f5f5;
+
+//padding article top
+@include for-desktop-up{
+    padding-right:20%;
+    padding-left:20%;
+    }
 //title
 .welcome{
     padding-top: 6rem;
@@ -502,7 +519,7 @@ $breakpoints: (
     font-size: 1.6rem;
 
     @include for-tablet-portrait-up{
-        font-size: 2rem;
+        font-size: 2.4rem;
         }
 }
 
@@ -514,7 +531,7 @@ $breakpoints: (
     font-weight: 600;
 
     @include for-tablet-portrait-up{
-        font-size: 3.3rem;
+        font-size: 3.6rem;
         }
 }
 
@@ -523,20 +540,53 @@ $breakpoints: (
 width: 100%;
 @include centerElement;
 
-&__rectangle{
-    width: 100%;
-    height: 8rem;
-    background-color: #f5f5f5;
+.originalRest__One{
+background-color: white;
+margin-bottom: 10rem;
+border-bottom: 1px solid black;
+
+@include for-desktop-up{
+    display: flex;
+    border-right: 1px solid black;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    }
 }
 
+.originalRest__Two{
+background-color: white;
+margin-bottom: 10rem;
+border-bottom: 1px solid black;
+
+@include for-desktop-up{
+    display: flex;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    }
+
+}
+//SIZE PICTURE
  &__picture{
     @include pictureResevations;
+    width: 500px;
+    height: 500px;
+
+    @include for-tablet-portrait-up{
+        width: 80rem;
+        height: 80rem;
+        }
+
+        @include for-desktop-up{
+            background-size: cover;
+            width: 500px;
+            height: 500px;
+            }
 }
 
     &__title4{
-    @include titlereservationsh4;
-    }
+        @include titlereservationsh4;
+        }
 
     &__title3{
         @include titlereservationsh3;
@@ -549,31 +599,87 @@ width: 100%;
         @include for-tablet-portrait-up{
         padding: 0rem 7rem 10rem 7rem;
         }
+
+        @include for-desktop-up{
+        font-size: 1.2rem;
+        width: 500px;
+        height: 250px;
+        }
     }    
 
 }
 
-/* 6.3 — RESERVE TABLE  */
+/* 6.3 — MAP - */
+.locationMap{
 
-.reserveTable{
-    margin-top:6rem;
-    &__picture{
-    margin-bottom: -20px;
-    @include pictureResevations;
-    display: block;
-    @include centerElement;
-    }
+    background-color:white;
+    padding-top: 5rem;
 
-    &__title4{
-    @include titlereservationsh4;
-    }
+    @include for-desktop-up{
+        
+        }
 
-    &__title3{
-    @include titlereservationsh3;
-    }
+.locationMap__title4{
+    padding-top: 6rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 3rem;
+
+    @include for-tablet-portrait-up{
+        font-size: 3.2rem;
+        }
+}
 }
 
-/* 6.4 — FORMS */
+.locationMap__title3{
+    margin-top: -20px;
+    padding: 3rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 4.2rem;
+    font-weight: 600;
+
+    @include for-tablet-portrait-up{
+        font-size: 4.3rem;
+        }
+}
+
+/* 6.4 — RESERVE TABLE  */
+
+.reserveTable{
+    margin-top: 0px;
+    background-color:white;
+
+    margin-top:6rem;
+    @include centerElement;
+
+    &__Submit{
+    @include titlereservationsh4;
+    font-size: 3rem;
+    line-height: 2;
+
+    @include for-tablet-portrait-up{
+        font-size:3rem;
+         }
+    }
+
+    &__Reserve{
+    @include titlereservationsh3;
+
+    @include for-tablet-portrait-up{
+       font-size:4.2rem;
+        }
+    }
+
+    &__picture{
+        margin-bottom: -20px;
+        @include pictureResevations;
+        display: block;
+        @include centerElement;
+        }
+}
+
+/* 6.5 — FORMS */
 
 .frm_combo_inputs_container, 
 .frm_grid_container, 
@@ -584,8 +690,21 @@ width: 100%;
     margin-top: 0%;
     width: 100%;
     padding: 4rem 4rem;
-    @include centerElement;
     background-color: #f5f5f5;
+    @include centerElement;
+
+    @include for-tablet-portrait-up{
+        position : absolute;
+        width: 80%;
+        margin-top: -10rem;
+        margin-right: 10%;
+        margin-left: 10%;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr;
+        // grid-template-areas:'frm_field_28_container frm_field_24_container'
+                                          ; 
+         }
 
     .with_frm_style, 
     .frm_primary_label{
@@ -593,13 +712,31 @@ width: 100%;
     font-size: 1em;
     }
 
-    /* Input formulaire */
+     /* Input formulaire */
+
+    /*NAME*/
+    #frm_field_28_container{
+
+        @include for-tablet-portrait-up{
+            // width: 40%;
+            display: inline;
+             }
+
     #field_rv7v3{
     @include inputForm;
     }
+    }   
+    /*EMAIL*/
+    #frm_field_24_container{
+
+        @include for-tablet-portrait-up{
+            // width: 40%;
+            display: inline;
+             }
 
     #field_gtla8{
     @include inputForm;
+    }
     }
 
     #field_oj1pb{
@@ -607,6 +744,10 @@ width: 100%;
     }
 
     #field_49kp8{
+    @include inputForm;
+    }
+
+    #field_dsgiz{
     @include inputForm;
     }
 
@@ -620,6 +761,7 @@ width: 100%;
 
     #field_cv5th{
     @include inputForm;
+    height: 13rem;
     }
     
     .frm_submit{
@@ -630,9 +772,18 @@ width: 100%;
         font-family: 'Poppins', sans-serif;
         font-size: 1em;
         font-weight: 800;
+        margin-left:22%;
+        margin-right:22%;
+
+        @include for-tablet-portrait-up{
+            margin-left:35%;
+            margin-right:35%;                            ; 
+             }
     }
 }
 }
+}
+
 
 
 /* ===================================
