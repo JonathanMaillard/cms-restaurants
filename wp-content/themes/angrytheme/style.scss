@@ -66,8 +66,8 @@ body{
    ================================ */
 
 $breakpoints: (
-    phone-only: 319px,
-    tablet-portrait-up: 769px,
+    phone-only: 374px,
+    tablet-portrait-up: 768px,
     desktop-up: 1024px,
 );
 
@@ -91,9 +91,16 @@ $breakpoints: (
 .black-bg {background-color:#292929;}
 .grey-bg {background-color:#F5F5F5;}
 
+// 3.1 Burger menu + Navbar
+
    .burgermenu span {font-size:10px;
     font-weight:500; 
     color:white!important;}
+
+    .navbar-toggler {position:absolute;
+        right:2rem;}
+
+
     .navbar-toggler>.close {
         display:inline;
     }
@@ -101,8 +108,11 @@ $breakpoints: (
         display:none;
     }
 
+    .navbar-toggle.collapsed {
+        background-color: #000 !important;
+    }
 
-   .menu_class {
+   .menu_class {    float:right;
     &__navlinks {font-size:1.2rem;
         font-weight:500;
         font-family: 'Poppins', sans-serif;}}
@@ -123,7 +133,7 @@ $breakpoints: (
         .order-btn a:hover {color:$white;
             background-color:$black;}  
     
-        .nav.navbar-nav li a {
+        .nav.navbar-nav li a {font-size:1.3rem;
             color: white;
             margin:0rem 1.2rem 0rem 1.2rem;
             transition: 0.2s;
@@ -140,32 +150,76 @@ $breakpoints: (
             @include for-phone-only {display:none;}
           }
 
-        .headerhatching {
-            width:100%;
-            height:90vh;
-            overflow: hidden;
-            position:absolute;
-            z-index: -3;
-            top: 0;
-        & img { position:absolute;
-            z-index: -3;
-            bottom: 0;}
+// 3.2 Image header
+                    
+                    
+      .headerpicture {   min-height:800px;
+        width: 100%;
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:start;
+        overflow:hidden;
+        z-index:-1;
+        @include for-desktop-up {max-width:100%;
+            transform:translate(0,-15rem);}
 
-          
+
+
+        & img {  flex-shrink:0;
+            -webkit-flex-shrink: 0;
+            max-width:200%;
+            height:620px;
+        z-index: -3;
     
-        }
-        
-        .headerpicture {
-            width:100%;
-            height:90vh;
-            overflow: hidden;
-            position:absolute;
-            z-index: -3;
-            top: 0px;
-            
-          
-    
-        }
+        @include for-desktop-up {height:790px;
+            min-width:100%;}}    }
+
+        .grey-hatching {
+            height: 670px;
+            width: 100%;
+            background-image: url("assets/images/hachures-grises-180.png");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+
+            @include for-desktop-up {min-width:100%;
+                height: 700px;}
+
+        }    
+
+        .white-hatching {
+            height: 550px;
+            width: 100%;
+            background-color:$black;
+            background-image: url("assets/images/hachures-blanches-180.png");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+
+            @include for-desktop-up {min-width:100%;
+                height: 700px;}
+
+        }    
+
+        .black-hatching {
+            height: 550px;
+            width: 100%;
+            background-image: url("assets/images/hachures-noires-180.png");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+
+            @include for-desktop-up {min-width:100%;
+                height: 700px;}
+
+        }    
     
         .black {
         -webkit-filter: invert(0%) grayscale(10%) brightness(50%) contrast(1);
@@ -173,26 +227,23 @@ $breakpoints: (
         z-index: -1;
         top: 0px;
         position:relative; }
-    
-        .hatching {width:100%;
-        bottom:-1rem;
-        transform: rotate(180deg);
-        z-index: 3;
-        position:relative;}
-        
-.block {
-    transform: translate(0,3rem); 
+                
+ // 3.3 Text  header       
 
-    @include for-desktop-up {transform: translate(0,9rem); }
+.block {position:absolute;
+    top:20rem;
+    left:6rem;
+    z-index:3000;
+
 
         &__maintitle { 
             color:white;
             font-weight:300;
             line-height:1.2;
         
-            @include for-tablet-portrait-up {font-size:1vw;}
-            @include for-phone-only {font-size:6vw;}
-            @include for-desktop-up {font-size:2vw;}
+            @include for-tablet-portrait-up {font-size:15px;}
+            @include for-phone-only {font-size:20px;}
+            @include for-desktop-up {font-size:30px;}
             }
     
         &__maintitle span { 
@@ -201,9 +252,9 @@ $breakpoints: (
             text-transform:uppercase;
             font-weight:600;
 
-            @include for-tablet-portrait-up {font-size:3rem;}
-            @include for-phone-only {font-size:10vw;}
-            @include for-desktop-up {font-size:5rem;}}
+            @include for-tablet-portrait-up {font-size:20px;}
+            @include for-phone-only {font-size:30px;}
+            @include for-desktop-up {font-size:50px;}}
 
         &__mainlink{font-size:3vw;
             color:$white;
@@ -212,7 +263,7 @@ $breakpoints: (
         transform: translate(0,9rem);
 
         @include for-desktop-up {font-size:1.1vw;}
-        @include for-phone-only {font-size:1.5vw;}}
+        @include for-phone-only {font-size:1.1vw;}}
 
         &__mainlink:hover {
        transform: translate(4rem,9rem);

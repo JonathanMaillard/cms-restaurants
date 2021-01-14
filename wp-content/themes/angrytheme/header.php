@@ -14,7 +14,7 @@
 </head>
 
 
-<nav class="navbar mt-5 navbar-expand-md bg-transparent" role="navigation">
+<nav class="navbar mt-5 navbar-expand-md bg-transparent" style="position:absolute;top:0;left:0;right:1rem;" role="navigation">
   <div class="container px-5 py-3">
     <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -24,21 +24,23 @@
     <p class="burgermenu close active">  <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cross.svg" alt="menu" width=12/></p>
 </button>
 
-    <a class="navbar-brand text-uppercase small text-white h6" href="#">Dev restaurant</a>
-        <?php
+<a class="navbar-brand text-uppercase text-white" style="left:30rem;" href="#">Dev restaurant</a>
+
+<?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
             'depth'             => 2,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'navbarSupportedContent',
-            'menu_class'        => 'nav ms-auto menu_class__navlinks float-right text-right navbar-nav',
+            'menu_class'        => 'nav ms-auto menu_class__navlinks navbar-nav',
             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
         <!--<div class="order-btn"><a href="#">Order</a></div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarketwhite.svg" alt="cart" class="cart"/>-->
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/supermarketwhite.svg" alt="cart" class="cart"/>
+    float-right text-right-->
     </div>
 </nav>
 
