@@ -514,8 +514,8 @@ footer {
 
 .containerReserv .originalRest .originalRest__pictureOne {
   width: 100%;
-  width: 500px;
-  height: 500px;
+  width: 45rem;
+  height: 45rem;
 }
 
 @media (min-width: 768px) {
@@ -534,8 +534,8 @@ footer {
 
 .containerReserv .originalRest .originalRest__pictureTwo {
   width: 100%;
-  width: 500px;
-  height: 500px;
+  width: 45rem;
+  height: 45rem;
 }
 
 @media (min-width: 768px) {

@@ -577,8 +577,8 @@ border-bottom: 1px solid black;
 //SIZE PICTURE
 .originalRest__pictureOne{
     @include pictureResevations;
-    width: 500px;
-    height: 500px;
+    width: 45rem;
+    height: 45rem;
 
     @include for-tablet-portrait-up{
         width: 100%;
@@ -593,8 +593,8 @@ border-bottom: 1px solid black;
 
 .originalRest__pictureTwo{
     @include pictureResevations;
-    width: 500px;
-    height: 500px;
+    width: 45rem;
+    height: 45rem;
 
     @include for-tablet-portrait-up{
         width: 100%;
