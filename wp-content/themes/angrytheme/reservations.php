@@ -6,7 +6,25 @@
 ?>
 
 <?php get_header(); ?>
-<!--  TITLE   -->
+<!-- START HEADER -->
+<body style="background-color:#F5F5F5;">
+
+<div class="headerpicture">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="header" class="black">
+</div>
+
+<div class="block px-5 py-3">
+<p class="block__maintitle">Our original restaurant
+<span>The Chef's selection</span></p>
+<div class="block__mainlink">
+<p><a class="liner text-white ml-5" href="#"> check our menu </a></p>
+</div>   
+</div>
+
+<div class="grey-hatching"></div>
+<!-- END HEADER -->
+
+
 <div class="containerReserv">
     <h4 class="welcome">Welcome in Liège</h4>
     <h3 class="presentation">PRESENTATION</h3>
@@ -21,7 +39,7 @@
                 <div class="originalRest__pictureOne" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg)" alt="restaurant">
                 </div>
             </div>
-            <div class="originalRest__box">
+            <div class="originalRest__boxOne">
                 <h4 class="originalRest__title4">Our original restaurant</h4>
                 <h3 class="originalRest__title3">The chef's cafeteria</h3>
                 <p class="originalRest__para">
@@ -35,7 +53,7 @@
 
         <div class="originalRest__Two">
         
-            <div class="originalRest__box">
+            <div class="originalRest__boxTwo">
                 <h4 class="originalRest__title4">Our original restaurant</h4>
                 <h3 class="originalRest__title3">The chef's cafeteria</h3>
                 <p class="originalRest__para">
@@ -53,10 +71,13 @@
             </div>
         </div>
     </div>
-</div>      
+</div>    
   
     <div class="containerBottom">
         <!--  LOCATION MAP   -->
+          <!-- EFFECT -->
+          <img class="effect" src="<?php echo get_template_directory_uri(); ?>/assets/images/hachures-blanches-180.png">
+
         <div class="locationMap">
             <h4 class="locationMap__title4">Find Us</h4>
             <h3 class="locationMap__title3">Location</h3>
@@ -93,3 +114,4 @@
 
 
 <?php get_footer(); ?>
+
