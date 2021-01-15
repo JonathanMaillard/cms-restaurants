@@ -48,7 +48,7 @@
             </div>
             <div class="originalRest__box">
                     <!-- PICTURE SALAD -->
-                <div class="originalRest__pictureTwo" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/salad.png)" alt="restaurant">
+                <div class="originalRest__pictureTwo" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/salad.png)" alt="salad">
                 </div>
             </div>
         </div>
