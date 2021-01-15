@@ -2,14 +2,15 @@
 
 <section class="qualities wrapper d-flex flex-column align-items-center">
 
-    <div class="qualities__quality text-center">
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/quality-food.svg" />
-        <div>
+        </div>
 
         <div class="qualities__text">
-            QUALITY FOODS
+            <p>QUALITY FOODS</p>
+            <p class="qualities__subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque rem dolor ex a?</p>
         </div>
 
     </div>
@@ -18,7 +19,7 @@
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/fastest-delivery.svg" />
-        <div>
+        </div>
         
         <div class="qualities__text">
             FASTEST DELIVERY
@@ -30,7 +31,7 @@
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/original-recipes.svg" />
-        <div>
+        </div>
         
         <div class="qualities__text">
             ORIGINAL RECIPES

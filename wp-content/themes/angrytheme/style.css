@@ -213,10 +213,34 @@ footer {
 .qualities .qualities__quality {
   margin: 2rem;
 }
+@media (min-width: 768px) {
+  .qualities .qualities__quality {
+    width: 45rem;
+  }
+}
 .qualities .qualities__text {
   font-weight: bold;
   font-size: 1.8rem;
   margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .qualities .qualities__text {
+    width: 30rem;
+    font-size: 2.4rem;
+  }
+}
+.qualities .qualities__text .qualities__subtext {
+  display: none;
+}
+@media (min-width: 768px) {
+  .qualities .qualities__text .qualities__subtext {
+    display: inline;
+    font-weight: normal;
+    font-size: 1.4rem;
+  }
+}
+.qualities .qualities__image img {
+  width: 100px;
 }
 
 .story {
