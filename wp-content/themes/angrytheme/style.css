@@ -93,6 +93,7 @@ body {
 .menu_class {
   float: right;
 }
+
 .menu_class__navlinks {
   font-size: 1.2rem;
   font-weight: 500;
@@ -111,6 +112,7 @@ body {
   margin: 0rem 1rem 0rem 1rem;
   transition: 0.3s;
 }
+
 @media (min-width: 374px) {
   .order-btn a {
     display: none;
@@ -137,6 +139,7 @@ body {
   width: 1.8rem;
   margin: 0rem 0rem 0rem 1rem;
 }
+
 @media (min-width: 374px) {
   .cart {
     display: none;
@@ -147,25 +150,36 @@ body {
   min-height: 800px;
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   overflow: hidden;
   z-index: -1;
 }
+
 @media (min-width: 1024px) {
   .headerpicture {
     max-width: 100%;
-    transform: translate(0, -15rem);
+    -webkit-transform: translate(0, -15rem);
+            transform: translate(0, -15rem);
   }
 }
+
 .headerpicture img {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-flex-shrink: 0;
   max-width: 200%;
   height: 620px;
   z-index: -3;
 }
+
 @media (min-width: 1024px) {
   .headerpicture img {
     height: 790px;
@@ -183,6 +197,7 @@ body {
   z-index: -1;
   top: 0;
 }
+
 @media (min-width: 1024px) {
   .grey-hatching {
     min-width: 100%;
@@ -218,6 +233,7 @@ body {
   z-index: -1;
   top: 0;
 }
+
 @media (min-width: 1024px) {
   .black-hatching {
     min-width: 100%;
@@ -244,42 +260,50 @@ body {
   font-weight: 300;
   line-height: 1.2;
 }
+
 @media (min-width: 768px) {
   .block__maintitle {
     font-size: 15px;
   }
 }
+
 @media (min-width: 374px) {
   .block__maintitle {
     font-size: 20px;
   }
 }
+
 @media (min-width: 1024px) {
   .block__maintitle {
     font-size: 30px;
   }
 }
+
 .block__maintitle span {
   display: block;
   color: white;
   text-transform: uppercase;
   font-weight: 600;
 }
+
 @media (min-width: 768px) {
   .block__maintitle span {
     font-size: 20px;
   }
 }
+
 @media (min-width: 374px) {
   .block__maintitle span {
     font-size: 30px;
   }
 }
+
 @media (min-width: 1024px) {
   .block__maintitle span {
     font-size: 50px;
   }
 }
+
 .block__mainlink {
   font-size: 3vw;
   color: #FFF;
@@ -287,16 +311,19 @@ body {
   transition: 0.8s;
   transform: translate(0, 9rem);
 }
+
 @media (min-width: 1024px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
+
 @media (min-width: 374px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
+
 .block__mainlink:hover {
   transform: translate(4rem, 9rem);
   text-decoration: none;
@@ -315,18 +342,23 @@ body {
   max-width: 4rem;
   margin: 1rem;
 }
+
 @media (min-width: 768px) {
   .liner:before {
     max-width: 3rem;
-    transform: translate(0, -0.2rem);
+    -webkit-transform: translate(0, -0.2rem);
+            transform: translate(0, -0.2rem);
   }
 }
+
 @media (min-width: 374px) {
   .liner:before {
     max-width: 3rem;
-    transform: translate(0, 0.2rem);
+    -webkit-transform: translate(0, 0.2rem);
+            transform: translate(0, 0.2rem);
   }
 }
+
 .liner:before {
   margin-right: 2rem;
   margin-top: 1rem;
@@ -577,6 +609,7 @@ footer p span {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
 }
+
 .food .food__pictures img {
   width: 100%;
   max-width: 250px;
@@ -648,11 +681,14 @@ footer p span {
 /* Page reservations.php */
 .containerReserv {
   background-color: #f5f5f5;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (min-width: 1024px) {
   .containerReserv {
-    padding-right: 20%;
-    padding-left: 20%;
+    width: 100%;
+    max-width: 150rem;
+    padding: auto;
   }
 }
 .containerReserv .welcome {
@@ -679,10 +715,9 @@ footer p span {
   }
 }
 .containerReserv .originalRest {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   padding-bottom: 2rem;
+  margin-right: 18%;
+  margin-left: 18%;
 }
 @media (min-width: 1024px) {
   .containerReserv .originalRest {
@@ -690,8 +725,38 @@ footer p span {
     padding-bottom: 6rem;
   }
 }
+
+.containerReserv .originalRest .originalRest__boxOne {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .containerReserv .originalRest .originalRest__boxOne {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.containerReserv .originalRest .originalRest__boxTwo {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .containerReserv .originalRest .originalRest__boxTwo {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
 .containerReserv .originalRest .originalRest__One {
-  background-color: white;
   margin-bottom: 10rem;
   border-bottom: 1px solid black;
 }
@@ -699,13 +764,9 @@ footer p span {
   .containerReserv .originalRest .originalRest__One {
     display: flex;
     border: none;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
   }
 }
 .containerReserv .originalRest .originalRest__Two {
-  background-color: white;
   margin-bottom: 10rem;
   border-bottom: 1px solid black;
 }
@@ -713,9 +774,6 @@ footer p span {
   .containerReserv .originalRest .originalRest__Two {
     display: flex;
     border: none;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
   }
 }
 .containerReserv .originalRest .originalRest__pictureOne {
@@ -816,14 +874,27 @@ footer p span {
   }
 }
 
+/* 6.3 — MAP - */
 .containerBottom {
+  position: relative;
   width: 100%;
-  /* 6.3 — MAP - */
   /* 6.4 — RESERVE TABLE  */
 }
+
+.containerBottom .effect {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .containerBottom .locationMap {
   background-color: white;
   padding-top: 5rem;
+  padding-bottom: 0px;
+  margin-bottom: -7rem;
 }
 .containerBottom .locationMap .locationMap__title4 {
   padding-top: 6rem;
@@ -852,6 +923,7 @@ footer p span {
   }
 }
 .containerBottom .flexBottom {
+  margin-top: 0rem;
   /* 6.5 — FORMS */
 }
 @media (min-width: 1024px) {
@@ -860,8 +932,8 @@ footer p span {
   }
 }
 .containerBottom .flexBottom .reserveTable {
-  margin-top: 0px;
   background-color: white;
+  width: 100%;
   margin-top: 6rem;
   margin-right: auto;
   margin-left: auto;
@@ -968,6 +1040,7 @@ footer p span {
     display: none;
   }
 }
+
 @media (min-width: 374px) {
   .containerBottom .flexBottom .formTabletteDesk {
     display: none;

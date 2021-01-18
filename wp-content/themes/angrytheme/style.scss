@@ -702,12 +702,15 @@ $breakpoints: (
 /* Page reservations.php */
 
 .containerReserv{
+
 background-color:#f5f5f5;
+@include centerElement;
 
 //padding article top
 @include for-desktop-up{
-    padding-right:20%;
-    padding-left:20%;
+    width: 100%;
+    max-width: 150rem;
+    padding: auto;
     }
 //title
 .welcome{
@@ -735,40 +738,58 @@ background-color:#f5f5f5;
 
 //PART ONE CARD : ORIGINAL RESTAURANT
 .originalRest{
-width: 100%;
-@include centerElement;
-padding-bottom: 2rem;
 
-@include for-desktop-up{
+    padding-bottom: 2rem;
+    margin-right: 18%;
+    margin-left: 18%;
+    @include for-desktop-up{
     padding-top: 6rem;
     padding-bottom: 6rem;
     }
 
+    .originalRest__boxOne{
+        width: 100%;
+
+        @include for-desktop-up{
+            width: 500px;
+            height: 500px;
+            background-color:white;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            }
+    }
+
+    .originalRest__boxTwo{
+        width: 100%;
+
+        @include for-desktop-up{
+            width: 500px;
+            height: 500px;
+            background-color:white;
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            }
+    }
+
 .originalRest__One{
-background-color: white;
 margin-bottom: 10rem;
 border-bottom: 1px solid black;
 
 @include for-desktop-up{
     display: flex;
     border: none;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     }
 }
 
 .originalRest__Two{
-background-color: white;
 margin-bottom: 10rem;
 border-bottom: 1px solid black;
 
 @include for-desktop-up{
     display: flex;
     border: none;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     }
 }
 
@@ -782,11 +803,11 @@ border-bottom: 1px solid black;
         width: 100%;
         }
 
-        @include for-desktop-up{
-            background-size: cover;
-            width: 500px;
-            height: 500px;
-            }
+    @include for-desktop-up{
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        }
 }
 
 .originalRest__pictureTwo{
@@ -834,21 +855,30 @@ border-bottom: 1px solid black;
         width: 500px;
         height: 250px;
         }
-    }    
-
+    }  
 }
 
 }
-
-.containerBottom{
-
-    width: 100%;
 
 /* 6.3 — MAP - */
+.containerBottom{
+    position: relative;
+    width: 100%;
+
+    .effect{
+        position: absolute;
+        display: block;
+        max-width: 100%;
+        margin-top: -10px;
+        @include centerElement;
+        }
+
 .locationMap{
 
     background-color:white;
     padding-top: 5rem;
+    padding-bottom: 0px;
+    margin-bottom: -7rem;
 
 .locationMap__title4{
     padding-top: 6rem;
@@ -880,15 +910,15 @@ border-bottom: 1px solid black;
 /* 6.4 — RESERVE TABLE  */
 
 .flexBottom{
-
+    margin-top: 0rem;
+    
     @include for-desktop-up{
        display: flex;
         }
 
 .reserveTable{
-    margin-top: 0px;
     background-color:white;
-
+    width: 100%;
     margin-top:6rem;
     @include centerElement;
 
@@ -1120,7 +1150,7 @@ border-bottom: 1px solid black;
         margin-right:22%;
 
         @include for-tablet-portrait-up{
-            margin-left:0rem;                ; 
+            margin-left:0rem;                
              }
 
              @include for-desktop-up{
@@ -1136,6 +1166,8 @@ border-bottom: 1px solid black;
 }
 //CONTAINER RESERV
 }
+
+
 
 
 
