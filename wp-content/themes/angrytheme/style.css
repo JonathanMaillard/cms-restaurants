@@ -484,6 +484,9 @@ footer p span {
   max-width: 1200px;
 }
 
+.qualities {
+  padding: 4rem 0;
+}
 .qualities .qualities__quality {
   margin: 2rem;
 }
@@ -494,13 +497,12 @@ footer p span {
 }
 .qualities .qualities__text {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   margin-top: 2rem;
 }
 @media (min-width: 768px) {
   .qualities .qualities__text {
     width: 30rem;
-    font-size: 2.4rem;
   }
 }
 .qualities .qualities__text .qualities__subtext {
@@ -524,26 +526,38 @@ footer p span {
   width: 100%;
 }
 .story .story__text {
-  margin-top: 3.5rem;
-  padding: 0 2rem;
+  margin-top: 4rem;
+  padding: 0 2.5rem;
+  background-color: #FFF;
+  position: relative;
+  z-index: 1;
 }
 .story .story__text h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .story .story__text h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 2.9rem;
 }
 .story .story__text h4 {
   font-weight: bold;
 }
 .story .story__text p {
-  line-height: 3rem;
+  line-height: 3.5rem;
 }
 .story .story__text .signature {
   font-size: 3.2rem;
+}
+@media (min-width: 768px) {
+  .story .story__text {
+    width: 90%;
+    margin: auto;
+    margin-top: -20rem;
+    padding: 4rem;
+    box-shadow: 0px 3px 50px 0px #888888;
+  }
 }
 
 .restaurants {
@@ -556,37 +570,74 @@ footer p span {
 }
 .restaurants h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .restaurants h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 2.9rem;
 }
 .restaurants .restaurants__head {
-  padding: 4.2rem 0;
+  padding: 4.2rem 2rem;
 }
 .restaurants .restaurant {
-  background-color: #FFF;
   margin-bottom: 8rem;
 }
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .restaurants .restaurant .restaurant__image img {
+    width: 80%;
+  }
+}
 .restaurants .restaurant .restaurant__text {
   padding: 5rem 4rem;
+  background-color: #FFF;
+}
+@media (min-width: 768px) {
+  .restaurants .restaurant .restaurant__text {
+    width: 70%;
+    position: relative;
+    margin-top: -15rem;
+  }
+}
+.restaurants .restaurant .restaurant__text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.9rem;
+}
+.restaurants .restaurant .restaurant__text h4 {
+  font-size: 2rem;
 }
 .restaurants .restaurant .restaurant__text p {
   line-height: 3rem;
 }
 .restaurants .restaurant .restaurant__text a {
   display: block;
-  width: 9rem;
+  width: 14rem;
   text-decoration: none;
   color: white;
   background-color: #292929;
   padding: 1rem 0;
   margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .restaurant-right .restaurant__image img {
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .restaurant-left .restaurant__text {
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+  }
 }
 
 .food {
@@ -594,17 +645,26 @@ footer p span {
 }
 .food h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .food h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 2.9rem;
 }
-.food .food__pictures img {
+.food .food__pictures {
+  width: 80%;
+}
+.food .food__pictures .food__picture img {
   width: 100%;
   max-width: 250px;
   margin: 5px;
+}
+@media (min-width: 768px) {
+  .food .food__pictures .food__picture img {
+    width: 100%;
+    max-width: 280px;
+  }
 }
 .food .food__text {
   padding: 5rem 4rem;
@@ -614,13 +674,19 @@ footer p span {
 }
 .food .food__text a {
   display: block;
-  width: 20rem;
-  font-size: 1.8rem;
+  width: 28rem;
+  font-size: 2.2rem;
+  font-weight: bold;
   text-decoration: none;
   color: white;
   background-color: #292929;
-  padding: 1rem 0;
+  padding: 2rem 0;
   margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .food .food__text {
+    width: 70%;
+  }
 }
 
 .quote {
@@ -632,15 +698,15 @@ footer p span {
 }
 .quote .quote__wrap .quote__text p {
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 3.6rem;
 }
 .quote .quote__wrap .quote__author {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .quote .quote__wrap .quote__nav {
   margin-top: 3.6rem;
-  width: 4rem;
+  width: 4.6rem;
 }
 .quote .quote__wrap .quote__nav .bullet {
   width: 1rem;
