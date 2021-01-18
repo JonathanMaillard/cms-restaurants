@@ -18,3 +18,7 @@ register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'angryTheme' ),
 ) );
 // -------------------------------------------------
+
+// NEW PICTURE SIZE
+
+add_image_size('card-article', 350, 215, true);
