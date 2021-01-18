@@ -306,8 +306,9 @@ $breakpoints: (
    ================================ */
 
    footer {     
+       margin-top:6rem;
         color:$white;
-        height: 260px;
+        height: 285px;
         border-image: url("assets/images/hachures-noires.png") 30 fill / 30px / 30px ;
         & p {line-height:1.8;}
         & p span { color:darkgrey;}
@@ -347,9 +348,9 @@ $breakpoints: (
 
 // 4.2 Section 2 : Open hours
 
-.grid-container {
+.sect2openhours {
     display: grid;
-    grid-template-columns: 0.2fr 0.4fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.7fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -361,14 +362,61 @@ $breakpoints: (
     border: 0;
     border-top: 2px solid #ccc;
     margin: 1em 0;
-    padding: 0;
-}}    
+    padding: 0;}}    
   }
   .time { grid-area: time; }
   .day { grid-area: day; }
   .line { grid-area: line;
-         margin:0rem 0.5rem 0rem 0.5rem; }
+         margin:0rem 0.8rem 0rem 0rem; }
   .hours { grid-area: hours; }
+
+ // 4.3 Section 2 : Contact 
+
+  .sect2contact {
+    display: grid;
+    grid-template-columns: 0.2fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "contacticon contacttext";
+      & p { color:darkgrey;}
+  }
+  .contacticon { grid-area: contacticon; }
+  .contacttext { grid-area: contacttext; }
+  
+
+  // 4.4 Section 2 : Instagram
+.footerig{ 
+    &__item{width:80px;
+    height:80px;
+    margin:0.7rem 0.7rem 0 0;
+
+    & img {width:100%;
+        height:100%;
+        object-fit:cover;}
+    }}
+
+// 4.5 Newsletter 
+
+.newsletter {margin:auto;
+    transform:translate(0,2rem);
+    z-index:1000;
+    box-shadow: -9px 33px 48px -7px rgba(0,0,0,1);
+    width:70%;
+    height: 150px;
+    border-image: url("assets/images/hachures-noires.png") 30 fill / 30px / 30px ;
+    
+    &__title p{color:white;
+        transform:translate(0,80%);}
+
+    &__mail { transform:translate(0,80%);}
+
+}
+
+// 4.6 Copyrights
+
+.copyrights {color:darkgrey;}
+
 
 
 
