@@ -1,21 +1,39 @@
 <?php get_header(); ?>
 
-<section class="qualities wrapper d-flex flex-column align-items-center">
+<body style="background-color:#F5F5F5;">
 
-    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
+<div class="headerpicture">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-top.jpg" class="black" alt="header">
+</div>
+
+<div class="block px-5 py-3">
+<p class="block__maintitle">For a happy day
+<span>Enjoy a <br> happy meal</span></p>
+<div class="block__mainlink">
+<p><a class="liner text-white ml-5" href="#">check our menu </a></p>
+</div>   
+</div>
+
+<div class="grey-hatching"></div>
+
+<!-- FIN HEADER SANDRINE -->
+
+<section class="qualities wrapper d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between flex-lg-column">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/quality-food.svg" />
         </div>
 
         <div class="qualities__text">
-            <p>QUALITY FOODS</p>
-            <p class="qualities__subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque rem dolor ex a?</p>
+            <p><?php echo get_field('qualities_title_one') ?></p>
+            <p class="qualities__subtext"><?php echo get_field('qualities_text_one') ?></p>
         </div>
 
     </div>
 
-    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between flex-lg-column">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/fastest-delivery.svg" />
@@ -29,7 +47,7 @@
 
     </div>
 
-    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between flex-lg-column">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/original-recipes.svg" />
@@ -139,7 +157,31 @@
     </div>
 </section>
 
-<section class="quote wrapper text-center">
+<section class="food-lg container-fluid">
+    <div class="wrapper d-flex  justify-content-center">
+        
+
+        <div class="food__pictures d-flex flex-column align-items-center flex-md-row flex-md-wrap justify-content-md-start">
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes1.jpg"></div>
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes2.jpg"></div>
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes3.jpg"></div>
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes4.jpg"></div>
+        </div>
+
+        <div class="food__title">
+            <h3 class="text-center">LET'S DISCOVER FOOD</h3>
+            <h2 class="text-center">DISCOVER OUR MENU</h2>
+            <div class="food__text text-center d-flex flex-column align-items-center">
+                <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
+                <a href="#">View the full Menu</a>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<section class="quote text-center d-lg-flex align-items-lg-center">
     <div class="quote__wrap d-flex flex-column align-items-center">
         <div class="quote__text">
             <p><i class="fas fa-quote-right"></i></p>
@@ -159,6 +201,18 @@
     <div class="quote__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png">
     </div>
+
+    
+
+</section>
+
+<section class="latest">
+    
+    <div class="latest__title">
+        <h3 class="text-center">Latest updated</h3>
+        <h2 class="text-center">RECIPES BLOG</h2>
+    </div>
+
 </section>
 
 <?php get_footer(); ?>
