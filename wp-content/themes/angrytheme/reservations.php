@@ -71,7 +71,7 @@ Our original restaurant
         <div class="locationMap">
             <h4 class="locationMap__title4">Find Us</h4>
             <h3 class="locationMap__title3">Location</h3>
-            <div width="100%" height="600px" class="openstreetmap">
+            <div class="locationMap__openstreetmap">
                 <?php the_field('map'); ?>
             </div>
             <!-- " -->

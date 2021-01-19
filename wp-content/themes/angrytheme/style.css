@@ -94,6 +94,7 @@ body {
 .menu_class {
   float: right;
 }
+
 .menu_class__navlinks {
   font-size: 1.2rem;
   font-weight: 500;
@@ -113,6 +114,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 @media (min-width: 374px) {
   .order-btn a {
     display: none;
@@ -140,6 +142,7 @@ body {
   width: 1.8rem;
   margin: 0rem 0rem 0rem 1rem;
 }
+
 @media (min-width: 374px) {
   .cart {
     display: none;
@@ -150,25 +153,36 @@ body {
   min-height: 800px;
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   overflow: hidden;
   z-index: -1;
 }
+
 @media (min-width: 1024px) {
   .headerpicture {
     max-width: 100%;
-    transform: translate(0, -15rem);
+    -webkit-transform: translate(0, -15rem);
+            transform: translate(0, -15rem);
   }
 }
+
 .headerpicture img {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-flex-shrink: 0;
   max-width: 200%;
   height: 620px;
   z-index: -3;
 }
+
 @media (min-width: 1024px) {
   .headerpicture img {
     height: 790px;
@@ -186,6 +200,7 @@ body {
   z-index: -1;
   top: 0;
 }
+
 @media (min-width: 1024px) {
   .grey-hatching {
     min-width: 100%;
@@ -222,6 +237,7 @@ body {
   z-index: -1;
   top: 0;
 }
+
 @media (min-width: 1024px) {
   .black-hatching {
     min-width: 100%;
@@ -250,42 +266,50 @@ body {
   font-weight: 300;
   line-height: 1.2;
 }
+
 @media (min-width: 768px) {
   .block__maintitle {
     font-size: 15px;
   }
 }
+
 @media (min-width: 374px) {
   .block__maintitle {
     font-size: 20px;
   }
 }
+
 @media (min-width: 1024px) {
   .block__maintitle {
     font-size: 30px;
   }
 }
+
 .block__maintitle span {
   display: block;
   color: white;
   text-transform: uppercase;
   font-weight: 600;
 }
+
 @media (min-width: 768px) {
   .block__maintitle span {
     font-size: 20px;
   }
 }
+
 @media (min-width: 374px) {
   .block__maintitle span {
     font-size: 30px;
   }
 }
+
 @media (min-width: 1024px) {
   .block__maintitle span {
     font-size: 50px;
   }
 }
+
 .block__mainlink {
   font-size: 3vw;
   color: #FFF;
@@ -295,16 +319,19 @@ body {
   -webkit-transform: translate(0, 9rem);
           transform: translate(0, 9rem);
 }
+
 @media (min-width: 1024px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
+
 @media (min-width: 374px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
+
 .block__mainlink:hover {
   -webkit-transform: translate(4rem, 9rem);
           transform: translate(4rem, 9rem);
@@ -331,18 +358,23 @@ body {
   max-width: 4rem;
   margin: 1rem;
 }
+
 @media (min-width: 768px) {
   .liner:before {
     max-width: 3rem;
-    transform: translate(0, -0.2rem);
+    -webkit-transform: translate(0, -0.2rem);
+            transform: translate(0, -0.2rem);
   }
 }
+
 @media (min-width: 374px) {
   .liner:before {
     max-width: 3rem;
-    transform: translate(0, 0.2rem);
+    -webkit-transform: translate(0, 0.2rem);
+            transform: translate(0, 0.2rem);
   }
 }
+
 .liner:before {
   margin-right: 2rem;
   margin-top: 1rem;
@@ -356,8 +388,6 @@ footer {
   margin-top: 6rem;
   color: #FFF;
   height: 285px;
-  border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
-  height: 260px;
   -o-border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
      border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
 }
@@ -414,29 +444,21 @@ footer p span {
 }
 
 .sect2openhours {
-  display: grid;
-  grid-template-columns: 0.2fr 0.5fr 1fr 0.7fr;
-  grid-template-rows: 1fr;
-.grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 0.4fr 1fr 1fr;
-      grid-template-columns: 0.2fr 0.4fr 1fr 1fr;
+  -ms-grid-columns: 0.2fr 0.5fr 1fr 0.7fr;
+      grid-template-columns: 0.2fr 0.5fr 1fr 0.7fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   gap: 0px 0px;
       grid-template-areas: "time day line hours";
 }
+
 .sect2openhours p {
   color: darkgrey;
 }
+
 .sect2openhours p hr {
-
-.grid-container p {
-  color: darkgrey;
-}
-
-.grid-container p hr {
   display: block;
   height: 2px;
   border: 0;
@@ -471,21 +493,29 @@ footer p span {
 }
 
 .sect2contact {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.2fr 0.7fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: 0.2fr 0.7fr;
+      grid-template-columns: 0.2fr 0.7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "contacticon contacttext";
+      grid-template-areas: "contacticon contacttext";
 }
+
 .sect2contact p {
   color: darkgrey;
 }
 
 .contacticon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: contacticon;
 }
 
 .contacttext {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: contacttext;
 }
 
@@ -494,27 +524,36 @@ footer p span {
   height: 80px;
   margin: 0.7rem 0.7rem 0 0;
 }
+
 .footerig__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .newsletter {
   margin: auto;
-  transform: translate(0, 2rem);
+  -webkit-transform: translate(0, 2rem);
+          transform: translate(0, 2rem);
   z-index: 1000;
-  box-shadow: -9px 33px 48px -7px black;
+  -webkit-box-shadow: -9px 33px 48px -7px black;
+          box-shadow: -9px 33px 48px -7px black;
   width: 70%;
   height: 150px;
-  border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
+  -o-border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
+     border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
 }
+
 .newsletter__title p {
   color: white;
-  transform: translate(0, 80%);
+  -webkit-transform: translate(0, 80%);
+          transform: translate(0, 80%);
 }
+
 .newsletter__mail {
-  transform: translate(0, 80%);
+  -webkit-transform: translate(0, 80%);
+          transform: translate(0, 80%);
 }
 
 .copyrights {
@@ -533,9 +572,11 @@ footer p span {
 .qualities {
   padding: 4rem 0;
 }
+
 .qualities .qualities__quality {
   margin: 2rem;
 }
+
 @media (min-width: 768px) {
   .qualities .qualities__quality {
     width: 45rem;
@@ -547,14 +588,17 @@ footer p span {
   font-size: 2.6rem;
   margin-top: 2rem;
 }
+
 @media (min-width: 768px) {
   .qualities .qualities__text {
     width: 30rem;
   }
 }
+
 .qualities .qualities__text .qualities__subtext {
   display: none;
 }
+
 @media (min-width: 768px) {
   .qualities .qualities__text .qualities__subtext {
     display: inline;
@@ -562,6 +606,7 @@ footer p span {
     font-size: 1.4rem;
   }
 }
+
 .qualities .qualities__image img {
   width: 100px;
 }
@@ -585,14 +630,12 @@ footer p span {
 .story .story__text h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3.8rem;
-  font-size: 3.0rem;
   font-weight: bold;
 }
 
 .story .story__text h3 {
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
-  font-size: 2.0rem;
 }
 
 .story .story__text h4 {
@@ -606,13 +649,15 @@ footer p span {
 .story .story__text .signature {
   font-size: 3.2rem;
 }
+
 @media (min-width: 768px) {
   .story .story__text {
     width: 90%;
     margin: auto;
     margin-top: -20rem;
     padding: 4rem;
-    box-shadow: 0px 3px 50px 0px #888888;
+    -webkit-box-shadow: 0px 3px 50px 0px #888888;
+            box-shadow: 0px 3px 50px 0px #888888;
   }
 }
 
@@ -628,14 +673,12 @@ footer p span {
 .restaurants h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3.8rem;
-  font-size: 3.0rem;
   font-weight: bold;
 }
 
 .restaurants h3 {
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
-  font-size: 2.0rem;
 }
 
 .restaurants .restaurants__head {
@@ -649,6 +692,7 @@ footer p span {
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__image img {
     width: 80%;
@@ -659,6 +703,7 @@ footer p span {
   padding: 5rem 4rem;
   background-color: #FFF;
 }
+
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__text {
     width: 70%;
@@ -666,10 +711,12 @@ footer p span {
     margin-top: -15rem;
   }
 }
+
 .restaurants .restaurant .restaurant__text h3 {
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
 }
+
 .restaurants .restaurant .restaurant__text h4 {
   font-size: 2rem;
 }
@@ -713,23 +760,24 @@ footer p span {
 .food h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3.8rem;
-  font-size: 3.0rem;
   font-weight: bold;
 }
 
 .food h3 {
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
-  font-size: 2.0rem;
 }
+
 .food .food__pictures {
   width: 80%;
 }
+
 .food .food__pictures .food__picture img {
   width: 100%;
   max-width: 250px;
   margin: 5px;
 }
+
 @media (min-width: 768px) {
   .food .food__pictures .food__picture img {
     width: 100%;
@@ -756,6 +804,7 @@ footer p span {
   padding: 2rem 0;
   margin-top: 1rem;
 }
+
 @media (min-width: 768px) {
   .food .food__text {
     width: 70%;
@@ -866,9 +915,11 @@ footer p span {
     padding-bottom: 6rem;
   }
 }
+
 .containerReserv .originalRest .originalRest__boxOne {
   width: 100%;
 }
+
 @media (min-width: 1024px) {
   .containerReserv .originalRest .originalRest__boxOne {
     width: 600px;
@@ -879,20 +930,6 @@ footer p span {
     border-bottom: 1px solid black;
   }
 }
-.containerReserv .originalRest .originalRest__boxTwo {
-  width: 100%;
-}
-@media (min-width: 1024px) {
-  .containerReserv .originalRest .originalRest__boxTwo {
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-}
-.containerReserv .originalRest .originalRest__One {
 
 .containerReserv .originalRest .originalRest__One:nth-child(odd) {
   margin-bottom: 10rem;
@@ -1038,8 +1075,10 @@ footer p span {
 .containerBottom {
   position: relative;
   width: 100%;
+  height: auto;
   /* 6.4 — RESERVE TABLE  */
 }
+
 .containerBottom .effect {
   position: absolute;
   display: block;
@@ -1048,6 +1087,7 @@ footer p span {
   margin-right: auto;
   margin-left: auto;
 }
+
 .containerBottom .locationMap {
   background-color: white;
   padding-top: 5rem;
@@ -1067,6 +1107,11 @@ footer p span {
   .containerBottom .locationMap .locationMap__title4 {
     font-size: 3.2rem;
   }
+}
+
+.containerBottom .locationMap .locationMap__openstreetmap {
+  width: 100%;
+  padding-bottom: 6rem;
 }
 
 .containerBottom .locationMap__title3 {
@@ -1227,6 +1272,7 @@ footer p span {
     display: none;
   }
 }
+
 @media (min-width: 374px) {
   .containerBottom .flexBottom .formTabletteDesk {
     display: none;
@@ -1583,5 +1629,101 @@ footer p span {
   .article__Title {
     font-size: 3rem;
   }
+}
+
+.link {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .link {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0rem;
+  }
+}
+
+.linkSmart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .linkSmart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .linkSmart {
+    display: none;
+  }
+}
+
+.iconarticle {
+  font-size: 5rem;
+  margin: 0.5rem 0rem;
+}
+
+.iconarticle:hover {
+  font-size: 5.2rem;
+  color: gray;
+}
+
+.fb {
+  color: #385694;
+}
+
+.twit {
+  color: #50abf1;
+}
+
+.insta {
+  color: #de3568;
+}
+
+.email {
+  color: black;
+}
+
+.ingredient__title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.ingredient {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.instructions .instructions__title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.instructions .instructions__number .instructions__liste {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.instructions .instructions__number .instructions__picture {
+  width: 800px;
 }
 /*# sourceMappingURL=style.css.map */

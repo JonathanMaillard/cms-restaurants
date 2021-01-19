@@ -958,6 +958,7 @@ border-bottom: 1px solid black;
 .containerBottom{
     position: relative;
     width: 100%;
+    height: auto;
 
     .effect{
         position: absolute;
@@ -968,7 +969,6 @@ border-bottom: 1px solid black;
         }
 
 .locationMap{
-
     background-color:white;
     padding-top: 5rem;
     padding-bottom: 0px;
@@ -985,6 +985,12 @@ border-bottom: 1px solid black;
         font-size: 3.2rem;
         }
 }
+
+.locationMap__openstreetmap{
+    width: 100%;
+    padding-bottom:6rem;
+}
+
 }
 
 .locationMap__title3{
@@ -1313,4 +1319,95 @@ margin-left: auto;
     @include titleAsrticleh1;
 }
 
+// LINK ON DESKTOP
+.link{
 
+    display:none;
+
+    @include for-tablet-portrait-up{
+        display:none;
+        }
+
+        @include for-desktop-up{
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0rem;
+            }
+}
+//LINK ON SMARTPHONE AND TABLETTE
+
+.linkSmart{
+
+    display: flex;
+
+    @include for-tablet-portrait-up{
+        display: flex;
+        }
+
+        @include for-desktop-up{
+            display:none;
+            }
+}
+
+.iconarticle{
+    font-size:5rem;
+    margin: 0.5rem 0rem;
+}
+
+.iconarticle:hover{
+    font-size:5.2rem;
+    color:gray;
+}
+
+.fb{
+color:#385694;
+}
+
+.twit{
+    color:#50abf1;
+}
+
+.insta{
+    color:#de3568;
+}
+
+.email{
+    color: black;
+}
+
+//INGREDIENT
+.ingredient__title{
+    font-size:2rem;
+    font-weight: 600;
+    font-family: $font-family;
+}
+
+.ingredient{
+    font-size:1.8rem;
+    font-weight: 400;
+    font-family: $font-family;
+}
+
+
+.instructions{
+
+    .instructions__title{
+        font-size:2rem;
+        font-weight: 600;
+        font-family: $font-family;
+    }
+
+.instructions__number{
+
+    .instructions__liste{
+        font-size:1.6rem;
+        font-family: $font-family;
+    }
+
+    .instructions__picture{
+        width: 800px;
+    }
+
+}
+
+}
