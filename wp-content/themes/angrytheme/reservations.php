@@ -71,7 +71,9 @@ Our original restaurant
         <div class="locationMap">
             <h4 class="locationMap__title4">Find Us</h4>
             <h3 class="locationMap__title3">Location</h3>
-            <iframe width="100%" height="600px class="openstreetmap" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_547091?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+            <div width="100%" height="600px" class="openstreetmap">
+                <?php the_field('map'); ?>
+            </div>
             <!-- " -->
         </div>
 
@@ -95,10 +97,10 @@ Our original restaurant
             </div>
         </div>
 
+
 <!--  DISCOVER OUR MENU with Jonathan   -->
 
 <!--  Latest updated RECIPES BLOG with Jonathan   -->
-
 
 
 

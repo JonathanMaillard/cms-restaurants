@@ -689,15 +689,17 @@ background-color:#f5f5f5;
 }
 
 //PART ONE CARD : ORIGINAL RESTAURANT
+
+//Container principale
 .originalRest{
 
+    @include for-desktop-up{
     margin-right: 10%;
     margin-left: 10%;
-    @include for-desktop-up{
     padding-top: 6rem;
     padding-bottom: 6rem;
     }
-
+    // Contient le texte
     .originalRest__boxOne{
         width: 100%;
 
@@ -711,20 +713,7 @@ background-color:#f5f5f5;
             }
     }
 
-    .originalRest__boxTwo{
-        width: 100%;
-
-        @include for-desktop-up{
-            width: 600px;
-            height: 600px;
-            background-color:white;
-            border-left: 1px solid black;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            }
-    }
-
-.originalRest__One{
+.originalRest__One:nth-child(odd){
 margin-bottom: 10rem;
 border-bottom: 1px solid black;
 
@@ -734,47 +723,45 @@ border-bottom: 1px solid black;
     }
 }
 
-.originalRest__Two{
-margin-bottom: 10rem;
-border-bottom: 1px solid black;
+//IMPAIR
+.originalRest__One:nth-child(even){
+    margin-bottom: 10rem;
+    border-bottom: 1px solid black;
+    
+    @include for-desktop-up{
+        display: flex;
+        //Inverse le flex
+        flex-direction:row-reverse;
+        border: none;
+        }
 
-@include for-desktop-up{
-    display: flex;
-    border: none;
+        .originalRest__boxOne{
+            width: 100%;
+    
+            @include for-desktop-up{
+                width: 600px;
+                height: 600px;
+                background-color:white;
+                border-left: 1px solid black;
+                border-right: 0px solid white;
+                }
+        }
     }
-}
 
 //SIZE PICTURE
 .originalRest__pictureOne{
-    @include pictureResevations;
+    // @include pictureResevations;
     width: 100%;
-    display: block;
+    height: auto;
 
     @include for-tablet-portrait-up{
         width: 100%;
         }
 
     @include for-desktop-up{
-        background-size: cover;
         width: 600px;
         height: 600px;
         }
-}
-
-.originalRest__pictureTwo{
-    @include pictureResevations;
-    width: 45rem;
-    height: 45rem;
-
-    @include for-tablet-portrait-up{
-        width: 100%;
-        }
-
-        @include for-desktop-up{
-            background-size: cover;
-            width: 609px;
-            height: 600px;
-            }
 }
 
     &__title4{
@@ -809,8 +796,10 @@ border-bottom: 1px solid black;
         height: 250px;
         }
     }  
+    //END ORIGINAL REST CONTAINER
 }
 
+   //END containerReserv
 }
 
 /* 6.3 — MAP - */
@@ -864,6 +853,8 @@ border-bottom: 1px solid black;
 
 .flexBottom{
     margin-top: 0rem;
+    margin-bottom: 60rem;
+    background-color: white;
     
     @include for-desktop-up{
        display: flex;
@@ -872,8 +863,9 @@ border-bottom: 1px solid black;
 .reserveTable{
     background-color:white;
     width: 100%;
+    height: auto;
     margin-top:6rem;
-    padding-bottom: 20rem;
+    // padding-bottom: 60rem;
     @include centerElement;
 
     &__Submit{
@@ -986,10 +978,9 @@ border-bottom: 1px solid black;
     @include for-tablet-portrait-up{
         position : absolute;
         width: 80%;
-        margin-top: -10rem;
+        margin-top: -13rem;
         margin-right: 10%;
         margin-left: 10%;
-
          }
 
     @include for-desktop-up{
@@ -1122,9 +1113,6 @@ border-bottom: 1px solid black;
 }
 
 
-
-
-
 /* ===================================
    7.0 - PAGE : Menu (Jonathan)
     menu.php
@@ -1142,5 +1130,35 @@ border-bottom: 1px solid black;
     single-recipe.php
    =================================== */
 
+    //MIXIN
+   @mixin titleAsrticleh1{
+    padding: 3rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 4.2rem;
+    font-weight: 600;
+
+    @include for-tablet-portrait-up{
+        font-size: 3rem;
+        margin: 0% 9%;
+        }
+
+        @include for-desktop-up{
+            font-size: 3rem;
+            }
+}
+
+//CONTAINER GLOBALE
+.containerArticle{
+width: 100%;
+max-width: 800px;
+margin-right: auto;
+margin-left: auto;
+}
+
+//TITRE ARTICLE
+.article__Title{
+    @include titleAsrticleh1;
+}
 
 

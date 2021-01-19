@@ -21,4 +21,4 @@ register_nav_menus( array(
 
 // NEW PICTURE SIZE
 
-add_image_size('card-article', 350, 215, true);
+add_image_size('card-article', 800, 200, true);
