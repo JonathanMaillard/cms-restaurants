@@ -402,7 +402,8 @@ $breakpoints: (
     transform:translate(0,2rem);
     z-index:1000;
     box-shadow: -9px 33px 48px -7px rgba(0,0,0,1);
-    width:70%;
+    width:100%;
+    max-width: 1200px;
     height: 150px;
     border-image: url("assets/images/hachures-noires.png") 30 fill / 30px / 30px ;
     
@@ -438,17 +439,34 @@ $breakpoints: (
 .wrapper{
     width:100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .qualities{
 
     padding:4rem 0;
 
+    @include for-desktop-up{
+        padding: 0;
+        margin-top: -28rem;
+        margin-bottom: 10rem;
+    }
+
     .qualities__quality{
         margin:2rem;
 
         @include for-tablet-portrait-up{
             width: 45rem;
+        }
+        @include for-desktop-up{
+            margin: 0;
+            background-color: $white;
+            //height: 32rem;
+            width: 38rem;
+
+            padding: 4rem;
+
+            border-radius: 40px 40px 0 0;
         }
         
     }
@@ -474,6 +492,10 @@ $breakpoints: (
     }
     .qualities__image img{
         width:100px;
+        @include for-desktop-up{
+            width: auto;
+            height: 80px;
+        }
     }
     
 }
@@ -482,8 +504,14 @@ $breakpoints: (
 
     padding-bottom:10rem;
 
+    position: relative;
+
     .story__image img{
         width:100%;
+
+        @include for-desktop-up{
+            width: 60%;
+        }
     }
 
     .story__text{
@@ -505,10 +533,19 @@ $breakpoints: (
 
         h4{
             font-weight: bold;
+
+            @include for-tablet-portrait-up{
+                font-size: 1.4rem;
+            }
         }
 
         p{
             line-height: 3.5rem;
+
+            @include for-tablet-portrait-up{
+                line-height: 2rem;
+                font-size: 1.2rem;
+            }
         }
 
         .signature{
@@ -523,6 +560,14 @@ $breakpoints: (
             padding: 4rem;
 
             box-shadow: 0px 3px 50px 0px #888888;
+        }
+        @include for-desktop-up{
+            width: 60%;
+            margin: 0;
+
+            position: absolute;
+            right: 0;
+            top: 25rem;
         }
         
     }
@@ -557,6 +602,12 @@ $breakpoints: (
         //background-color: $white;
         margin-bottom: 8rem;
 
+        @include for-desktop-up{
+            position: relative;
+        }
+
+        
+
 
         .restaurant__image img{
             width:100%;
@@ -573,6 +624,12 @@ $breakpoints: (
 
                 position: relative;
                 margin-top: -15rem;
+            }
+            @include for-desktop-up{
+                margin: 0;
+                position:absolute;
+                top: 20rem;
+
             }
 
             h3{
@@ -624,11 +681,75 @@ $breakpoints: (
             float:right;
         }
     }
+    @include for-desktop-up{
+        .restaurant__text{
+            right:0;
+        }
+
+    }
+}
+
+.food-lg{
+    display: none;
+
+    @include for-desktop-up{
+        display: block;
+    }
+
+    padding: 3rem 0;
+    //border-image: url("assets/images/hachures-blanches.png") 30 fill / 30px / 30px space;
+    
+
+    h2{
+        @include fronth2;
+    }
+
+    h3{
+        @include fronth3;
+    }
+
+    .food__pictures{
+
+        width: 100%;
+
+        .food__picture{
+
+            img{
+                width:100%;
+                max-width:250px;
+                margin: 5px;
+
+            }
+        }   
+    }
+
+    .food__text{
+        padding: 5rem 4rem;
+
+        p{
+            line-height:3rem;
+        }
+        a{
+            display: block;
+            width: 16rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+
+            text-decoration: none;
+            color: white;
+            background-color: $black;
+            padding: 1.2rem 0;
+            margin-top: 8rem;
+        }
+        
+    }
 }
 
 .food{
 
     padding: 3rem 0;
+    //border-image: url("assets/images/hachures-blanches.png") 30 fill / 30px / 30px space;
+    
 
     h2{
         @include fronth2;
@@ -683,26 +804,41 @@ $breakpoints: (
             width:70%;
         }
     }
+    @include for-desktop-up{
+        display: none;
+    }
 }
 
 .quote{
     background-color: $black;
     color: $white;
 
+    //border-image: url("assets/images/hachures-noires.png") 40 fill / 40px / 30px ;
+    
+
+
+
     .quote__wrap{
         padding: 4rem 4rem;
+
+        @include for-desktop-up{
+            width: 50%;
+        }
+        
 
         .quote__text{
 
             p{
                 font-weight: bold;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 line-height: 3.6rem;
+
+                margin-bottom: 4rem;
             }
         }
     
         .quote__author{
-            font-size: 1.4rem;
+            font-size: 1.6rem;
         }
     
         .quote__nav{
@@ -730,12 +866,17 @@ $breakpoints: (
     }
 
     
+    .quote__image{
 
-    
+        @include for-desktop-up{
+            width: 50%;
+        }
 
-    .quote__image img{
-        width:100%;
+        img{
+            width: 100%;
+        }
     }
+    
 }
 
 //END JONATHAN
