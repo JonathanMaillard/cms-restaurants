@@ -25,43 +25,45 @@
             <!-- LINK ARTICLE -->
             <div class="link">
                 <a class="facebook" href="<?php the_field('facebook'); ?>">
-                    <i class="fab fa-facebook-square">
+                    <i class="fab fa-facebook-square iconarticle fb">
                     </i>
                 </a>
 
                 <a class="twitter" href="<?php the_field('twitter'); ?>">
-                    <i class="fab fa-twitter-square">
+                    <i class="fab fa-twitter-square iconarticle twit">
                     </i>
                 </a>
 
                 <a class="instagram" href="<?php the_field('instagram'); ?>">
-                    <i class="fab fa-instagram-square">
+                    <i class="fab fa-instagram-square iconarticle insta">
                     </i>
                 </a>
 
                 <a class="email" href="<?php the_field('email'); ?>">
-                    <i class="fas fa-envelope-square">
+                    <i class="fas fa-envelope-square iconarticle email">
                     </i>
                 </a>
             </div>
             <!-- INGREDIENT ARTICLE -->
             <div class="ingredient">
-                <p class="ingredients__text"><?php echo get_field('ingredients'); ?></p>
+            <h4 class="ingredient__title"><?php the_field('title_ingredient'); ?></h4>
+                <p class="ingredients__text"><?php echo '<br/>'. get_field('ingredients') . '<br/>'; ?></p>
             </div>
 
               <!-- INSTRUCTIONS ARTICLE -->
               <div class="instructions">
+                <h4 class="instructions__title"><?php the_field('title_instructions'); ?></h4>
                 <?php 
                 $values = get_field('instructions');
                 // var_dump($values);
                 if($values){
-                    echo '<ol>';
+                    echo '<ol class="instructions__number">';
 
                     foreach($values as $value){
                         // var_dump($value);
-                        echo '<li>' . $value['instruction'] . '</li>';
+                        echo '<li class="instructions__liste">' . $value['instruction'] . '</li>';
                         // var_dump($value)["picture"];
-                        echo '<img src="'. $value["picture"]["url"] . '">';
+                        echo '<img class="instructions__picture" src="'. $value["picture"]["url"] . '">';
                         
                         // rajouter des corchets avec ce qu'il faut mettre entre crochet
                     }
@@ -72,6 +74,28 @@
             </div>
             <?php endif; ?>
         </div>
+
+        <div class="linkSmart">
+                <a class="facebook" href="<?php the_field('facebook'); ?>">
+                    <i class="fab fa-facebook-square iconarticle fb">
+                    </i>
+                </a>
+
+                <a class="twitter" href="<?php the_field('twitter'); ?>">
+                    <i class="fab fa-twitter-square iconarticle twit">
+                    </i>
+                </a>
+
+                <a class="instagram" href="<?php the_field('instagram'); ?>">
+                    <i class="fab fa-instagram-square iconarticle insta">
+                    </i>
+                </a>
+
+                <a class="email" href="<?php the_field('email'); ?>">
+                    <i class="fas fa-envelope-square iconarticle email">
+                    </i>
+                </a>
+            </div>
 </div>
 
 <?php
