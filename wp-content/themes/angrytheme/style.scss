@@ -427,12 +427,12 @@ $breakpoints: (
    =================================== */
    @mixin fronth2{
     font-family: $font-family;
-    font-size: 3.0rem;
+    font-size: 3.8rem;
     font-weight:bold;
 }
    @mixin fronth3{
     font-family: $font-family;
-    font-size: 2.0rem;
+    font-size: 2.9rem;
 }
 
 .wrapper{
@@ -442,19 +442,43 @@ $breakpoints: (
 
 .qualities{
 
+    padding:4rem 0;
+
     .qualities__quality{
         margin:2rem;
+
+        @include for-tablet-portrait-up{
+            width: 45rem;
+        }
+        
     }
     .qualities__text{
         font-weight:bold;
-        font-size: 1.8rem;
+        font-size: 2.6rem;
         margin-top: 2rem;
+
+        @include for-tablet-portrait-up{
+            width: 30rem;
+            //font-size: 2.4rem;
+        }
+
+        .qualities__subtext{
+            display:none;
+
+            @include for-tablet-portrait-up{
+                display:inline;
+                font-weight: normal;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .qualities__image img{
+        width:100px;
     }
     
 }
 
 .story{
-
 
     padding-bottom:10rem;
 
@@ -464,8 +488,12 @@ $breakpoints: (
 
     .story__text{
 
-        margin-top:3.5rem;
-        padding:0 2rem;
+        margin-top:4rem;
+        padding:0 2.5rem;
+        background-color: $white;
+
+        position: relative;
+        z-index: 1;
 
         h2{
             @include fronth2;
@@ -480,12 +508,23 @@ $breakpoints: (
         }
 
         p{
-            line-height: 3rem;
+            line-height: 3.5rem;
         }
 
         .signature{
             font-size: 3.2rem;
         }
+
+        @include for-tablet-portrait-up{
+            width: 90%;
+            margin: auto;
+            margin-top: -20rem;
+
+            padding: 4rem;
+
+            box-shadow: 0px 3px 50px 0px #888888;
+        }
+        
     }
 }
 
@@ -510,20 +549,39 @@ $breakpoints: (
     
 
     .restaurants__head{
-        padding: 4.2rem 0;
+        padding: 4.2rem 2rem;
     }
 
     .restaurant{
 
-        background-color: $white;
+        //background-color: $white;
         margin-bottom: 8rem;
 
 
         .restaurant__image img{
             width:100%;
+            @include for-tablet-portrait-up{
+                    width:80%;
+            }
         }
         .restaurant__text{
             padding: 5rem 4rem;
+            background-color: $white;
+
+            @include for-tablet-portrait-up{
+                width: 70%;
+
+                position: relative;
+                margin-top: -15rem;
+            }
+
+            h3{
+                @include fronth3;
+            }
+
+            h4{
+                font-size: 2rem;
+            }
 
             p{
                 line-height:3rem;
@@ -531,16 +589,41 @@ $breakpoints: (
 
             a{
                 display: block;
-                width: 9rem;
+                width: 14rem;
                 text-decoration: none;
                 color: white;
                 background-color: $black;
                 padding: 1rem 0;
                 margin-top: 1rem;
+
+                font-size: 1.4rem;
+                font-weight: bold;
             }
         }
     }
     
+}
+
+.restaurant-right{
+    @include for-tablet-portrait-up{
+
+        .restaurant__image img{
+            margin-left: auto;
+            margin-right: 0;
+            float:right;
+        }
+    }
+}
+
+.restaurant-left{
+    @include for-tablet-portrait-up{
+
+        .restaurant__text{
+            margin-left: auto;
+            margin-right: 0;
+            float:right;
+        }
+    }
 }
 
 .food{
@@ -555,11 +638,27 @@ $breakpoints: (
         @include fronth3;
     }
 
-    .food__pictures img{
-        width:100%;
-        max-width:250px;
-        margin: 5px;
+    .food__pictures{
+
+        width: 80%;
+
+        .food__picture{
+
+            img{
+                width:100%;
+                max-width:250px;
+                margin: 5px;
+
+                @include for-tablet-portrait-up{
+                    width:100%;
+                    max-width: 280px;
+                }
+            }
+        }
+        
     }
+
+    
 
     .food__text{
         padding: 5rem 4rem;
@@ -569,14 +668,19 @@ $breakpoints: (
         }
         a{
             display: block;
-            width: 20rem;
-            font-size: 1.8rem;
+            width: 28rem;
+            font-size: 2.2rem;
+            font-weight: bold;
 
             text-decoration: none;
             color: white;
             background-color: $black;
-            padding: 1rem 0;
+            padding: 2rem 0;
             margin-top: 1rem;
+        }
+        @include for-tablet-portrait-up{
+
+            width:70%;
         }
     }
 }
@@ -592,19 +696,19 @@ $breakpoints: (
 
             p{
                 font-weight: bold;
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 line-height: 3.6rem;
             }
         }
     
         .quote__author{
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     
         .quote__nav{
             
             margin-top: 3.6rem;
-            width: 4rem;
+            width: 4.6rem;
 
             .bullet{
                 width: 1rem;
@@ -685,7 +789,7 @@ $breakpoints: (
         }
 
         @include for-desktop-up{
-            font-size: 3rem;
+            font-size: 3.6rem;
             }
 }
 
@@ -737,22 +841,23 @@ background-color:#f5f5f5;
 }
 
 //PART ONE CARD : ORIGINAL RESTAURANT
+
+//Container principale
 .originalRest{
 
-    padding-bottom: 2rem;
-    margin-right: 18%;
-    margin-left: 18%;
     @include for-desktop-up{
+    margin-right: 10%;
+    margin-left: 10%;
     padding-top: 6rem;
     padding-bottom: 6rem;
     }
-
+    // Contient le texte
     .originalRest__boxOne{
         width: 100%;
 
         @include for-desktop-up{
-            width: 500px;
-            height: 500px;
+            width: 600px;
+            height: 600px;
             background-color:white;
             border-right: 1px solid black;
             border-top: 1px solid black;
@@ -760,20 +865,7 @@ background-color:#f5f5f5;
             }
     }
 
-    .originalRest__boxTwo{
-        width: 100%;
-
-        @include for-desktop-up{
-            width: 500px;
-            height: 500px;
-            background-color:white;
-            border-left: 1px solid black;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            }
-    }
-
-.originalRest__One{
+.originalRest__One:nth-child(odd){
 margin-bottom: 10rem;
 border-bottom: 1px solid black;
 
@@ -783,47 +875,45 @@ border-bottom: 1px solid black;
     }
 }
 
-.originalRest__Two{
-margin-bottom: 10rem;
-border-bottom: 1px solid black;
+//IMPAIR
+.originalRest__One:nth-child(even){
+    margin-bottom: 10rem;
+    border-bottom: 1px solid black;
+    
+    @include for-desktop-up{
+        display: flex;
+        //Inverse le flex
+        flex-direction:row-reverse;
+        border: none;
+        }
 
-@include for-desktop-up{
-    display: flex;
-    border: none;
+        .originalRest__boxOne{
+            width: 100%;
+    
+            @include for-desktop-up{
+                width: 600px;
+                height: 600px;
+                background-color:white;
+                border-left: 1px solid black;
+                border-right: 0px solid white;
+                }
+        }
     }
-}
 
 //SIZE PICTURE
 .originalRest__pictureOne{
-    @include pictureResevations;
-    width: 45rem;
-    height: 45rem;
+    // @include pictureResevations;
+    width: 100%;
+    height: auto;
 
     @include for-tablet-portrait-up{
         width: 100%;
         }
 
     @include for-desktop-up{
-        background-size: cover;
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 600px;
         }
-}
-
-.originalRest__pictureTwo{
-    @include pictureResevations;
-    width: 45rem;
-    height: 45rem;
-
-    @include for-tablet-portrait-up{
-        width: 100%;
-        }
-
-        @include for-desktop-up{
-            background-size: cover;
-            width: 509px;
-            height: 500px;
-            }
 }
 
     &__title4{
@@ -843,6 +933,8 @@ border-bottom: 1px solid black;
         }
 
     &__para{
+        margin-left: auto;
+        margin-right: auto;
         padding: 0rem 1.5rem 10rem 1.5rem;
         line-height: 3em;
 
@@ -856,8 +948,10 @@ border-bottom: 1px solid black;
         height: 250px;
         }
     }  
+    //END ORIGINAL REST CONTAINER
 }
 
+   //END containerReserv
 }
 
 /* 6.3 — MAP - */
@@ -911,6 +1005,8 @@ border-bottom: 1px solid black;
 
 .flexBottom{
     margin-top: 0rem;
+    margin-bottom: 60rem;
+    background-color: white;
     
     @include for-desktop-up{
        display: flex;
@@ -919,7 +1015,9 @@ border-bottom: 1px solid black;
 .reserveTable{
     background-color:white;
     width: 100%;
+    height: auto;
     margin-top:6rem;
+    // padding-bottom: 60rem;
     @include centerElement;
 
     &__Submit{
@@ -1032,10 +1130,9 @@ border-bottom: 1px solid black;
     @include for-tablet-portrait-up{
         position : absolute;
         width: 80%;
-        margin-top: -10rem;
+        margin-top: -13rem;
         margin-right: 10%;
         margin-left: 10%;
-
          }
 
     @include for-desktop-up{
@@ -1168,9 +1265,6 @@ border-bottom: 1px solid black;
 }
 
 
-
-
-
 /* ===================================
    7.0 - PAGE : Menu (Jonathan)
     menu.php
@@ -1188,5 +1282,35 @@ border-bottom: 1px solid black;
     single-recipe.php
    =================================== */
 
+    //MIXIN
+   @mixin titleAsrticleh1{
+    padding: 3rem 0rem;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 4.2rem;
+    font-weight: 600;
+
+    @include for-tablet-portrait-up{
+        font-size: 3rem;
+        margin: 0% 9%;
+        }
+
+        @include for-desktop-up{
+            font-size: 3rem;
+            }
+}
+
+//CONTAINER GLOBALE
+.containerArticle{
+width: 100%;
+max-width: 800px;
+margin-right: auto;
+margin-left: auto;
+}
+
+//TITRE ARTICLE
+.article__Title{
+    @include titleAsrticleh1;
+}
 
 

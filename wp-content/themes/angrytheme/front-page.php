@@ -2,38 +2,42 @@
 
 <section class="qualities wrapper d-flex flex-column align-items-center">
 
-    <div class="qualities__quality text-center">
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/quality-food.svg" />
-        <div>
+        </div>
 
         <div class="qualities__text">
-            QUALITY FOODS
+            <p>QUALITY FOODS</p>
+            <p class="qualities__subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque rem dolor ex a?</p>
         </div>
 
     </div>
 
-    <div class="qualities__quality text-center">
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/fastest-delivery.svg" />
-        <div>
+            
+        </div>
         
         <div class="qualities__text">
-            FASTEST DELIVERY
+            <p>FASTEST DELIVERY</p>
+            <p class="qualities__subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque rem dolor ex a?</p>
         </div>
 
     </div>
 
-    <div class="qualities__quality text-center">
+    <div class="qualities__quality text-center d-md-flex flex-row align-items-center justify-content-between">
 
         <div class="qualities__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/original-recipes.svg" />
-        <div>
+        </div>
         
         <div class="qualities__text">
-            ORIGINAL RECIPES
+            <p>ORIGINAL RECIPES</p>
+            <p class="qualities__subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque rem dolor ex a?</p>
         </div>
 
     </div>
@@ -69,7 +73,7 @@
             <h2 class="text-center">OUR RESTAURANTS</h2>
         </div>
         
-        <div class="restaurant restaurant-right">
+        <div class="restaurant restaurant-right d-flex flex-column">
 
             <div class="restaurant__image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg">
@@ -83,7 +87,7 @@
 
         </div>
 
-        <div class="restaurant restaurant-left">
+        <div class="restaurant restaurant-left d-flex flex-column">
             
             <div class="restaurant__image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto2.jpg">
@@ -97,7 +101,7 @@
 
         </div>
 
-        <div class="restaurant restaurant-right">
+        <div class="restaurant restaurant-right d-flex flex-column">
 
             <div class="restaurant__image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto3.jpg">
@@ -115,21 +119,23 @@
 </section>
 
 <section class="food container-fluid">
-    <div class="wrapper">
-        <h3 class="text-center">LET'S DISCOVER FOOD</h3>
-        <h2 class="text-center">DISCOVER OUR MENU</h2>
-    </div>
+    <div class="wrapper d-flex flex-column align-items-center">
+        <div class="food__title">
+            <h3 class="text-center">LET'S DISCOVER FOOD</h3>
+            <h2 class="text-center">DISCOVER OUR MENU</h2>
+        </div>
 
-    <div class="food__pictures d-flex flex-column align-items-center">
-        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes1.jpg"></div>
-        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes2.jpg"></div>
-        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes3.jpg"></div>
-        <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes4.jpg"></div>
-    </div>
+        <div class="food__pictures d-flex flex-column align-items-center flex-md-row flex-md-wrap justify-content-md-center">
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes1.jpg"></div>
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes2.jpg"></div>
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes3.jpg"></div>
+            <div class="food__picture d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dishes4.jpg"></div>
+        </div>
 
-    <div class="food__text text-center d-flex flex-column align-items-center">
-        <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
-        <a href="#">View the full Menu</a>
+        <div class="food__text text-center d-flex flex-column align-items-center">
+            <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
+            <a href="#">View the full Menu</a>
+        </div>
     </div>
 </section>
 
