@@ -93,7 +93,6 @@ body {
 .menu_class {
   float: right;
 }
-
 .menu_class__navlinks {
   font-size: 1.2rem;
   font-weight: 500;
@@ -112,7 +111,6 @@ body {
   margin: 0rem 1rem 0rem 1rem;
   transition: 0.3s;
 }
-
 @media (min-width: 374px) {
   .order-btn a {
     display: none;
@@ -139,7 +137,6 @@ body {
   width: 1.8rem;
   margin: 0rem 0rem 0rem 1rem;
 }
-
 @media (min-width: 374px) {
   .cart {
     display: none;
@@ -150,36 +147,25 @@ body {
   min-height: 800px;
   width: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  justify-content: center;
+  align-items: start;
   overflow: hidden;
   z-index: -1;
 }
-
 @media (min-width: 1024px) {
   .headerpicture {
     max-width: 100%;
-    -webkit-transform: translate(0, -15rem);
-            transform: translate(0, -15rem);
+    transform: translate(0, -15rem);
   }
 }
-
 .headerpicture img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   -webkit-flex-shrink: 0;
   max-width: 200%;
   height: 620px;
   z-index: -3;
 }
-
 @media (min-width: 1024px) {
   .headerpicture img {
     height: 790px;
@@ -197,7 +183,6 @@ body {
   z-index: -1;
   top: 0;
 }
-
 @media (min-width: 1024px) {
   .grey-hatching {
     min-width: 100%;
@@ -233,7 +218,6 @@ body {
   z-index: -1;
   top: 0;
 }
-
 @media (min-width: 1024px) {
   .black-hatching {
     min-width: 100%;
@@ -261,50 +245,37 @@ body {
   font-weight: 300;
   line-height: 1.2;
 }
-
 @media (min-width: 768px) {
   .block__maintitle {
     font-size: 15px;
   }
 }
-
-@media (min-width: 374px) {
-  .block__maintitle {
-    font-size: 20px;
-  }
-}
-
 @media (min-width: 1024px) {
   .block__maintitle {
     font-size: 30px;
   }
 }
-
 .block__maintitle span {
   display: block;
   color: white;
   text-transform: uppercase;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   .block__maintitle span {
     font-size: 20px;
   }
 }
-
 @media (min-width: 374px) {
   .block__maintitle span {
     font-size: 30px;
   }
 }
-
 @media (min-width: 1024px) {
   .block__maintitle span {
     font-size: 50px;
   }
 }
-
 .block__mainlink {
   font-size: 3vw;
   color: #FFF;
@@ -312,19 +283,16 @@ body {
   transition: 0.8s;
   transform: translate(0, 9rem);
 }
-
 @media (min-width: 1024px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
-
 @media (min-width: 374px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
-
 .block__mainlink:hover {
   transform: translate(4rem, 9rem);
   text-decoration: none;
@@ -343,23 +311,18 @@ body {
   max-width: 4rem;
   margin: 1rem;
 }
-
 @media (min-width: 768px) {
   .liner:before {
     max-width: 3rem;
-    -webkit-transform: translate(0, -0.2rem);
-            transform: translate(0, -0.2rem);
+    transform: translate(0, -0.2rem);
   }
 }
-
 @media (min-width: 374px) {
   .liner:before {
     max-width: 3rem;
-    -webkit-transform: translate(0, 0.2rem);
-            transform: translate(0, 0.2rem);
+    transform: translate(0, 0.2rem);
   }
 }
-
 .liner:before {
   margin-right: 2rem;
   margin-top: 1rem;
@@ -373,7 +336,6 @@ footer {
   margin-top: 6rem;
   color: #FFF;
   border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
-
 }
 footer p {
   line-height: 1.8;
@@ -428,11 +390,9 @@ footer p span {
   gap: 0px 0px;
   grid-template-areas: "time day line hours";
 }
-
 .sect2openhours p {
   color: darkgrey;
 }
-
 .sect2openhours p hr {
   display: block;
   height: 2px;
@@ -460,29 +420,21 @@ footer p span {
 }
 
 .sect2contact {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 0.7fr;
-      grid-template-columns: 0.2fr 0.7fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 0.2fr 0.7fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
-      grid-template-areas: "contacticon contacttext";
+  grid-template-areas: "contacticon contacttext";
 }
-
 .sect2contact p {
   color: darkgrey;
 }
 
 .contacticon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: contacticon;
 }
 
 .contacttext {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: contacttext;
 }
 
@@ -491,24 +443,20 @@ footer p span {
   height: 76px;
   margin: 0.7rem 0.7rem 0 0;
 }
-
 .footerig__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .newsletter {
   margin: auto;
-  -webkit-transform: translate(0, 2rem);
-          transform: translate(0, 2rem);
+  transform: translate(0, 2rem);
   z-index: 1000;
   box-shadow: -9px 33px 48px -7px black;
   width: 100%;
   height: 150px;
-  -o-border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
-     border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
+  border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
 }
 @media (min-width: 1024px) {
   .newsletter {
@@ -517,10 +465,8 @@ footer p span {
 }
 .newsletter__title p {
   color: white;
-  -webkit-transform: translate(0, 80%);
-          transform: translate(0, 80%);
+  transform: translate(0, 80%);
 }
-
 .newsletter__mail {
   transform: translate(0, 80%);
   text-align: center;
@@ -558,7 +504,6 @@ footer p span {
 .qualities {
   padding: 4rem 0;
 }
-
 @media (min-width: 1024px) {
   .qualities {
     padding: 0;
@@ -569,10 +514,18 @@ footer p span {
 .qualities .qualities__quality {
   margin: 2rem;
 }
-
 @media (min-width: 768px) {
   .qualities .qualities__quality {
     width: 45rem;
+  }
+}
+@media (min-width: 1024px) {
+  .qualities .qualities__quality {
+    margin: 0;
+    background-color: #FFF;
+    width: 38rem;
+    padding: 4rem;
+    border-radius: 40px 40px 0 0;
   }
 }
 .qualities .qualities__text {
@@ -580,17 +533,14 @@ footer p span {
   font-size: 2.6rem;
   margin-top: 2rem;
 }
-
 @media (min-width: 768px) {
   .qualities .qualities__text {
     width: 30rem;
   }
 }
-
 .qualities .qualities__text .qualities__subtext {
   display: none;
 }
-
 @media (min-width: 768px) {
   .qualities .qualities__text .qualities__subtext {
     display: inline;
@@ -598,7 +548,6 @@ footer p span {
     font-size: 1.4rem;
   }
 }
-
 .qualities .qualities__image img {
   width: 100px;
 }
@@ -640,7 +589,6 @@ footer p span {
 .story .story__text h4 {
   font-weight: bold;
 }
-
 @media (min-width: 768px) {
   .story .story__text h4 {
     font-size: 1.4rem;
@@ -658,15 +606,13 @@ footer p span {
 .story .story__text .signature {
   font-size: 3.2rem;
 }
-
 @media (min-width: 768px) {
   .story .story__text {
     width: 90%;
     margin: auto;
     margin-top: -20rem;
     padding: 4rem;
-    -webkit-box-shadow: 0px 3px 50px 0px #888888;
-            box-shadow: 0px 3px 50px 0px #888888;
+    box-shadow: 0px 3px 50px 0px #888888;
   }
 }
 @media (min-width: 1024px) {
@@ -702,10 +648,14 @@ footer p span {
 .restaurants .restaurant {
   margin-bottom: 8rem;
 }
+@media (min-width: 1024px) {
+  .restaurants .restaurant {
+    position: relative;
+  }
+}
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
-
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__image img {
     width: 80%;
@@ -715,7 +665,6 @@ footer p span {
   padding: 5rem 4rem;
   background-color: #FFF;
 }
-
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__text {
     width: 70%;
@@ -723,7 +672,6 @@ footer p span {
     margin-top: -15rem;
   }
 }
-
 @media (min-width: 1024px) {
   .restaurants .restaurant .restaurant__text {
     margin: 0;
@@ -735,7 +683,6 @@ footer p span {
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
 }
-
 .restaurants .restaurant .restaurant__text h4 {
   font-size: 2rem;
 }
@@ -831,17 +778,14 @@ footer p span {
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
 }
-
 .food .food__pictures {
   width: 80%;
 }
-
 .food .food__pictures .food__picture img {
   width: 100%;
   max-width: 250px;
   margin: 5px;
 }
-
 @media (min-width: 768px) {
   .food .food__pictures .food__picture img {
     width: 100%;
@@ -865,7 +809,6 @@ footer p span {
   padding: 2rem 0;
   margin-top: 1rem;
 }
-
 @media (min-width: 768px) {
   .food .food__text {
     width: 70%;
@@ -978,11 +921,9 @@ footer p span {
     padding-bottom: 6rem;
   }
 }
-
 .containerReserv .originalRest .originalRest__boxOne {
   width: 100%;
 }
-
 @media (min-width: 1024px) {
   .containerReserv .originalRest .originalRest__boxOne {
     width: 600px;
@@ -993,7 +934,6 @@ footer p span {
     border-bottom: 1px solid black;
   }
 }
-
 .containerReserv .originalRest .originalRest__One:nth-child(odd) {
   margin-bottom: 10rem;
   border-bottom: 1px solid black;
@@ -1115,7 +1055,6 @@ footer p span {
   height: auto;
   /* 6.4 — RESERVE TABLE  */
 }
-
 .containerBottom .effect {
   position: absolute;
   display: block;
@@ -1124,7 +1063,6 @@ footer p span {
   margin-right: auto;
   margin-left: auto;
 }
-
 .containerBottom .locationMap {
   background-color: white;
   padding-top: 5rem;
@@ -1143,12 +1081,10 @@ footer p span {
     font-size: 3.2rem;
   }
 }
-
 .containerBottom .locationMap .locationMap__openstreetmap {
   width: 100%;
   padding-bottom: 6rem;
 }
-
 .containerBottom .locationMap__title3 {
   margin-top: -20px;
   margin-bottom: 6rem;
@@ -1284,7 +1220,6 @@ footer p span {
     display: none;
   }
 }
-
 @media (min-width: 374px) {
   .containerBottom .flexBottom .formTabletteDesk {
     display: none;
@@ -1639,40 +1574,27 @@ footer p span {
 .link {
   display: none;
 }
-
 @media (min-width: 768px) {
   .link {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
   .link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 1rem 0rem;
   }
 }
 
 .linkSmart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media (min-width: 768px) {
   .linkSmart {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 @media (min-width: 1024px) {
   .linkSmart {
     display: none;
@@ -1722,13 +1644,12 @@ footer p span {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
-
 .instructions .instructions__number .instructions__liste {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-
 .instructions .instructions__number .instructions__picture {
   width: 800px;
 }
+
 /*# sourceMappingURL=style.css.map */
