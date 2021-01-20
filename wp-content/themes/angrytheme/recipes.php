@@ -21,81 +21,75 @@
 
 <div class="grey-hatching"></div>
 
-<section class="story wrapper">
 
-    <div class="story__text">
-        <h3>Discover<h3>
-        <h2>OUR STORY</h2>
-        <h4>ULTIMATE DINING EXPERIENCE LIKE NO OTHER</h4>
 
-        <p>One of the notable character traits of a successful small restaurant owner is the ablity to easily solve problems. Problem-solving is a skill and most of the time comes with being open-minded.<p>
-        <p>Succesful entrepreneurs are open-minded people and as such good optimists, critical thinkers and prolem solvers. As a small restaurant owner, you need to be able to proffer quick solutions to any problem that may arise in the course of your business<p>
-        
-        <h4>OUR FOUNDER</h4>
-        <div class="signature">The Chef</div>
+<section class="articles">
+    <div class="articles__wrapper">
 
+    <div class="groups mb-5"> 
+        <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> original dev's restaurant</p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> local food</p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> spicy</p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> latino</p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> italian</p>
     </div>
 
-</section>
+    <div class="entries">
+    <div class="row">
 
-<section class="restaurants">
-    <div class="wrapper">
-
-        <div class="restaurants__head">
-            <h3 class="text-center">Discover our franchise</h3>
-            <h2 class="text-center">OUR RESTAURANTS</h2>
-        </div>
-        
-        <div class="restaurant restaurant-right">
-
-  
-            <div class="restaurant__text text-center d-flex flex-column align-items-center">
-                <h4>Our original restaurant</h4>
-                <h3>The Chef's cafeteria</h3>
-                <p>The chef's cefeteria's 50 seat room, "The Meazzanine Room" features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, "Barbaresco", is available for meeting, birhtdays and other occasions.</p>
-                <a href="#">More infos</a>
-            </div>
-
-        </div>
-
-        <div class="restaurant restaurant-left">
-            
-     
-            <div class="restaurant__text text-center d-flex flex-column align-items-center">
-                <h4>Our first restaurant in Brussels</h4>
-                <h3>The BeCentral resto</h3>
-                <p>Somewhere over the rainbow<br>Way up high<br>And the dreams that you dream of<br>Once in a lullaby</p>
-                <a href="#">More infos</a>
-            </div>
-
-        </div>
-
-        <div class="restaurant restaurant-right">
-
-
-            <div class="restaurant__text text-center d-flex flex-column align-items-center">
-                <h4>Outssiplou, the place to be</h4>
-                <h3>The Honkytonk</h3>
-                <p>I feel your presence amongst us<br>You cannot hide in the darkness<br>Can you hear the rumble?<br>Can you hear the rumble that's calling?</p>
-                <a href="#">More infos</a>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="food container-fluid">
-    <div class="wrapper">
-        <h3 class="text-center">LET'S DISCOVER FOOD</h3>
-        <h2 class="text-center">DISCOVER OUR MENU</h2>
+    <div class="col-sm entries__content">
+    <p class="entries__time"><i class="far fa-clock"></i> 10 MARCH 2020</p>
+    <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> local food</p>
+    <h4>The Salade Liégoise</h4>
+    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. .</p>
+    <a href="#">Read more</a></div>
+   
+    <div class="col-sm">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png" class="entries__img">
     </div>
 
-    <div class="food__text text-center d-flex flex-column align-items-center">
-        <p>For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
-        <a href="#">View the full Menu</a>
+    </div>
+    </div>
+
+    <div class="entries image-on-the-right">
+    <div class="row">
+
+    <div class="col-sm">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/chicken-wings.jpg" class="entries__img">
+    </div>
+
+    <div class="col-sm entries__content">
+    <p class="entries__time"><i class="far fa-clock"></i> 10 FEBRUARY 2020</p>
+    <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> spicy</p>
+    <h4>Chicken wings from hell</h4>
+    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. .</p>
+    <a href="#">Read more</a></div>
+    
+    </div>
+    </div>
+
+    <div class="entries">
+    <div class="row">
+
+    <div class="col-sm entries__content">
+    <p class="entries__time"><i class="far fa-clock"></i> 8 JANUARY 2020</p>
+    <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> original dev's restaurant</p>
+    <h4>Midnight sandwich</h4>
+    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. .</p>
+    <a href="#">Read more</a></div>
+   
+    <div class="col-sm">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/midnight-sandwich.jpg" class="entries__img">
+    </div>
+
+    </div>
+    </div>
+
+
     </div>
 </section>
+
+
 
 
 

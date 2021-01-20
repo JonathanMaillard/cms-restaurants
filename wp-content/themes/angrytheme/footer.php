@@ -8,7 +8,7 @@
     <form action="" class="m-auto">
 		<div class="form-group row">
             <div class="col-md-8"><input type="email" class="form-control form-control-lg" id="your-email1" name="your-email" placeholder="Your email here" required></div>
-            <div class="col-md-4"><button class="btn btn-light text-uppercase" style="padding:0.7rem 1rem 0.7rem 1rem;" type="submit">Subscribe</button></div>
+            <div class="col-md-4"><button class="btn btn-light text-uppercase" type="submit">Subscribe</button></div>
 		</div>
 
 	</form>
@@ -19,17 +19,20 @@
 <footer>
 <div class="container">
   <div class="row justify-content-center g-0 pt-5">
-    <div class="col-sm-2 ps-5 me-3">
+    <!-- Desc. + Social Media -->
+    <div class="col-sm-2 ps-4 me-3">
       <p class="h3 pb-3">Dev Restaurant</p>
       <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. Integer at ante pellentesque, viverra nulla luctus, pellentesque ex.</span> </p>
-      <div class="socialmed pt-3">
+      <div class="socialmed py-3">
       <a href="#"><i class="fab fa-facebook-f socialmed__fb"></i></a>
       <a href="#"><i class="fab fa-twitter socialmed__twitter"></i></a>
       <a href="#"><i class="fab fa-instagram socialmed__ig"></i></a>
       <a href="#"><i class="fab fa-linkedin-in socialmed__linkedin"></i></a>
       </div>
     </div>
-    <div class="col-sm-3">
+
+   <!-- Opening hours -->
+    <div class="col-sm-3 ps-4">
     <p class="h6 pb-3">Open hours</p>
     <div class="sect2openhours">
   <div class="time"><i class="far fa-clock"></i></div>
@@ -59,9 +62,10 @@
   <div class="hours"><p>7am - 1am</p></div>
    </div>
 
-
     </div>
-    <div class="col-sm-2">
+
+    <!-- Contact us -->
+    <div class="col-sm-2 ps-4">
 
     <p class="h6 pb-3">Contact us</p>
 
@@ -84,8 +88,8 @@
 
     </div>
 
-
-    <div class="col-sm-3">
+   <!-- Instagram -->
+    <div class="col-sm-3 ps-4">
     <p class="h6 pb-3">Instagram</p>
 
     <div class="d-flex flex-wrap">   
