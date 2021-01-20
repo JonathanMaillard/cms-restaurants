@@ -1538,7 +1538,8 @@ border-bottom: 1px solid black;
     //MIXIN
    @mixin titleAsrticleh1{
     padding: 3rem 0rem;
-    text-align: center;
+    margin-left: 0px;
+    text-align: left;
     font-family: $font-family;
     font-size: 4.2rem;
     font-weight: 600;
@@ -1556,14 +1557,58 @@ border-bottom: 1px solid black;
 //CONTAINER GLOBALE
 .containerArticle{
 width: 100%;
-max-width: 800px;
 margin-right: auto;
 margin-left: auto;
+margin-top: 5rem;
+
+@include for-tablet-portrait-up{
+}
+
+@include for-desktop-up{
+    max-width: 800px;
+    }
+
 }
 
 //TITRE ARTICLE
 .article__Title{
     @include titleAsrticleh1;
+    margin:2rem 2rem;
+
+    @include for-desktop-up{
+        margin:2rem 0rem;
+        }
+}
+
+.article__subtile{
+    margin: 5rem 2rem ;
+    font-family: $font-family;
+    font-size:2rem;
+    line-height:4rem;
+
+    @include for-desktop-up{
+        margin:2rem 0rem;
+        }
+}
+
+//PICTURE ARTICLE
+.article__Picture{
+    width: 100%;
+
+    @include for-desktop-up{
+        max-width: 800px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        }
+    
+}
+// FLEX FOR DESKTOP -> ICON (fb, twit, insta, email) -> Ingredients
+.flexDesktop{
+
+    @include for-desktop-up{
+        display: flex;
+        }
 }
 
 // LINK ON DESKTOP
@@ -1584,8 +1629,9 @@ margin-left: auto;
 //LINK ON SMARTPHONE AND TABLETTE
 
 .linkSmart{
-
     display: flex;
+    justify-content: flex-end;
+    margin-bottom:3rem;
 
     @include for-tablet-portrait-up{
         display: flex;
@@ -1607,54 +1653,134 @@ margin-left: auto;
 }
 
 .fb{
-color:#385694;
+    color:#385694;
+    margin-right: 12px;
 }
 
 .twit{
     color:#50abf1;
+    margin-right: 12px;
 }
 
 .insta{
     color:#de3568;
+    margin-right: 12px;
 }
 
 .email{
     color: black;
+    margin-right: 25px;
 }
 
 //INGREDIENT
-.ingredient__title{
-    font-size:2rem;
-    font-weight: 600;
-    font-family: $font-family;
-}
 
 .ingredient{
-    font-size:1.8rem;
-    font-weight: 400;
-    font-family: $font-family;
+
+        @include for-desktop-up{
+            font-size:2rem;
+            }
+
+            .ingredient__title{
+                font-size:2.7rem;
+                margin:2rem 2rem;
+                font-weight: 600;
+                font-family: $font-family;
+            
+                @include for-desktop-up{
+                    margin:2rem 0rem;
+                    }
+            }
+
+            .ingredient__text{
+                font-size:1.6rem;
+                font-weight: 400;
+                font-family: $font-family;
+                line-height: 3.5rem;
+                margin:2rem 2rem;
+
+                @include for-desktop-up{
+                    margin:2rem 0rem;
+                    }
+            }
 }
 
-
+//INSTUCTIONS OL LI
 .instructions{
 
     .instructions__title{
-        font-size:2rem;
+        font-size:2.7rem;
+        margin:3rem 2rem;
         font-weight: 600;
         font-family: $font-family;
+
+        @include for-desktop-up{
+            margin:2rem 0rem;
+            }
     }
 
 .instructions__number{
-
+    
     .instructions__liste{
         font-size:1.6rem;
         font-family: $font-family;
+        line-height: 3rem;
     }
 
     .instructions__picture{
-        width: 800px;
+
+        width: 100%;
+        margin: 0px 0px;
+
+        @include for-desktop-up{
+            max-width: 800px;
+            }
+        
     }
-
+}
 }
 
-}
+//OL LI STYLE
+.instructions ol {
+    // max-width: 350px;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    margin-left: 40px;
+
+    @include for-tablet-portrait-up{
+        }
+
+        @include for-desktop-up{
+            max-width: 800px;
+            }
+  }
+  .instructions ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+  }
+
+  .instructions ol li::before {
+    content: counter(my-awesome-counter);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 20px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .instructions img{
+      margin: 0px;
+  }
+  
+  
+  
+  
+  
