@@ -60,8 +60,8 @@ Our original restaurant
                        
                     }
                     ?>
-        </div>       
-    </div>  
+    </div>       
+</div>  
   
     <div class="containerBottom">
         <!--  LOCATION MAP   -->

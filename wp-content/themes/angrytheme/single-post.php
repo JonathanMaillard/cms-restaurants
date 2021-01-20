@@ -1,16 +1,30 @@
 <?php get_header(); ?>
+<!-- HEADER HTML -->
+<body>
+<div class="white-hatching"></div>
+<!-- END HEADER HTML -->
 
 <!-- ARTICLES DE CUISINES -->
 <div class="containerArticle">
     <?php if( have_posts() ): while( have_posts()) : the_post(); ?>
-    <!-- " : " signifie s'il y a alors -->
+
+    <!-- RETOUR DATE -->
+    <div class="bandeau">
+        <p class="bandeau__retour">
+        <a class="bandeau__retour__link" href="http://localhost/cms-restaurants/index.php/recipes/">
+            ← &nbsp; &nbsp;Retour 
+        </a>
+        </p>
+        <p class="bandeau__date">
+        <?php the_time( get_option( 'date_format' ) ); ?>
+        </p> 
+    </div>
   
     <!-- TITLE ARTICLE -->
         <h1 class="article__Title"><?php the_title() ?></h1>
     
         <?php endwhile; endif; ?>  
  
-
     <!-- ACF CHAMPS -->
     <?php if( has_category( 'Recipes' ) ): ?>
 

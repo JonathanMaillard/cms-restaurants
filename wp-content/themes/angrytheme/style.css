@@ -94,6 +94,7 @@ body {
 .menu_class {
   float: right;
 }
+
 .menu_class__navlinks {
   font-size: 1.2rem;
   font-weight: 500;
@@ -113,6 +114,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 @media (min-width: 374px) {
   .order-btn a {
     display: none;
@@ -140,6 +142,7 @@ body {
   width: 1.8rem;
   margin: 0rem 0rem 0rem 1rem;
 }
+
 @media (min-width: 374px) {
   .cart {
     display: none;
@@ -150,25 +153,36 @@ body {
   min-height: 800px;
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   overflow: hidden;
   z-index: -1;
 }
+
 @media (min-width: 1024px) {
   .headerpicture {
     max-width: 100%;
-    transform: translate(0, -15rem);
+    -webkit-transform: translate(0, -15rem);
+            transform: translate(0, -15rem);
   }
 }
+
 .headerpicture img {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-flex-shrink: 0;
   max-width: 200%;
   height: 620px;
   z-index: -3;
 }
+
 @media (min-width: 1024px) {
   .headerpicture img {
     height: 790px;
@@ -186,6 +200,7 @@ body {
   z-index: -1;
   top: 0;
 }
+
 @media (min-width: 1024px) {
   .grey-hatching {
     min-width: 100%;
@@ -194,7 +209,7 @@ body {
 }
 
 .white-hatching {
-  height: 550px;
+  height: 700px;
   width: 100%;
   background-color: #292929;
   background-image: url("assets/images/hachures-blanches-180.png");
@@ -222,6 +237,7 @@ body {
   z-index: -1;
   top: 0;
 }
+
 @media (min-width: 1024px) {
   .black-hatching {
     min-width: 100%;
@@ -251,37 +267,44 @@ body {
   font-weight: 300;
   line-height: 1.2;
 }
+
 @media (min-width: 768px) {
   .block__maintitle {
     font-size: 15px;
   }
 }
+
 @media (min-width: 1024px) {
   .block__maintitle {
     font-size: 30px;
   }
 }
+
 .block__maintitle span {
   display: block;
   color: white;
   text-transform: uppercase;
   font-weight: 600;
 }
+
 @media (min-width: 768px) {
   .block__maintitle span {
     font-size: 20px;
   }
 }
+
 @media (min-width: 374px) {
   .block__maintitle span {
     font-size: 30px;
   }
 }
+
 @media (min-width: 1024px) {
   .block__maintitle span {
     font-size: 50px;
   }
 }
+
 .block__mainlink {
   font-size: 3vw;
   color: #FFF;
@@ -291,16 +314,19 @@ body {
   -webkit-transform: translate(0, 9rem);
           transform: translate(0, 9rem);
 }
+
 @media (min-width: 1024px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
+
 @media (min-width: 374px) {
   .block__mainlink {
     font-size: 1.1vw;
   }
 }
+
 .block__mainlink:hover {
   -webkit-transform: translate(4rem, 9rem);
           transform: translate(4rem, 9rem);
@@ -327,18 +353,23 @@ body {
   max-width: 4rem;
   margin: 1rem;
 }
+
 @media (min-width: 768px) {
   .liner:before {
     max-width: 3rem;
-    transform: translate(0, -0.2rem);
+    -webkit-transform: translate(0, -0.2rem);
+            transform: translate(0, -0.2rem);
   }
 }
+
 @media (min-width: 374px) {
   .liner:before {
     max-width: 3rem;
-    transform: translate(0, 0.2rem);
+    -webkit-transform: translate(0, 0.2rem);
+            transform: translate(0, 0.2rem);
   }
 }
+
 .liner:before {
   margin-right: 2rem;
   margin-top: 1rem;
@@ -351,8 +382,6 @@ body {
 footer {
   margin-top: 6rem;
   color: #FFF;
-  border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
-  height: 285px;
   -o-border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
      border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
 }
@@ -409,9 +438,6 @@ footer p span {
 }
 
 .sect2openhours {
-  display: grid;
-  grid-template-columns: 0.2fr 0.5fr 1fr 0.7fr;
-  grid-template-rows: 1fr;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.2fr 0.5fr 1fr 0.7fr;
@@ -420,9 +446,6 @@ footer p span {
       grid-template-rows: 1fr;
   gap: 0px 0px;
       grid-template-areas: "time day line hours";
-}
-.sect2openhours p {
-  color: darkgrey;
 }
 
 .sect2openhours p {
@@ -464,21 +487,29 @@ footer p span {
 }
 
 .sect2contact {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.2fr 0.7fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: 0.2fr 0.7fr;
+      grid-template-columns: 0.2fr 0.7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "contacticon contacttext";
+      grid-template-areas: "contacticon contacttext";
 }
+
 .sect2contact p {
   color: darkgrey;
 }
 
 .contacticon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: contacticon;
 }
 
 .contacttext {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: contacttext;
 }
 
@@ -487,45 +518,56 @@ footer p span {
   height: 76px;
   margin: 0.7rem 0.7rem 0 0;
 }
+
 .footerig__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .newsletter {
   margin: auto;
-  transform: translate(0, 2rem);
+  -webkit-transform: translate(0, 2rem);
+          transform: translate(0, 2rem);
   z-index: 1000;
-  box-shadow: -9px 33px 48px -7px black;
   -webkit-box-shadow: -9px 33px 48px -7px black;
           box-shadow: -9px 33px 48px -7px black;
   width: 100%;
   height: 150px;
-  border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
+  -o-border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
+     border-image: url("assets/images/hachures-noires.png") 30 fill/30px/30px;
 }
+
 @media (min-width: 1024px) {
   .newsletter {
     width: 70%;
   }
 }
+
 .newsletter__title p {
   color: white;
-  transform: translate(0, 80%);
+  -webkit-transform: translate(0, 80%);
+          transform: translate(0, 80%);
 }
+
 .newsletter__mail {
-  transform: translate(0, 80%);
+  -webkit-transform: translate(0, 80%);
+          transform: translate(0, 80%);
   text-align: center;
   margin-bottom: 8rem;
 }
+
 .newsletter__mail button {
   padding: 0.7rem 1rem 0.7rem 1rem;
 }
+
 @media (min-width: 1024px) {
   .newsletter__mail button {
     padding-top: 3rem;
   }
 }
+
 @media (min-width: 1024px) {
   .newsletter__mail {
     width: 70%;
@@ -550,6 +592,7 @@ front-page.php
 .qualities {
   padding: 4rem 0;
 }
+
 @media (min-width: 1024px) {
   .qualities {
     padding: 0;
@@ -561,6 +604,7 @@ front-page.php
 .qualities .qualities__quality {
   margin: 2rem;
 }
+
 @media (min-width: 768px) {
   .qualities .qualities__quality {
     width: 45rem;
@@ -582,14 +626,17 @@ front-page.php
   font-size: 2.6rem;
   margin-top: 2rem;
 }
+
 @media (min-width: 768px) {
   .qualities .qualities__text {
     width: 30rem;
   }
 }
+
 .qualities .qualities__text .qualities__subtext {
   display: none;
 }
+
 @media (min-width: 768px) {
   .qualities .qualities__text .qualities__subtext {
     display: inline;
@@ -597,6 +644,7 @@ front-page.php
     font-size: 1.4rem;
   }
 }
+
 .qualities .qualities__image img {
   width: 100px;
 }
@@ -666,13 +714,15 @@ front-page.php
 .story .story__text .signature {
   font-size: 3.2rem;
 }
+
 @media (min-width: 768px) {
   .story .story__text {
     width: 90%;
     margin: auto;
     margin-top: -20rem;
     padding: 4rem;
-    box-shadow: 0px 3px 50px 0px #888888;
+    -webkit-box-shadow: 0px 3px 50px 0px #888888;
+            box-shadow: 0px 3px 50px 0px #888888;
   }
 }
 
@@ -723,6 +773,7 @@ front-page.php
 .restaurants .restaurant .restaurant__image img {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__image img {
     width: 80%;
@@ -733,6 +784,7 @@ front-page.php
   padding: 5rem 4rem;
   background-color: #FFF;
 }
+
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__text {
     width: 70%;
@@ -740,6 +792,7 @@ front-page.php
     margin-top: -15rem;
   }
 }
+
 @media (min-width: 1024px) {
   .restaurants .restaurant .restaurant__text {
     margin: 0;
@@ -752,6 +805,7 @@ front-page.php
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
 }
+
 .restaurants .restaurant .restaurant__text h4 {
   font-size: 2rem;
 }
@@ -768,10 +822,12 @@ front-page.php
   background-color: #292929;
   padding: 1rem 0;
   margin-top: 1rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 1.4rem;
   font-weight: bold;
 }
+
 .restaurants .restaurant .restaurant__text a:hover {
   color: #292929;
   background-color: #F5F5F5;
@@ -865,14 +921,17 @@ front-page.php
   font-family: "Poppins", sans-serif;
   font-size: 2.9rem;
 }
+
 .food .food__pictures {
   width: 80%;
 }
+
 .food .food__pictures .food__picture img {
   width: 100%;
   max-width: 250px;
   margin: 5px;
 }
+
 @media (min-width: 768px) {
   .food .food__pictures .food__picture img {
     width: 100%;
@@ -899,6 +958,7 @@ front-page.php
   padding: 2rem 0;
   margin-top: 1rem;
 }
+
 @media (min-width: 768px) {
   .food .food__text {
     width: 70%;
@@ -1028,9 +1088,11 @@ front-page.php
     padding-bottom: 6rem;
   }
 }
+
 .containerReserv .originalRest .originalRest__boxOne {
   width: 100%;
 }
+
 @media (min-width: 1024px) {
   .containerReserv .originalRest .originalRest__boxOne {
     width: 600px;
@@ -1041,6 +1103,7 @@ front-page.php
     border-bottom: 1px solid black;
   }
 }
+
 .containerReserv .originalRest .originalRest__One:nth-child(odd) {
   margin-bottom: 10rem;
   border-bottom: 1px solid black;
@@ -1188,6 +1251,7 @@ front-page.php
   height: auto;
   /* 6.4 — RESERVE TABLE  */
 }
+
 .containerBottom .effect {
   position: absolute;
   display: block;
@@ -1196,6 +1260,7 @@ front-page.php
   margin-right: auto;
   margin-left: auto;
 }
+
 .containerBottom .locationMap {
   background-color: white;
   padding-top: 5rem;
@@ -1216,10 +1281,12 @@ front-page.php
     font-size: 3.2rem;
   }
 }
+
 .containerBottom .locationMap .locationMap__openstreetmap {
   width: 100%;
   padding-bottom: 6rem;
 }
+
 .containerBottom .locationMap__title3 {
   margin-top: -20px;
   margin-bottom: 6rem;
@@ -1378,6 +1445,7 @@ front-page.php
     display: none;
   }
 }
+
 @media (min-width: 374px) {
   .containerBottom .flexBottom .formTabletteDesk {
     display: none;
@@ -1705,7 +1773,8 @@ front-page.php
     recipes.php
    =================================== */
 .articles__wrapper {
-  transform: translate(0, -10rem);
+  -webkit-transform: translate(0, -10rem);
+          transform: translate(0, -10rem);
   width: 100%;
 }
 
@@ -1718,6 +1787,7 @@ front-page.php
   width: 70%;
   margin: auto;
 }
+
 .groups p {
   font-size: 11px;
   display: inline-block;
@@ -1730,6 +1800,7 @@ front-page.php
   margin: 0 auto 3rem auto;
   background-color: #FFF;
 }
+
 .entries a {
   display: block;
   font-weight: 600;
@@ -1738,25 +1809,31 @@ front-page.php
   background-color: #292929;
   padding: 1rem;
   margin: auto;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .entries a:hover {
   color: #292929;
   background-color: #F5F5F5;
 }
+
 .entries__content {
   text-align: center;
   padding: 2rem;
 }
+
 .entries__time {
   font-size: 8.5px;
   text-transform: uppercase;
   margin-top: 1rem;
 }
+
 .entries__tag {
   font-size: 11px;
   font-weight: 600;
 }
+
 .entries__desc {
   margin: 2rem 1rem 2rem 1rem;
   color: #8b8b8b;
@@ -1764,15 +1841,19 @@ front-page.php
   height: 7rem;
   overflow: auto;
 }
+
 .entries__img {
   width: inherit;
   height: 120px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
+
 @media (min-width: 1024px) {
   .entries__img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 540px;
     height: 280px;
   }
@@ -1782,27 +1863,73 @@ front-page.php
    9.0 - Single recipe (Magali)
     single-recipe.php
    =================================== */
+.bandeau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .bandeau {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bandeau {
+    margin-left: 0rem;
+  }
+}
+
+.bandeau .bandeau__retour {
+  color: white;
+  border-right: 1px solid gray;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.bandeau .bandeau__retour .bandeau__retour__link {
+  text-decoration: none;
+  color: white;
+}
+
+.bandeau .bandeau__retour .bandeau__retour__link:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.bandeau .bandeau__date {
+  color: white;
+}
+
 .containerArticle {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5rem;
 }
 
 @media (min-width: 1024px) {
   .containerArticle {
+    margin-top: 5rem;
     max-width: 800px;
   }
 }
 
 .article__Title {
-  padding: 3rem 0rem;
-  margin-left: 0px;
   text-align: left;
   font-family: "Poppins", sans-serif;
   font-size: 4.2rem;
   font-weight: 600;
-  margin: 2rem 2rem;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -1820,12 +1947,18 @@ front-page.php
 
 @media (min-width: 1024px) {
   .article__Title {
-    margin: 2rem 0rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
   }
 }
 
 .article__subtile {
-  margin: 5rem 2rem;
+  color: white;
+  margin: 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   line-height: 4rem;
@@ -1837,8 +1970,15 @@ front-page.php
   }
 }
 
+@media (min-width: 768px) {
+  .article__subtile {
+    margin: 2rem 4rem;
+  }
+}
+
 .article__Picture {
   width: 100%;
+  padding-bottom: 6rem;
 }
 
 @media (min-width: 1024px) {
@@ -1861,31 +2001,44 @@ front-page.php
 .link {
   display: none;
 }
+
 @media (min-width: 768px) {
   .link {
     display: none;
   }
 }
+
 @media (min-width: 1024px) {
   .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 1rem 0rem;
   }
 }
 
 .linkSmart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 3rem;
 }
+
 @media (min-width: 768px) {
   .linkSmart {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
+
 @media (min-width: 1024px) {
   .linkSmart {
     display: none;
@@ -1935,6 +2088,12 @@ front-page.php
   font-family: "Poppins", sans-serif;
 }
 
+@media (min-width: 768px) {
+  .ingredient .ingredient__title {
+    margin: 2rem 4rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .ingredient .ingredient__title {
     margin: 2rem 0rem;
@@ -1949,10 +2108,20 @@ front-page.php
   margin: 2rem 2rem;
 }
 
+@media (min-width: 768px) {
+  .ingredient .ingredient__text {
+    margin: 2rem 4rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .ingredient .ingredient__text {
     margin: 2rem 0rem;
   }
+}
+
+.instructions {
+  padding-top: 4rem;
 }
 
 .instructions .instructions__title {
@@ -1960,6 +2129,12 @@ front-page.php
   margin: 3rem 2rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .instructions .instructions__title {
+    margin: 2rem 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1973,6 +2148,7 @@ front-page.php
   font-family: "Poppins", sans-serif;
   line-height: 3rem;
 }
+
 .instructions .instructions__number .instructions__picture {
   width: 100%;
   margin: 0px 0px;
@@ -1987,7 +2163,14 @@ front-page.php
 .instructions ol {
   counter-reset: my-awesome-counter;
   list-style: none;
-  margin-left: 40px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .instructions ol {
+    margin: 2rem 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2022,6 +2205,4 @@ front-page.php
 .instructions img {
   margin: 0px;
 }
-
-/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
