@@ -97,6 +97,8 @@ $breakpoints: (
     font-weight:500; 
     color:white!important;}
 
+    .navbar {margin-top:5rem;}
+
     .navbar-toggler {position:absolute;
         right:2rem;}
 
@@ -117,21 +119,14 @@ $breakpoints: (
         font-weight:500;
         font-family: 'Poppins', sans-serif;}}
     
-    .order-btn a {
-        text-decoration:none;
-        text-transform:uppercase;
-        font-size:1.1rem;
-        font-weight:500;
-        font-family: 'Poppins', sans-serif;
-        background-color:white;
-        /* haut | droit | bas | gauche */
-        padding:0.7rem 2rem 0.7rem 2rem; 
-        margin:0rem 1rem 0rem 1rem;
-        transition:0.3s;
-        @include for-phone-only {display:none;}} 
-        
-        .order-btn a:hover {color:$white;
-            background-color:$black;}  
+        .order-btn a {
+            /* haut | droit | bas | gauche */
+            margin:0.5rem 1rem 0rem 1rem!important;
+            padding: 1rem 2rem 1rem 2rem!important;
+     } 
+            
+            .order-btn a:hover {color:$white!important;
+                background-color:$black;}  
     
         .nav.navbar-nav li a {font-size:1.3rem;
             color: white;
@@ -256,18 +251,21 @@ $breakpoints: (
             @include for-phone-only {font-size:30px;}
             @include for-desktop-up {font-size:50px;}}
 
-        &__mainlink{font-size:3vw;
+        &__mainlink{font-size:12px;
             color:$white;
             font-weight:500;
         transition: 0.8s;
-        transform: translate(0,9rem);
+        transform: translate(-2rem,9rem);
 
-        @include for-desktop-up {font-size:1.1vw;}
-        @include for-phone-only {font-size:1.1vw;}}
+        @include for-desktop-up {font-size:16px;
+            transform: translate(0,9rem);}}
 
         &__mainlink:hover {
-       transform: translate(4rem,9rem);
-       text-decoration: none; }
+       transform: translate(1rem,9rem);
+       text-decoration: none;
+       @include for-desktop-up {transform: translate(4rem,9rem);
+       }
+     }
 
 }
 
@@ -1453,6 +1451,11 @@ border-bottom: 1px solid black;
    7.0 - PAGE : Menu (Jonathan)
     menu.php
    =================================== */
+
+   .menu {
+     transform:translate(0,-10rem);
+     width:100%;}
+
 
 
 /* ===================================
