@@ -697,8 +697,13 @@ front-page.php
   background-color: #292929;
   padding: 1rem 0;
   margin-top: 1rem;
+  transition: 0.5s;
   font-size: 1.4rem;
   font-weight: bold;
+}
+.restaurants .restaurant .restaurant__text a:hover {
+  color: #292929;
+  background-color: #F5F5F5;
 }
 
 @media (min-width: 768px) {
