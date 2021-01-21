@@ -28,43 +28,26 @@
        </div>
 
        <div class="foodType">
-        <p class="menuCategory">Starters</p>   
+        <p class="menuCategory pb-3"><?php echo get_field('category_one'); ?></p>  
+
+
+            <?php if( have_rows('starters') ): ?>                 
+                <?php while( have_rows('starters') ): the_row();?>  
 
         <div class="foodType__list">
         <ul class=dishes>
-        <li><span>Bedfordshire clanger</span><span>9.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Bubble and squeak</span> <span>14.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Cauliflower cheese</span> <span>12.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Fish and chips</span> <span>9.25€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Cobbler</span> <span>10.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
+        <li><span><?= get_sub_field( 'dish_name' ); ?></span><span><?= get_sub_field( 'price' ); ?></span></li>
+        <p><?= get_sub_field( 'dish_description' ); ?></p>
+    
         </ul>
        </div>
        </div>
 
 
-       <div class="foodType">
-        <p class="menuCategory">Mains</p>   
+       <?php endwhile; ?>                   
+            <?php endif; ?>
 
-        <div class="foodType__list">
-        <ul class=dishes>
-        <li><span>Bedfordshire clanger</span><span>9.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Bubble and squeak</span> <span>14.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Cauliflower cheese</span> <span>12.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Fish and chips</span> <span>9.25€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        <li><span>Cobbler</span> <span>10.95€</span></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat, odio sed laoreet scelerisque.</p>
-        </ul>
-       </div>
-       </div>
+    
 
 </section>
 
