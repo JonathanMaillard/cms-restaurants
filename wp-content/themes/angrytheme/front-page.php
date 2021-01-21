@@ -65,19 +65,18 @@
 <section class="story wrapper">
 
     <div class="story__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/the-chef.jpg">
+        <img src="<?php echo get_field('intro_chef_image')['url'] ?>">
     </div>
 
     <div class="story__text">
-        <h3>Discover<h3>
-        <h2>OUR STORY</h2>
-        <h4>ULTIMATE DINING EXPERIENCE LIKE NO OTHER</h4>
+        <h3><?php echo get_field('intro_title') ?><h3>
+        <h2><?php echo get_field('intro_main_title') ?></h2>
+        <h4><?php echo get_field('intro_subtitle') ?></h4>
 
-        <p>One of the notable character traits of a successful small restaurant owner is the ablity to easily solve problems. Problem-solving is a skill and most of the time comes with being open-minded.<p>
-        <p>Succesful entrepreneurs are open-minded people and as such good optimists, critical thinkers and prolem solvers. As a small restaurant owner, you need to be able to proffer quick solutions to any problem that may arise in the course of your business<p>
+        <?php echo get_field('intro_text') ?>
         
-        <h4>OUR FOUNDER</h4>
-        <div class="signature">The Chef</div>
+        <h4><?php echo get_field('intro_signature_title') ?></h4>
+        <div class="signature"><?php echo get_field('intro_signature') ?></div>
 
     </div>
 
@@ -163,13 +162,5 @@
 
 </section>
 
-<section class="latest">
-    
-    <div class="latest__title">
-        <h3 class="text-center">Latest updated</h3>
-        <h2 class="text-center">RECIPES BLOG</h2>
-    </div>
-
-</section>
 
 <?php get_footer(); ?>
