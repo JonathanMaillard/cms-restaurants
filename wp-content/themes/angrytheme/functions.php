@@ -22,18 +22,18 @@ register_nav_menus( array(
 
 // NEW PICTURE SIZE
 
-add_theme_support( 'post-thumnails', $arg);
-//activer la section format
-add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'image', 'link', 'quote', 'status', 'video', 'audio' ));
-//activer les formats pour les pages
-add_post_type_support( 'page', 'post-formats');
-
-
 function wpm_new_image(){
+
+    //activer la section image en avant
+    add_theme_support( 'post-thumbnails' );
+    //activer la section format
+    add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'image', 'link', 'quote', 'status', 'video', 'audio' ));
+    //activer les formats pour les pages
+    add_post_type_support( 'page', 'post-formats');
 
     // L'image sera tronquée exactement à la dimension indiquée
     add_image_size( 'wpm_taille_1', 600, 600, true ); 
-    add_image_size('wpm_taille_2', 800, 200, true);
+    add_image_size('wpm_taille_2', 800, 350, true);
     
     }
 
