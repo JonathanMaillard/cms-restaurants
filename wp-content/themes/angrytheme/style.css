@@ -1032,6 +1032,11 @@ front-page.php
 /* Form  */
 /* 6.2 — ORIGINAL REST */
 /* Page reservations.php */
+.backgroundGray {
+  background-color: #f5f5f5;
+  margin-top: -190px;
+}
+
 .containerReserv {
   background-color: #f5f5f5;
   margin-right: auto;
@@ -1298,7 +1303,7 @@ front-page.php
 
 .containerBottom .flexBottom {
   margin-top: 0rem;
-  margin-bottom: 60rem;
+  margin-bottom: 10rem;
   background-color: white;
   /* 6.5 — FORMS */
 }
