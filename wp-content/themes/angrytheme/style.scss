@@ -1456,7 +1456,100 @@ border-bottom: 1px solid black;
      transform:translate(0,-10rem);
      width:100%;}
 
+    .pagetitle {width:70%;
+        text-align:center;
+        margin:auto;    
+            & p {line-height:1.5;
+            font-size:22px;
+            font-weight:300;}
+            & p span {
+            font-size:36px;
+            font-weight:500;
+            text-transform:uppercase;
+            display:block;}}   
 
+
+    .menuCategory {font-size:20px;
+        font-weight:600;   
+    margin:auto;
+    padding:2rem 0rem 1.5rem 0rem;
+    text-transform:uppercase;
+    border-bottom: solid 2.5px $black;
+    width:max-content; }
+
+    ul.dishes {
+        font-size:14px;
+        max-width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+        list-style: none;}
+
+        ul.dishes p {
+            font-size:12px;
+            font-weight:300;
+            width:50rem;
+            color:rgb(143, 143, 143);}
+
+    ul.dishes li:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content:
+     ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "}
+    ul.dishes span:first-child {
+        padding-right: 0.33em;
+        background: white;
+        text-transform:uppercase;}
+    ul.dishes span + span {
+        float: right;
+        font-weight:600;
+        padding-left: 0.33em;
+        background: white;}
+
+    .foodType {
+        width:100%;
+    &__list {width:50%;
+        padding-top:3rem;
+            margin:auto;} }
+
+    .lastupdated {     
+            padding-bottom:3rem;
+            border-image: url("assets/images/hachures-grises-180.png") 30 fill / 30px / 30px ;
+
+               }
+
+    .entry {
+        height:28rem;
+        
+        & img {width:inherit;
+            height:170px;
+            object-fit: cover;
+            overflow:hidden;}
+
+            &__time {font-size:8.5px;
+                text-transform:uppercase;
+            margin-top:1rem;}
+        
+            &__desc {
+            color:rgb(139, 139, 139);
+            line-height:1.4;
+            height:3rem;
+            overflow:auto;}
+    }           
+
+    .horizontal_dotted_line{
+        width: 15rem;
+        display : flex;
+       } 
+       .dot{margin-right:1rem;
+         flex: 1;
+         border-bottom: 1px dotted black;
+         height: 0.6em;
+       }
+    
 
 /* ===================================
    8.0 - Recipes archives (Sandrine)

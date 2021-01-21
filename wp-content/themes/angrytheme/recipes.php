@@ -41,7 +41,7 @@
     <p class="entries__time"><i class="far fa-clock"></i> 10 MARCH 2020</p>
     <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> local food</p>
     <h4>The Salade Liégoise</h4>
-    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. .</p>
+    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. </p>
     <a href="#">Read more</a></div>
    
     <div class="col-sm">
@@ -88,6 +88,9 @@
 
     </div>
 </section>
+
+<?php get_template_part('parts/food') ?>
+
 
 
 
