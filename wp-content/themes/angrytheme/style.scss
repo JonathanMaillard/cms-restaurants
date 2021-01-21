@@ -1680,7 +1680,29 @@ border-bottom: 1px solid black;
         
     .bandeau__date{
     color: white;
+    margin-right: 25px;
+
+    @include for-tablet-portrait-up{
+        margin-right: 350px;
+        }
+
+    @include for-desktop-up{
+        margin-right: 350px;
+        }
     }
+
+    
+        & a{
+            color:white !important;
+            text-decoration: none !important;
+        }
+
+        .utensilsPicture{
+            position : relative;
+            width: 15px;
+            height: 15px;
+        }
+
 }
 
 //CONTAINER GLOBALE

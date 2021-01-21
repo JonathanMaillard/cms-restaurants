@@ -17,7 +17,13 @@
         </p>
         <p class="bandeau__date">
         <?php the_time( get_option( 'date_format' ) ); ?>
-        </p> 
+        </p>
+    
+        <a class="utensilscontainer">
+        <img class="utensilsPicture" src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry-white.svg">
+        <?php the_category() ?>
+        </a>
+      
     </div>
   
     <!-- TITLE ARTICLE -->
@@ -26,7 +32,7 @@
         <?php endwhile; endif; ?>  
  
     <!-- ACF CHAMPS -->
-    <?php if( has_category( 'Recipes' ) ): ?>
+    <?php if( have_posts() ): while( have_posts()) : the_post(); ?>
 
 
         <div class="review">
@@ -90,7 +96,7 @@
                 }
                 ?>
             </div>
-            <?php endif; ?>
+           
         </div>
 
         <!-- ICON SMARPHONE TABLETTE -->
@@ -115,7 +121,9 @@
                     </i>
                 </a>
             </div>
+            <?php endwhile; endif; ?>  
 </div>
+          
 
 <?php get_footer(); ?>
 
