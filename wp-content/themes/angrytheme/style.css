@@ -507,6 +507,7 @@ front-page.php
 }
 
 .qualities {
+  margin-top: -190px;
   padding: 4rem 0;
 }
 @media (min-width: 1024px) {
