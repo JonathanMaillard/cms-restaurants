@@ -1905,6 +1905,30 @@ front-page.php
 
 .bandeau .bandeau__date {
   color: white;
+  margin-right: 25px;
+}
+
+@media (min-width: 768px) {
+  .bandeau .bandeau__date {
+    margin-right: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bandeau .bandeau__date {
+    margin-right: 350px;
+  }
+}
+
+.bandeau a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.bandeau .utensilsPicture {
+  position: relative;
+  width: 15px;
+  height: 15px;
 }
 
 .containerArticle {

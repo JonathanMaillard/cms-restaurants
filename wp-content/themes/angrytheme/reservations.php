@@ -51,7 +51,7 @@ Our original restaurant
                             // TITLE
                             echo '<div class="originalRest__boxOne">';
                             echo '<h4 class="originalRest__title4">' . $value['titlearticle'] . '</h4>';
-                            echo '<h3 class="originalRest__title3">' . $value['titlearticle'] . '</h3>';
+                            echo '<h3 class="originalRest__title3">' . $value['subtitle'] . '</h3>';
                             echo '<p class="originalRest__para">' . $value['textearticle'] . '</p>';
                             echo '</div>';
 
