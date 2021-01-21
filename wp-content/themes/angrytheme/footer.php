@@ -1,21 +1,27 @@
 
-<div class="container newsletter">
-  <div class="row">
-    <div class="col-sm d-flex justify-content-center newsletter__title">
-      <p class="text-uppercase h1">Join our<span class="d-block">newsletter</span></p>
-    </div>
-    <div class="col-sm justify-content-center newsletter__mail">
-    <form action="" class="m-auto">
-		<div class="form-group row">
-            <div class="col-md-8"><input type="email" class="form-control form-control-lg" id="your-email1" name="your-email" placeholder="Your email here" required></div>
-            <div class="col-md-4"><button class="btn btn-light text-uppercase" type="submit">Subscribe</button></div>
-		</div>
-
-	</form>
+<section class="newsletter d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+  
+    <div class="d-flex newsletter__title">
+      <p class="text-uppercase h1">Join our<br>newsletter</p>
     </div>
 
-</div>
-</div>
+    <div class="newsletter__mail">
+
+      <form action="" class="">
+        <div class="form-group d-lg-flex justify-content-lg-end align-items-lg-center">
+                <div class="d-flex justify-content-center">
+                  <input type="email" class="form-control form-control-lg" id="your-email1" name="your-email" placeholder="Your email here" required></br>
+                </div>
+                <div class="d-flex justify-content-center justify-content-md-end">
+                  <button class="btn btn-light text-uppercase" type="submit">Subscribe</button>
+                </div>
+        </div>
+      </form>
+
+    </div>
+
+</section>
+
 <footer>
 <div class="container">
   <div class="row justify-content-center g-0 pt-5">
