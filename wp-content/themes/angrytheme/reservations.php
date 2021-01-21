@@ -7,62 +7,63 @@
 
 <?php get_header(); ?>
 <!-- START HEADER -->
-<body style="background-color:#F5F5F5;">
+ <body> 
 
-<div class="headerpicture">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="header" class="black">
-</div>
+    <div class="headerpicture">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="header" class="black">
+    </div>
 
-<div class="block px-5 py-3">
-<p class="block__maintitle">
-Our original restaurant
-<span>The Chef's selection</span></p>
-<div class="block__mainlink">
-<p><a class="liner text-white ml-5" href="#"> check our menu </a></p>
-</div>   
-</div>
+    <div class="block px-5 py-3">
+            <p class="block__maintitle">
+            Our original restaurant
+            <span>The Chef's selection</span></p>
+        <div class="block__mainlink">
+            <p><a class="liner text-white ml-5" href="#"> check our menu </a></p>
+        </div>   
+    </div>
 
-<div class="grey-hatching"></div>
-<!-- END HEADER -->
+    <div class="grey-hatching"></div>
+    <!-- END HEADER -->
+<div class="backgroundGray">
+
+    <div class="containerReserv">
+        <h4 class="welcome"><?php the_field('titreone'); ?></h4>
+        <h3 class="presentation"><?php the_field('titretwo'); ?></h3>
 
 
-<div class="containerReserv">
-    <h4 class="welcome"><?php the_field('titreone'); ?></h4>
-    <h3 class="presentation"><?php the_field('titretwo'); ?></h3>
+        <!--  PART ONE CARD : ORIGINAL RESTAURANT   -->
+        <div class="originalRest">
+            
+                <?php 
+                        $values = get_field('articlesres');
+                        // var_dump($values);
+                        if($values){
+                        
+                            foreach($values as $value){
+                                // var_dump($value);
+                                // var_dump($value)["picture"];
+                                echo '<div class="originalRest__One">';
+                                //PICTURE
+                                echo '<div class="originalRest__box">';
+                                echo '<img class="originalRest__pictureOne" src="'. $value["picturearticle"]["url"] . '">';
+                                echo '</div>';
 
+                                // TITLE
+                                echo '<div class="originalRest__boxOne">';
+                                echo '<h4 class="originalRest__title4">' . $value['titlearticle'] . '</h4>';
+                                echo '<h3 class="originalRest__title3">' . $value['subtitle'] . '</h3>';
+                                echo '<p class="originalRest__para">' . $value['textearticle'] . '</p>';
+                                echo '</div>';
 
-    <!--  PART ONE CARD : ORIGINAL RESTAURANT   -->
-    <div class="originalRest">
-        
-            <?php 
-                    $values = get_field('articlesres');
-                    // var_dump($values);
-                    if($values){
-                      
-                        foreach($values as $value){
-                            // var_dump($value);
-                            // var_dump($value)["picture"];
-                            echo '<div class="originalRest__One">';
-                            //PICTURE
-                            echo '<div class="originalRest__box">';
-                            echo '<img class="originalRest__pictureOne" src="'. $value["picturearticle"]["url"] . '">';
-                            echo '</div>';
-
-                            // TITLE
-                            echo '<div class="originalRest__boxOne">';
-                            echo '<h4 class="originalRest__title4">' . $value['titlearticle'] . '</h4>';
-                            echo '<h3 class="originalRest__title3">' . $value['subtitle'] . '</h3>';
-                            echo '<p class="originalRest__para">' . $value['textearticle'] . '</p>';
-                            echo '</div>';
-
-                            echo '</div>';
+                                echo '</div>';
+                            }
+                        
                         }
-                       
-                    }
-                    ?>
-    </div>       
+                        ?>
+        </div>       
+    </div>  
 </div>  
-  
+
     <div class="containerBottom">
         <!--  LOCATION MAP   -->
           <!-- EFFECT -->
@@ -97,11 +98,12 @@ Our original restaurant
             </div>
         </div>
 
+<!--  DISCOVER OUR MENU  -->
+        <?php get_template_part('parts/food') ?>
 
-<!--  DISCOVER OUR MENU with Jonathan   -->
 
-<!--  Latest updated RECIPES BLOG with Jonathan   -->
-
+<!--  Latest updated RECIPES BLOG  -->
+    <?php get_template_part('parts/latest') ?>
 
 
 
