@@ -139,28 +139,56 @@
 
 <section class="quote text-center d-lg-flex align-items-lg-center">
     <div class="quote__wrap d-flex flex-column align-items-center">
-        <div class="quote__text">
-            <p><i class="fas fa-quote-right"></i></p>
-            <p>Any Time We Start Something New It Is Exciting And We Are Very Motivated And Committed. As Time Goes By</p>
-        </div>
 
-        <div class="quote__author">
-            - Devil Roy Barman
-        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <?php
 
-        <div class="quote__nav d-flex align-items-center justify-content-between">
-            <div class="bullet"></div>
-            <div class="bullet active"></div>
-            <div class="bullet"></div>   
+                    // Check rows exists.
+                    if( have_rows('testimony_testimonies') ):
+
+                        // Loop through rows.
+                        while( have_rows('testimony_testimonies') ) : the_row();
+
+                            // Load sub field value.
+                            $text = get_sub_field('text');
+                            $author = get_sub_field('author');
+                            
+                ?>
+
+                <div class="swiper-slide">
+                    <div class="quote__text">
+                        <p><i class="fas fa-quote-right"></i></p>
+                        <p><?php echo $text; ?></p>
+                    </div>
+
+                    <div class="quote__author">
+                        - <?php echo $author; ?>
+                    </div>
+                </div>
+
+                <?php
+                        // End loop.
+                        endwhile;
+                    endif;
+                ?>    
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
         </div>
+        
     </div>
     <div class="quote__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png">
-    </div>
-
-    
+        <img src="<?php echo get_field('testimony_image')['url']; ?>">
+    </div> 
 
 </section>
+
 
 <?php get_template_part('parts/latest') ?>
 
