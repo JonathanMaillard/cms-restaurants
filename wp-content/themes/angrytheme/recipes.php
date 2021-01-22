@@ -34,9 +34,11 @@
         <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> italian</p>
     </div>
 
+
+    <?php if( have_posts() ): ?>
     <div class="entries">
     <div class="row">
-
+      <?php while( have_posts()) : the_post(); ?>
     <div class="col-sm entries__content">
     <p class="entries__time"><i class="far fa-clock"></i> 10 MARCH 2020</p>
     <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> local food</p>
@@ -88,6 +90,8 @@
 
     </div>
 </section>
+
+
 
 <?php get_template_part('parts/food') ?>
 
