@@ -980,6 +980,25 @@ front-page.php
   }
 }
 
+.swiper-container {
+  width: 100%;
+}
+.swiper-container .swiper-wrapper {
+  margin-bottom: 5rem;
+}
+.swiper-container .swiper-pagination-bullet {
+  background-color: #FFF;
+  opacity: 0.5;
+}
+.swiper-container .swiper-pagination-bullet:hover {
+  background-color: #FFF;
+  opacity: 1;
+}
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: #FFF;
+  opacity: 1;
+}
+
 .quote {
   background-color: #292929;
   color: #FFF;
