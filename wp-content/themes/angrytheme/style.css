@@ -1692,6 +1692,18 @@ ul.dishes span + span {
   }
 }
 
+.latestentries {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .latestentries {
+    flex-wrap: nowrap;
+  }
+}
+
 /* ===================================
    9.0 - Single recipe (Magali)
     single-recipe.php

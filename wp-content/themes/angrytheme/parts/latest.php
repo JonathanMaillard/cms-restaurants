@@ -24,11 +24,11 @@ $the_query = new WP_Query( $args );
 
 // The Loop
 if ( $the_query->have_posts() ) {
-    echo ' <div class="d-flex flex-row card-body m-2">';
+    echo ' <div class="latestentries pb-5">';
    
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
-        echo '<div class="container p-5" style="width:75%;">';
+        echo '<div class="m-3">';
         echo '<div class="row g-0">';
         echo '<div class="col">';
         // PICTURE

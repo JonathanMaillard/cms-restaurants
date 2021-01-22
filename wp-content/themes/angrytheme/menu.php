@@ -90,57 +90,7 @@
 
 </section>
 
-<section class="lastupdated">
-<div class="pagetitle">
-       <p>Last updated <span>Recipes blog</span></p>
-       </div>
-
-       <div class="container p-5" style="width:75%;">
-  <div class="row g-0">
-    <div class="col"><div class="card border-0 entry" style="width:19rem;">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="...">
-  <div class="card-body m-2">
-  <p class="entry__time"><i class="far fa-clock"></i> 10 FEBRUARY 2020</p>
-  <p class="h5">Fluffy japanese pancakes</p>
-  <p class="entry__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-  <div class="horizontal_dotted_line"><span class="dot"></span> Read more</div>
-  </div>
-</div></div>
-    <div class="col">
-    <div class="card border-0 entry" style="width:19rem;">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="...">
-  <div class="card-body m-2">
-  <p class="entry__time"><i class="far fa-clock"></i> 10 FEBRUARY 2020</p>
-  <p class="h5">Fluffy japanese pancakes</p>
-  <p class="entry__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-  <div class="horizontal_dotted_line"><span class="dot"></span> Read more</div>
-  </div>
-</div>
-    </div>
-    <div class="col">
-    <div class="card border-0 entry" style="width:19rem;">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="...">
-  <div class="card-body m-2">
-  <p class="entry__time"><i class="far fa-clock"></i> 10 FEBRUARY 2020</p>
-  <p class="h5">Fluffy japanese pancakes</p>
-  <p class="entry__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-  <div class="horizontal_dotted_line"><span class="dot"></span> Read more</div>
-  </div>
-</div>
-    </div>
-    <div class="col">
-    <div class="card border-0 entry" style="width:19rem;">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood-pixabay.jpg" alt="...">
-  <div class="card-body m-2">
-  <p class="entry__time"><i class="far fa-clock"></i> 10 FEBRUARY 2020</p>
-  <p class="h5">Fluffy japanese pancakes</p>
-  <p class="entry__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-  <div class="horizontal_dotted_line"><span class="dot"></span> Read more</div>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
+<?php get_template_part('parts/latest') ?>
 
 
 

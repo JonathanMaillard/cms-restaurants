@@ -1685,6 +1685,13 @@ border-bottom: 1px solid black;
         height:280px;
     }}   }    
     
+    .latestentries {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        @include for-desktop-up {
+            flex-wrap: nowrap;}}
 
 
 /* ===================================
