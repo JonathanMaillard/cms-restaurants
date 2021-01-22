@@ -5,7 +5,7 @@
 * Follow a design 
 
 # 🍔 The project :
-![Picture]()
+![<Visuel>](wp-content/themes/angrytheme/assets/print.png)
 
 Creation of a custom WordPress theme, respecting an existing wireframe. Use of ACF and plugins.
 
@@ -21,7 +21,7 @@ Creation of a custom WordPress theme, respecting an existing wireframe. Use of A
 
 ## 🔧 Languages 
 * HTML
-* CSS
+* CSS / SCSS
 * PHP
 * JavaScript 
 
@@ -33,8 +33,10 @@ Creation of a custom WordPress theme, respecting an existing wireframe. Use of A
 ├── index.php</br>
 ├── archive.php</br>
 ├── home.php</br>
-├── 404.php</br>
+├── class-wp-bootstrap-navwalker</br>
+├── 404.php</br> 
 ├── header.php</br>
+├── modeles-headers.php</br>
 ├── footer.php</br>
 ├── front-page.php</br>
 ├── functions.php</br>
@@ -43,6 +45,11 @@ Creation of a custom WordPress theme, respecting an existing wireframe. Use of A
 ├── recipes.php</br>
 ├── reservations.php</br>
 ├── README.md</br>
+├── single-post.php</br>
+├── single-recipe.php</br>
 ├── style.css</br>
 ├── style.css.map</br>
 ├── style.scss</br>
+├── script.js</br>
+│ ├── food.php</br>
+│ ├── latest.php</br>

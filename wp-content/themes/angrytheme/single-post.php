@@ -123,6 +123,10 @@
             </div>
             <?php endwhile; endif; ?>  
 </div>
+
+<!-- Permet d'afficher toutes les catégories
+<!-- <?php wp_list_categories( ['hide_empty=0' , 'title_li' => ''] ); ?> -->
+
           
 
 <?php get_footer(); ?>
