@@ -565,6 +565,7 @@ front-page.php
 }
 
 .story {
+  background-color: #FFF;
   padding-bottom: 10rem;
   position: relative;
 }
@@ -630,6 +631,11 @@ front-page.php
     top: 25rem;
   }
 }
+@media (min-width: 1024px) {
+  .story {
+    background-color: #F5F5F5;
+  }
+}
 
 .restaurants {
   background-image: url("assets/images/burger party-t.png");
@@ -664,7 +670,7 @@ front-page.php
 }
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__image img {
-    width: 80%;
+    width: 70%;
   }
 }
 .restaurants .restaurant .restaurant__text {
@@ -673,13 +679,14 @@ front-page.php
 }
 @media (min-width: 768px) {
   .restaurants .restaurant .restaurant__text {
-    width: 70%;
+    width: 60%;
     position: relative;
-    margin-top: -15rem;
+    margin-top: -30rem;
   }
 }
 @media (min-width: 1024px) {
   .restaurants .restaurant .restaurant__text {
+    width: 50%;
     margin: 0;
     position: absolute;
     top: 20rem;
@@ -694,6 +701,12 @@ front-page.php
 }
 .restaurants .restaurant .restaurant__text p {
   line-height: 3rem;
+  max-width: 300px;
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurant .restaurant__text p {
+    margin: 4rem 0;
+  }
 }
 .restaurants .restaurant .restaurant__text a {
   display: block;
@@ -872,6 +885,7 @@ front-page.php
 .quote .quote__wrap .quote__author {
   font-size: 1.6rem;
 }
+<<<<<<< HEAD
 .quote .quote__wrap .quote__nav {
   margin-top: 3.6rem;
   width: 4.6rem;
@@ -890,6 +904,8 @@ front-page.php
 .quote .quote__wrap .quote__nav .bullet.active {
   opacity: 1;
 }
+=======
+>>>>>>> jonathan
 @media (min-width: 1024px) {
   .quote .quote__image {
     width: 50%;
@@ -1674,6 +1690,7 @@ ul.dishes span + span {
   text-align: center;
   max-height: 200px !important;
 }
+<<<<<<< HEAD
 
 .recipe-img {
   grid-area: recipe-img;
@@ -1681,6 +1698,9 @@ ul.dishes span + span {
 }
 
 .readmore a {
+=======
+.entries a {
+>>>>>>> jonathan
   display: block;
   font-weight: 600;
   width: 10rem;
@@ -1690,6 +1710,7 @@ ul.dishes span + span {
   margin: auto;
   transition: 0.5s;
 }
+<<<<<<< HEAD
 .readmore a:hover {
   color: #292929;
   background-color: #F5F5F5;
@@ -1709,6 +1730,12 @@ ul.dishes span + span {
   color: #292929;
   text-decoration: none;
 }
+=======
+.entries a:hover {
+  color: #292929;
+  background-color: #F5F5F5;
+}
+>>>>>>> jonathan
 .entries__content {
   text-align: center;
   padding: 2rem;
@@ -1729,6 +1756,22 @@ ul.dishes span + span {
   height: 7rem;
   overflow: auto;
 }
+<<<<<<< HEAD
+=======
+.entries__img {
+  width: inherit;
+  height: 120px;
+  object-fit: cover;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .entries__img {
+    object-fit: cover;
+    width: 540px;
+    height: 280px;
+  }
+}
+>>>>>>> jonathan
 
 .latestentries {
   display: flex;
