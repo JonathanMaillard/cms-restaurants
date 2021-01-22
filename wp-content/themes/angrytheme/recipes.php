@@ -5,7 +5,8 @@
     */
 ?>
 <?php get_header(); ?>
-<body style="background-color:#F5F5F5;">
+<!-- <body style="background-color:#F5F5F5;"> -->
+<body style="background-color:red;">
 
 <div class="headerpicture">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="header" class="black">
@@ -33,61 +34,58 @@
         <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> latino</p>
         <p><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> italian</p>
     </div>
-
-
-    <?php if( have_posts() ): ?>
-    <div class="entries">
-    <div class="row">
-      <?php while( have_posts()) : the_post(); ?>
-    <div class="col-sm entries__content">
-    <p class="entries__time"><i class="far fa-clock"></i> 10 MARCH 2020</p>
-    <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> local food</p>
-    <h4>The Salade Liégoise</h4>
-    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. </p>
-    <a href="#">Read more</a></div>
-   
-    <div class="col-sm">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salad.png" class="entries__img">
-    </div>
-
-    </div>
-    </div>
-
-    <div class="entries image-on-the-right">
-    <div class="row">
-
-    <div class="col-sm">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/chicken-wings.jpg" class="entries__img">
-    </div>
-
-    <div class="col-sm entries__content">
-    <p class="entries__time"><i class="far fa-clock"></i> 10 FEBRUARY 2020</p>
-    <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> spicy</p>
-    <h4>Chicken wings from hell</h4>
-    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. .</p>
-    <a href="#">Read more</a></div>
     
-    </div>
-    </div>
+    
+    <?php 
+    $args = array(
+        'post_type'         => 'post',
+        'posts_per_page'    => 6
+    );
+    $the_query = new WP_Query( $args );
 
-    <div class="entries">
-    <div class="row">
+    if ( $the_query->have_posts() ) {
+     echo '<div class="entries">';
+        
+            while ( $the_query->have_posts() ) {
+                $the_query->the_post();
+                echo '<div class="row">';
+                echo '<div class="col-sm entries__content">';
 
-    <div class="col-sm entries__content">
-    <p class="entries__time"><i class="far fa-clock"></i> 8 JANUARY 2020</p>
-    <p class="entries__tag"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/cutelry.svg" class="cutelry"> original dev's restaurant</p>
-    <h4>Midnight sandwich</h4>
-    <p class="entries__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nunc sed dolor dictum, vitae lacinia odio volutpat. .</p>
-    <a href="#">Read more</a></div>
-   
-    <div class="col-sm">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/midnight-sandwich.jpg" class="entries__img">
-    </div>
+                echo '<p class="entries__time">';
+                //ICON TIME
+                echo '<i class="far fa-clock">' . '</i>';
+                //DATE
+                echo the_time( get_option( 'date_format' ) );
+                echo '</p>';
 
-    </div>
-    </div>
+                echo '<p class="entries__tag">';
+                //USTENSILE
+                echo '<img class="cutelry" src="' . get_template_directory_uri() . '/assets/svg/cutelry.svg">'; 
+                //CATEGORY
+                echo the_category();
+                echo '</p>';
+                echo  '<h4>' . get_the_title() . '</h4>';
+                echo '<p class="entries__desc">' . get_field('subtitle') . '</p>';
+                //READ MORE
+                echo '<a href="' . get_permalink() . '">' . 'Read More' . '</a>';
+                echo '</div>';
+                echo '<div class="col-sm>';
+                //PICTURE
+                echo '<img class="entries__img" src=" ' . $value["image_article"]["url"] . '">'; 
+                echo '<div>' . the_post_thumbnail('large', ['class' => 'card-img-top', 'alt' => '', 'style'=> 'height:auto;']) . '</div>';
+                echo '</div>';
+                echo '</div>';
+            }
+            echo '</div>';
+        }
+        /* Restore original Post Data */
+        wp_reset_postdata();
+        ?>
 
 
+
+
+    <!-- END WRAPPER -->
     </div>
 </section>
 
