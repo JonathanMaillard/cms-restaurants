@@ -5,8 +5,7 @@
     */
 ?>
 <?php get_header(); ?>
-<!-- <body style="background-color:#F5F5F5;"> -->
-<body style="background-color:palevioletred;">
+<body style="background-color:#F5F5F5;"> 
 
 <div class="headerpicture">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/resto1.jpg" alt="header" class="black">
