@@ -5,7 +5,7 @@
 * Follow a design 
 
 # 🍔 The project :
-![<Visuel>](wp-content/themes/angrytheme/assets/print.png)
+![<Visuel>](https://github.com/JonathanMaillard/cms-restaurants/raw/magali/wp-content/themes/angrytheme/assets/images/print.png)
 
 Creation of a custom WordPress theme, respecting an existing wireframe. Use of ACF and plugins.
 
