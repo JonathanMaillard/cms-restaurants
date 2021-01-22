@@ -1501,11 +1501,12 @@ front-page.php
 .frm_section_heading,
   .containerBottom .flexBottom .frm_form_fields
 .frm_fields_container {
-    position: absolute;
+    position: relative;
     width: 80%;
     margin-top: -13rem;
     margin-right: 10%;
     margin-left: 10%;
+    margin-bottom: 5rem !important;
   }
 }
 
@@ -1882,6 +1883,7 @@ ul.dishes span + span {
 }
 
 .entry__time {
+  margin: 0px 10px;
   font-size: 8.5px;
   text-transform: uppercase;
   margin-top: 1rem;
@@ -1894,15 +1896,37 @@ ul.dishes span + span {
   overflow: auto;
 }
 
+.entry i {
+  margin-right: 5px;
+}
+
+.entry .h5 {
+  margin: 5px 10px;
+}
+
+.entry .subtileCard {
+  margin: 0px 10px;
+  font-size: 10px;
+  line-height: 2;
+}
+
+.entry .readMore {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0px 10px;
+}
+
 .horizontal_dotted_line {
   width: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 9px 10px;
 }
 
 .dot {
-  margin-right: 1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
