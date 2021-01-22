@@ -162,5 +162,7 @@
 
 </section>
 
+<?php get_template_part('parts/latest') ?>
+
 
 <?php get_footer(); ?>
