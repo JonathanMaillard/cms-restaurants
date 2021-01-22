@@ -3,14 +3,14 @@
 <body style="background-color:#F5F5F5;">
 
 <div class="headerpicture">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-top.jpg" class="black" alt="header">
+<img src="<?php echo get_field('banner_image')['url']; ?>" class="black" alt="header">
 </div>
 
 <div class="block px-5 py-3">
-<p class="block__maintitle">For a happy day
-<span>Enjoy a <br> happy meal</span></p>
+<p class="block__maintitle"><?php echo get_field('banner_subtitle'); ?>
+<span><?php echo get_field('banner_main_title'); ?></span></p>
 <div class="block__mainlink">
-<p><a class="liner text-white ml-5" href="#">check our menu </a></p>
+<p><a class="liner text-white ml-5" href="<?php echo get_field('banner_link')['url']; ?>"><?php echo get_field('banner_link')['title']; ?></a></p>
 </div>   
 </div>
 
