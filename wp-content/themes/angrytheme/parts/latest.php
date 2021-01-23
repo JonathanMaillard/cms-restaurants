@@ -24,7 +24,7 @@ $the_query = new WP_Query( $args );
 
 // The Loop
 if ( $the_query->have_posts() ) {
-    echo ' <div class="latestentries pb-5">';
+    echo ' <div class="latestentries wrapper pb-5">';
    
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
