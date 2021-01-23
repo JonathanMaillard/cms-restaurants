@@ -657,6 +657,9 @@ front-page.php
             @include for-tablet-portrait-up{
                 width:70%;
             }
+            @include for-desktop-up{
+                width: 60%;
+            }
         }
         .restaurant__text{
             padding: 5rem 4rem;
@@ -672,7 +675,7 @@ front-page.php
                 width: 50%;
                 margin: 0;
                 position:absolute;
-                top: 20rem;
+                top: 15rem;
             
             }
             
@@ -891,6 +894,8 @@ front-page.php
 
     
 .quote{
+    position: relative;
+    z-index: 0;
     background-color: $black;
     color: $white;
     
@@ -1544,7 +1549,9 @@ border-bottom: 1px solid black;
     &__list {width:50%;
             margin:auto;} }
 
-    .lastupdated {     
+    .lastupdated {   
+            position: relative;
+            z-index: 1;  
             padding-bottom:3rem;
             border-image: url("assets/images/hachures-grises-180.png") 30 fill / 30px / 30px ;
 
@@ -1701,7 +1708,7 @@ border-bottom: 1px solid black;
     .latestentries {display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     
         @include for-desktop-up {
             flex-wrap: nowrap;}}

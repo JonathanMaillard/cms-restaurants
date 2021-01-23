@@ -23,7 +23,7 @@
 </section>
 
 <footer>
-<div class="container">
+<div class="container-fluid wrapper">
   <div class="row justify-content-center g-0 pt-5">
     <!-- Desc. + Social Media -->
     <div class="col-sm-2 ps-4 me-3">
