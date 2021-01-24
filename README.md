@@ -11,7 +11,7 @@ Creation of a custom WordPress theme, respecting an existing wireframe. Use of A
 
 ## 🔗 Link to exercice
 * [LINK](https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/03-the-mountain/02-cms-restaurant)
-* https://wordpress-restaurant.herokuapp.com/
+* http://wordpress-restaurant.herokuapp.com/
 
 
 ## 🧑🏼‍🎨👩🏻‍🎨👩🏼‍🎨 Team
